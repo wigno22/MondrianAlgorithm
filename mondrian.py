@@ -35,48 +35,64 @@ def median2(sequence):
 
 # Makes the dataset k-anonymous by
 # generalizing QIs
-def mondrianAnon(dataset, QIs, K):
+def mondrianAnon(dataset, QIs, k, choose_dimension=True):
+    '''
 
-    # TODO: Check if dataset in already K anonymous
+    :param dataset:
+    :param QIs:
+    :param k:
+    :param choose_dimension: SCELTA DELL'ATTRIBUTO DA PARTIZIONARE
+    :return:
+    '''
+
+    # Check if dataset in already K anonymous
     # If true stop
-    if is_k_anon(dataset, QIs, K) == True:
+    if is_k_anon(dataset, QIs, k) == True:
         return dataset
-    #se non è k anon dovrò generalizzare, splittare il dataset e k anonimizzare
 
+    # se non è k anon dovrò generalizzare, splittare il dataset e k anonimizzare
 
     # I don't have any new quasi identifiers to generalize
     # in order to reach k-anonymization
+    # TODO: verificare che questo controllo funzioni. L'algoritmo passa mai di qui?
     if len(QIs) == 0:
         return dataset
     # I have some quasi-identifier to generalize
-    #else:
-        # dim ← choose dimension()
-        # ^ choose one elements inside QIs to split my dataset
-        #dim = QIs[0]
-        
-    # choose the QI with the most different values
-    values = []
-    for QI in QIs:
-        # This will create a set with all the distinct values
-        # for the currenct quasi-identifier
-        values.append( len( set( row[QI] for row in dataset)) )
 
-    # Takes the first element that has the maximum different values
-    # inside the dataset
-    dim = values[values.index(max(values))]
 
-    '''
-    dataset = {
-        ZIP CODE = [3, 3, 4, 5, 5, 5, 6, 7, 7, 7, 9] <- set(3, 4, 5, 6, 7, 9) <- 6
-        CITY     = [A, A, A, A, B, B, B, B, B, E, E] <- set(A, B, E)          <- 3
-        DEGREE   = [B, B, B, B, P, P, P, M, M, H, H] <- set(B, P, M, H)       <- 4
-    }
-    '''
+    # region dim ← choose dimension()
+    #
+    # ^ choose one elements inside QIs to split my dataset
+    dim = None
+    if choose_dimension:
+        # Scelgo il primo attributo della lista
+        dim = QIs[0]
+    else:
+        # choose the QI with the most different values
+        values = []
+        for QI in QIs:
+            # This will create a set with all the distinct values
+            # for the currenct quasi-identifier
+            values.append( len( set( row[QI] for row in dataset)) )
 
-    #f s ← frequency set(partition, dim)
-    #splitV al ← ﬁnd median(f s)
+        # Takes the first element that has the maximum different values
+        # inside the dataset
+        dim = values[values.index(max(values))]
+
+        '''
+        dataset = {
+            ZIP CODE = [3, 3, 4, 5, 5, 5, 6, 7, 7, 7, 9] <- set(3, 4, 5, 6, 7, 9) <- 6
+            CITY     = [A, A, A, A, B, B, B, B, B, E, E] <- set(A, B, E)          <- 3
+            DEGREE   = [B, B, B, B, P, P, P, M, M, H, H] <- set(B, P, M, H)       <- 4
+        }
+        '''
+    # endregion
+
+
+    # fs ← frequency set(partition, dim)
+    # splitV al ← ﬁnd median(f s)
     # ^ find the median value for the choosen attribute (dim)
-    #se dim è un valore numerico chiamo median altrimenti median2
+    # se dim è un valore numerico chiamo median altrimenti median2
 
     medValue = find_median(dataset, dim)
 
@@ -96,7 +112,7 @@ def mondrianAnon(dataset, QIs, K):
     QIsNew = [q for q in QIs if q != dim]
 
     #return Anonymize(lhs) ∪ Anonymize(rhs)
-    return mondrianAnon(LHS, QIsNew, K) + mondrianAnon(RHS, QIsNew, K)
+    return mondrianAnon(LHS, QIsNew, k, choose_dimension) + mondrianAnon(RHS, QIsNew, k, choose_dimension)
 
 
 '''
