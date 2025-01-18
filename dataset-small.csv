@@ -1,14 +1,13 @@
-id,name,birthday,country,zip-code,gender,education,salary,height,weight,condition
-6,Sebastiano Bruscantini,2003-10-18,Turkmenistan,16130,M,bachelor degree,334598.5958689225,146,139,stomach
-12,Sebastiano Bruscantini,2003-10-18,Turkmenistan,16130,F,bachelor degree,334598.5958689225,146,139,stomach
-9,Valentina Palladio-Gianvecchio,2009-02-12,Guernsey,16130,F,elementary schools,72958.71185907777,194,40,backpain
-10,Adriano Saracino-Gregorio,1984-08-26,Repubblica Ceca,16146,N/D,elementary schools,121912.56817561336,129,58,broken bones
-0,Stefani Zabarella,1959-10-27,Bosnia e Herzegovina,16136,M,high schools,604030.6053225388,160,44,headache
-4,Ranieri Guarneri,1947-09-10,Grecia,16153,F,high schools,421984.52418064914,185,102,headache
-2,Maura Scalfaro,2017-11-17,Palau,16131,F,master degree,239858.56500016322,181,116,hearth disease
-5,Laureano Giacconi,1939-12-04,Nigeria,16150,M,master degree,478879.8625044358,177,114,hearth disease
-3,Guglielmo Falcone-Bruscantini,1961-07-09,Seychelles,16133,N/D,middle schools,769150.6180299092,131,127,broken bones
-8,Nicol√≤ Priuli,2018-02-08,Capo Verde,16127,O,middle schools,99146.0873018829,121,44,headache
-11,Liberto Cocci-Pontecorvo,2000-09-12,Pakistan,16126,N/D,middle schools,432047.32483917207,149,96,flu
-1,Costantino Spinola-Baresi,1994-08-15,Mongolia,16167,O,phd,550857.767585737,182,148,stomach
-7,Rosario Tomasini,1938-08-16,Cina,16144,N/D,phd,943962.1778665024,175,52,stomach
+id,name,birthday,country,zip-code,gender,education,salary,height,weight,condition
+0,Gianfrancesco Briccialdi,2002-10-17,Egitto,16123,F,bachelor degree,147507.92897281505,182,110,flu
+1,Letizia Morandini-Fallaci,1985-04-26,Bahamas,16131,N/D,bachelor degree,20789.873987712483,135,77,hearth disease
+2,Tina Interminelli,1931-07-12,Polinesia Francese,16140,M,middle schools,981032.3349262818,167,106,hearth disease
+3,Arsenio Onisto,1995-09-12,Bolivia,16139,N/D,middle schools,989640.349071132,199,66,flu
+4,Sig.ra Aurora Cugia,1939-05-04,Armenia,16163,O,bachelor degree,390752.0308267073,172,54,broken bones
+5,Benito Golgi,1962-05-28,Zimbabwe,16135,N/D,master degree,903898.2592599296,151,92,flu
+6,Annetta Cociarelli,1947-09-02,Kiribati,16132,M,high schools,526890.6258034107,150,86,backpain
+7,Ubaldo Zaccardo,1990-01-18,Russia,16157,F,bachelor degree,146548.7940366299,133,143,flu
+8,Griselda Roero,2017-02-05,Burundi,16130,F,elementary schools,762694.8741272113,156,104,flu
+9,Sig. Paride Filzi,2005-12-16,Tailandia,16152,N/D,phd,222581.4411264446,161,115,backpain
+10,Melina Stucchi-Lucarelli,1980-05-23,Citt‡ del Vaticano,16167,M,elementary schools,190804.44044805356,143,147,flu
+11,Marina Squarcione,1964-01-22,Citt‡ del Vaticano,16162,N/D,middle schools,315384.84263501543,123,60,flu

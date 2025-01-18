@@ -40,7 +40,7 @@ def is_k_anon(dataset, attrs, k):
     return result
 
 
-
+'''
 small_dataset = []
 
 with open("dataset-small.csv", "r") as f:
@@ -54,4 +54,4 @@ print("LENGTH OF DATASET", len(small_dataset))
 print("IS DATASET 1-ANON", is_k_anon(small_dataset, ["education"], 1))
 print("IS DATASET 2-ANON", is_k_anon(small_dataset, ["education"], 2))
 print("IS DATASET 3-ANON", is_k_anon(small_dataset, ["education"], 3))
-
+'''
