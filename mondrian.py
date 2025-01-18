@@ -154,6 +154,9 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # return Anonymize(lhs) ∪ Anonymize(rhs)
     l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
     r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
+
+    # TODO: valutare il cambiamento a questa versione:
+    # r = mondrianAnon(RHS, [], k, choose_dimension)
     return l + r
 
 
