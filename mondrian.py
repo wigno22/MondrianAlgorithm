@@ -30,6 +30,9 @@ def median2(sequence):
 
 
 
+
+
+
 # Makes the dataset k-anonymous by
 # generalizing QIs
 def mondrianAnon(dataset, QIs, K):
