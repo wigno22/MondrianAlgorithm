@@ -37,31 +37,34 @@ def median2(sequence):
 # generalizing QIs
 def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     '''
+    # TODO: scrivere cosa fa questa funzione
 
-    :param dataset:
-    :param QIs:
-    :param k:
+    :param dataset: dataset
+    :param QIs: quasi-identifiers
+    :param k: k-anonymization
     :param choose_dimension: SCELTA DELL'ATTRIBUTO DA PARTIZIONARE
     :return:
     '''
 
+    # region CHECK K-ANONYMINITY
     # Check if dataset in already K anonymous
     # If true stop
     if is_k_anon(dataset, QIs, k) == True:
         return dataset
 
     # se non è k anon dovrò generalizzare, splittare il dataset e k anonimizzare
+    # endregion
 
+    # region CHECK QI TO GENERALIZE
     # I don't have any new quasi identifiers to generalize
     # in order to reach k-anonymization
     # TODO: verificare che questo controllo funzioni. L'algoritmo passa mai di qui?
     if len(QIs) == 0:
         return dataset
-    # I have some quasi-identifier to generalize
-
+    # else I have some quasi-identifier to generalize
+    # endregion
 
     # region dim ← choose dimension()
-    #
     # ^ choose one elements inside QIs to split my dataset
     dim = None
     if choose_dimension:
@@ -111,7 +114,7 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
 
-    #return Anonymize(lhs) ∪ Anonymize(rhs)
+    # return Anonymize(lhs) ∪ Anonymize(rhs)
     return mondrianAnon(LHS, QIsNew, k, choose_dimension) + mondrianAnon(RHS, QIsNew, k, choose_dimension)
 
 
