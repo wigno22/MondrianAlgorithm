@@ -1,7 +1,7 @@
 import kanon
 from kanon import is_k_anon
 
-
+# region FUNCTIONS
 def find_median(dataset, dim):
     # Estrai i valori della colonna `dim`
     values = [row[dim] for row in dataset]
@@ -19,7 +19,7 @@ def median(sequence):
     sequence = list(sorted(sequence))
     median = -1
     if len(sequence) % 2 == 0:
-        median = ( sequence[ len(sequence) // 2 -1 ] + sequence[ len(sequence) // 2 ] ) /2
+        median = ( sequence[ len(sequence) // 2 -1 ] + sequence[ len(sequence) // 2 ] ) / 2.0
     else:
         median = sequence[ len(sequence) // 2 ]
     return median
@@ -27,10 +27,7 @@ def median(sequence):
 def median2(sequence):
     sequence = list(sorted(sequence))
     return sequence[ len(sequence) // 2 ]
-
-
-
-
+# endregion
 
 
 # Makes the dataset k-anonymous by
@@ -39,7 +36,12 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     '''
     # TODO: scrivere cosa fa questa funzione
 
-    :param dataset: dataset
+    :param dataset: è una lista di record
+                Esempio:    [
+                                {'ID': 0, 'Age': 25, ... },
+                                {'ID': 1, 'Age': 25, ... },
+                                ...
+                            ]
     :param QIs: quasi-identifiers
     :param k: k-anonymization
     :param choose_dimension: SCELTA DELL'ATTRIBUTO DA PARTIZIONARE
@@ -76,11 +78,15 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
         for QI in QIs:
             # This will create a set with all the distinct values
             # for the currenct quasi-identifier
-            values.append( len( set( row[QI] for row in dataset)) )
+            temp = []
+            for record in dataset:
+                temp.append(record[QI])
+
+            values.append(len(set(temp)))
 
         # Takes the first element that has the maximum different values
         # inside the dataset
-        dim = values[values.index(max(values))]
+        dim = QIs[values.index(max(values))]
 
         '''
         dataset = {
@@ -106,8 +112,39 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # ^ split dataset in two partition
     # LHS <- all the elements <= median
     # RHS <- all the elements > median
-    LHS = [x for x in dataset if x <= medValue]
-    RHS = [x for x in dataset if x >  medValue]
+
+    LHS = []
+    RHS = []
+
+    for item in dataset:
+        if item[dim] <= medValue:
+            LHS.append(item)
+        else:
+            RHS.append(item)
+
+    lhs = []
+    for item in LHS:
+        lhs.append(item[dim])
+    min_LHS = min(lhs)
+    max_LHS = max(lhs)
+
+    rhs = []
+    for item in RHS:
+        rhs.append(item[dim])
+    min_RHS = min(rhs)
+    max_RHS = max(rhs)
+
+    for lhs in LHS:
+        if min_LHS != max_LHS:
+            lhs[dim] = f'[{min_LHS}-{max_LHS}]'
+        else:
+            lhs[dim] = f'{min_LHS}'
+
+    for rhs in RHS:
+        if min_RHS != max_RHS:
+            rhs[dim] = f'[{min_RHS}-{max_RHS}]'
+        else:
+            rhs[dim] = f'{min_RHS}'
 
     # TODO: Generalize LHS and RHS according to the previous example
 
@@ -115,7 +152,9 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     QIsNew = [q for q in QIs if q != dim]
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
-    return mondrianAnon(LHS, QIsNew, k, choose_dimension) + mondrianAnon(RHS, QIsNew, k, choose_dimension)
+    l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
+    r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
+    return l + r
 
 
 '''

@@ -17,11 +17,16 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open("datasets\paper.csv", "r") as f:
+    with open('datasets\paper.csv', 'r') as f:
         for row in csv.DictReader(f):
+            row['Age'] = int(row['Age'])
+            row['Zipcode'] = int(row['Zipcode'])
             dataset.append(row)
 
+    print(type(dataset))
+    print(dataset)
     print(pd.DataFrame.from_dict(dataset))
+
     # endregion
 
     # region TEST find_median()
@@ -51,12 +56,13 @@ def main():
     # endregion
 
     # region TEST mondrianAnon()
-    dataset_after = mondrianAnon(dataset, QIs=['Age', 'Sex'], k=3)
+    #dataset_after = mondrianAnon(dataset, QIs=['Age', 'Sex'], k=3)
 
-    mondrianAnon(dataset, QIs=['Age', 'Sex'], k=3, choose_dimension=False)
+    dataset_after = mondrianAnon(dataset, QIs=['Zipcode', 'Age'], k=2, choose_dimension=True)
 
+    df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
 
-    print(pd.DataFrame.from_dict(dataset_after))
+    print(df)
     # endregion
 
 
