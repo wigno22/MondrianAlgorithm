@@ -1,12 +1,6 @@
 import kanon
 from kanon import is_k_anon
 
-sequence = [1, 2, 2, 3, 4, 4, 4, 5, 6, 7, 8, 9, 9, 9, 9, 10, 11, 12, 13]
-
-'''
-1, 2, 3     <- % 2 = 1    -> median = 2
-1, 2, 3, 4  <- % 2 = 0    -> median = (2+3) / 2 = 2.5
-'''
 
 def find_median(dataset, dim):
     # Estrai i valori della colonna `dim`
@@ -34,30 +28,6 @@ def median2(sequence):
     sequence = list(sorted(sequence))
     return sequence[ len(sequence) // 2 ]
 
-med = median(sequence)
-print("Median of sequence =", med)
-
-LHS = [ f"<= {med}" for x in sequence if x <= med]
-RHS = [ f"> {med}" for x in sequence if x > med]
-
-print("SEQ = ", sequence)
-print("LHS = ", LHS)
-print("RHS = ", RHS)
-
-
-sequence2 = ["Genoa", "Rome", "Milan",  "Rome", "Milan", "Genoa", "Genoa", "Genoa", "Milan", "Milan", "Genoa", "Rome", "Pisa", "Pisa", "Pisa"]
-medianCity = median2(sequence2)
-
-print("MEDIAN CITY =", medianCity)
-LHS = [ x for x in sequence2 if x <= medianCity]
-RHS = [ x for x in sequence2 if x > medianCity]
-
-LHS = [ "[" + "-".join(list(set(LHS))) + "]" for x in LHS]
-RHS = [ "[" + "-".join(list(set(RHS))) + "]" for x in RHS]
-
-print("SEQ = ", sequence2)
-print("LHS = ", LHS)
-print("RHS = ", RHS)
 
 
 # Makes the dataset k-anonymous by
@@ -106,6 +76,8 @@ def mondrianAnon(dataset, QIs, K):
     #se dim è un valore numerico chiamo median altrimenti median2
 
     medValue = find_median(dataset, dim)
+
+    print(medValue)
 
     #lhs ← {t ∈ partition : t.dim ≤ splitV all}
     #rhs ← {t ∈ partition : t.dim > splitV all}
