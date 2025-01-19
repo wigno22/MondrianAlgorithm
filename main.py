@@ -3,7 +3,7 @@ from generate import generatePaperdataset
 
 from mondrian import find_median
 from kanon import is_k_anon
-from refactored import mondrianAnon
+from mondrian import mondrianAnon
 
 import csv
 import pandas as pd
@@ -20,7 +20,7 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/prova.csv', 'r') as f:
+    with open('datasets/paper.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -59,7 +59,7 @@ def main():
     # endregion
 
     # region TEST mondrianAnon()
-    dataset_after = mondrianAnon(dataset, QIs=['Sex'], k=40, choose_dimension=True)
+    dataset_after = mondrianAnon(dataset, QIs=['Sex'], k=4, choose_dimension=True)
 
     df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
 

@@ -3,25 +3,41 @@ from kanon import is_k_anon
 
 # region FUNCTIONS
 def chooseDimension(dataset, QIs, choice):
-    dim = None
+    """
+    Choose one elements inside QIs to split my dataset
+
+    :param dataset: dataset to be partitioned
+    :param QIs: a list of quasi-identifiers
+    :param choice: a boolean flag that determines the selection method:
+                   - If True, the first attribute in the QIs list is chosen.
+                   - If False, the attribute with the most distinct values is selected.
+    :return: the selected attribute (dimension) to split the dataset.
+    """
+
     if choice:
-        # Choose the first attribute of the list
         dim = QIs[0]
     else:
-        # Choose the QI with the most different values
         distinct_counts = {QI: len(set(record[QI] for record in dataset)) for QI in QIs}
         dim = max(distinct_counts, key=distinct_counts.get)
     return dim
 
 
 def find_median(dataset, dim):
-    # Estrai i valori della colonna `dim`
+    """
+    Find the median of a specific attribute (dimension) in a dataset.
+
+    :param dataset: dataset to be partitioned
+    :param dim: the dimension (attribute) for which the median is to be calculated
+    :return: the median value for numerical data or the median index for categorical data
+    """
+
+    # Extract the values of the specified dimension
     values = [row[dim] for row in dataset]
 
-    # Controlla il tipo di dati
-    if isinstance(values[0], (int, float)):  # Numerico
+    # Check data type
+    if isinstance(values[0], (int, float)):  # Numerical
         return median(values)
-    elif isinstance(values[0], str):  # Categoriale
+    elif isinstance(values[0], str):  # Categorical
         return medianIndex(values)
     else:
         raise ValueError(f"Unsupported data type for dimension: {dim}")
@@ -41,6 +57,15 @@ def medianIndex(sequence):
 
 
 def splitDataset(dataset, dim, splitVal):
+    """
+    Splits the dataset into two subsets based on the given dimension (dim) and split value (splitVal).
+
+    :param dataset: dataset to be split
+    :param dim: dimension used for splitting
+    :param splitVal: the value used to split the dataset
+    :return: LHS (left-hand side) and RHS (right-hand side)
+    """
+
     LHS = None
     RHS = None
 
@@ -63,6 +88,13 @@ def splitDataset(dataset, dim, splitVal):
 
 
 def generalize(partition, dim):
+    """
+    Generalize the values of the specified dimension (dim) in the given partition.
+
+    :param partition: the subset of the dataset to be generalized
+    :param dim: the dimension to generalize in the partition
+    """
+
     values = [record[dim] for record in partition]
     min_val = min(values)
     max_val = max(values)
@@ -78,14 +110,16 @@ def generalize(partition, dim):
 
 def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     """
-    Makes the dataset k-anonymous by generalizing QIs
+    Makes the dataset k-anonymous by generalizing quasi-identifiers (QIs)
 
-    :param dataset: è una lista di record
+    :param dataset: the dataset to be partitioned
                     Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
-    :param QIs: quasi-identifiers
-    :param k: k-anonymization
-    :param choose_dimension: SCELTA DELL'ATTRIBUTO DA PARTIZIONARE
-    :return: dataset k-anonymized
+    :param QIs: a list of quasi-identifiers
+    :param k: the value k for k-anonymization
+    :param choose_dimension: boolean flag to determine how to choose the attribute to partition.
+                            - if True, use the first attribute
+                            - if False, use the one with the most distinct values
+    :return: the k-anonymized dataset
     """
 
     # Check if dataset in already K anonymous
@@ -101,18 +135,10 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # Choose one elements inside QIs to split my dataset
     dim = chooseDimension(dataset, QIs, choose_dimension)
 
-    # TODO: cosa fa questa parte dello pseudo-codice?
-    # fs ← frequency_set(partition, dim)
-
     # Find the median value for the chosen attribute (dim)
-    # splitVal will be the:
-    #   - median value      if it is numerical
-    #   - index of median   if it is categorical
     splitVal = find_median(dataset, dim)
 
     # Split dataset in two partition
-    # lhs ← {t ∈ partition : t.dim ≤ splitVal} all the elements <= median (index_of_median)
-    # rhs ← {t ∈ partition : t.dim > splitVal} all the elements >  median (index_of_median)
     LHS, RHS = splitDataset(dataset, dim, splitVal)
 
     # Generalization
