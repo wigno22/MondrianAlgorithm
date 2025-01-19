@@ -10,14 +10,16 @@ import pandas as pd
 
 def main():
     # region GENERAZIONE DATASET
-    generateDataset(50, 'prova.csv')
-    generatePaperdataset(6, 'paper.csv')
+
+    # generateDataset(50, 'prova.csv')
+    # generatePaperdataset(6, 'paper.csv')
+
     # endregion
 
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets\prova.csv', 'r') as f:
+    with open('datasets\paper.csv', 'r') as f:
         for row in csv.DictReader(f):
             row['Age'] = int(row['Age'])
             row['Zipcode'] = int(row['Zipcode'])
@@ -58,7 +60,7 @@ def main():
     # region TEST mondrianAnon()
     #dataset_after = mondrianAnon(dataset, QIs=['Age', 'Sex'], k=3)
 
-    dataset_after = mondrianAnon(dataset, QIs=['Zipcode', 'Age', 'Sex'], k=2, choose_dimension=True)
+    dataset_after = mondrianAnon(dataset, QIs=['Education'], k=4, choose_dimension=True)
 
     df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
 

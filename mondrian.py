@@ -1,6 +1,7 @@
 import kanon
 from kanon import is_k_anon
 
+
 # region FUNCTIONS
 def find_median(dataset, dim):
     # Estrai i valori della colonna `dim`
@@ -19,21 +20,28 @@ def median(sequence):
     sequence = list(sorted(sequence))
     median = -1
     if len(sequence) % 2 == 0:
-        return ( sequence[ len(sequence) // 2 -1 ] + sequence[ len(sequence) // 2 ] ) / 2.0
+        return (sequence[len(sequence) // 2 - 1] + sequence[len(sequence) // 2]) / 2.0
     else:
-        return  sequence[ len(sequence) // 2 ]
+        return sequence[len(sequence) // 2]
 
 
 def median2(sequence):
     sequence = list(sorted(sequence))
-    return sequence[ len(sequence) // 2 ]
+    #return sequence[len(sequence) // 2]
+    return len(sequence) // 2
+
 
 def generalize(partition, dim):
     values = [record[dim] for record in partition]
     min_val = min(values)
     max_val = max(values)
     for record in partition:
-        record[dim] = f"[{min_val}-{max_val}]"
+        if min_val == max_val:
+            record[dim] = f'{min_val}'
+        else:
+            record[dim] = f"[{min_val}-{max_val}]"
+
+
 # endregion
 
 
@@ -108,42 +116,70 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
         '''
     # endregion
 
-
     # fs ← frequency set(partition, dim)
     # splitV al ← ﬁnd median(f s)
     # ^ find the median value for the choosen attribute (dim)
     # se dim è un valore numerico chiamo median altrimenti median2
 
     medValue = find_median(dataset, dim)
-
     print(medValue)
+    # medValue is:
+    #   - median value      if it is numerical
+    #   - index of median   if it is categorical
 
-    #lhs ← {t ∈ partition : t.dim ≤ splitV all}
-    #rhs ← {t ∈ partition : t.dim > splitV all}
-    # ^ split dataset in two partition
-    # LHS <- all the elements <= median
-    # RHS <- all the elements > median
+    LHS = None
+    RHS = None
+    if isinstance(dataset[0][dim], (int, float)):
+        # region HANDLE NUMERICAL
 
-    LHS = [record for record in dataset if record[dim] <= medValue]
-    RHS = [record for record in dataset if record[dim] > medValue]
+        # lhs ← {t ∈ partition : t.dim ≤ splitV all}
+        # rhs ← {t ∈ partition : t.dim > splitV all}
+        # ^ split dataset in two partition
+        # LHS <- all the elements <= median
+        # RHS <- all the elements > median
 
-    # TODO: Generalize LHS and RHS according to the previous example
-    generalize(LHS, dim)
-    generalize(RHS, dim)
+        LHS = [record for record in dataset if record[dim] <= medValue]
+        RHS = [record for record in dataset if record[dim] > medValue]
 
-    for other_dim in QIs:
-        if other_dim != dim:
-            generalize(LHS, other_dim)
-            generalize(RHS, other_dim)
+        # TODO: Generalize LHS and RHS according to the previous example
+        generalize(LHS, dim)
+        generalize(RHS, dim)
+
+        for other_dim in QIs:
+            if other_dim != dim:
+                generalize(LHS, other_dim)
+                generalize(RHS, other_dim)
+        # endregion
+    elif isinstance(dataset[0][dim], str):
+        # region HANDLE CATEGORICAL
+        # Metodo 2 (andrea)
+
+        dataset_sorted = sorted(dataset, key=lambda x: x[dim])
+
+        LHS = dataset_sorted[:medValue]
+        RHS = dataset_sorted[medValue:]
+
+        generalize(LHS, dim)
+        generalize(RHS, dim)
+
+        for other_dim in QIs:
+            if other_dim != dim:
+                generalize(LHS, other_dim)
+                generalize(RHS, other_dim)
+        # endregion
+    else:
+        print('Tipo dell\'attributo non gestito')
+
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
+    # TODO: scrivere mondrian(LHS) + mondrian(RHS)
     l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
     r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
 
-    f = l+ r
+    f = l + r
     print(is_k_anon(f, QIs, k))
     return f
 
@@ -165,4 +201,3 @@ mondrian(LHS11, [], 3) +
 
 
 '''
-        
