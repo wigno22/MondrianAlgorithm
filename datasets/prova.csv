@@ -1,7 +1,51 @@
 ID,Age,Sex,Zipcode,Disease
-0,25,Male,16143,AIDS
-1,58,Female,16135,Brochitis
-2,54,Male,16140,Flu
-3,42,Male,16163,Hepatitis
-4,59,Female,16124,AIDS
-5,21,Male,16130,Broken Arm
+0,39,Female,16126,AIDS
+1,48,Male,16155,Hang Nail
+2,44,Female,16148,Flu
+3,52,Female,16135,Hepatitis
+4,36,Female,16123,Hang Nail
+5,29,Male,16123,Hepatitis
+6,60,Male,16163,Brochitis
+7,45,Male,16161,Brochitis
+8,58,Male,16133,Hepatitis
+9,32,Female,16146,AIDS
+10,58,Female,16155,Hepatitis
+11,53,Female,16143,Hepatitis
+12,24,Female,16157,Hang Nail
+13,21,Male,16144,Hang Nail
+14,29,Male,16141,Brochitis
+15,30,Male,16144,Flu
+16,58,Female,16135,Flu
+17,43,Female,16136,Broken Arm
+18,46,Female,16156,AIDS
+19,37,Female,16126,Hang Nail
+20,42,Male,16148,Hang Nail
+21,25,Female,16124,AIDS
+22,49,Female,16144,Broken Arm
+23,20,Male,16161,Broken Arm
+24,25,Female,16136,AIDS
+25,49,Female,16137,Brochitis
+26,32,Male,16148,Brochitis
+27,19,Female,16138,Hepatitis
+28,32,Male,16130,Hepatitis
+29,56,Female,16167,Hepatitis
+30,37,Male,16124,Flu
+31,54,Female,16126,Hang Nail
+32,28,Male,16164,Brochitis
+33,32,Female,16164,Broken Arm
+34,47,Male,16138,Brochitis
+35,48,Male,16132,Brochitis
+36,33,Male,16148,Hepatitis
+37,59,Male,16156,Hepatitis
+38,58,Female,16132,AIDS
+39,50,Female,16142,Hang Nail
+40,51,Male,16155,Brochitis
+41,34,Male,16149,Flu
+42,22,Male,16151,Flu
+43,26,Male,16136,Hepatitis
+44,55,Male,16124,Flu
+45,25,Male,16162,Brochitis
+46,45,Male,16139,Brochitis
+47,21,Male,16136,Hepatitis
+48,40,Female,16159,Broken Arm
+49,34,Male,16139,Brochitis

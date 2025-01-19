@@ -19,10 +19,10 @@ def median(sequence):
     sequence = list(sorted(sequence))
     median = -1
     if len(sequence) % 2 == 0:
-        median = ( sequence[ len(sequence) // 2 -1 ] + sequence[ len(sequence) // 2 ] ) / 2.0
+        return ( sequence[ len(sequence) // 2 -1 ] + sequence[ len(sequence) // 2 ] ) / 2.0
     else:
-        median = sequence[ len(sequence) // 2 ]
-    return median
+        return  sequence[ len(sequence) // 2 ]
+
 
 def median2(sequence):
     sequence = list(sorted(sequence))
@@ -33,10 +33,7 @@ def generalize(partition, dim):
     min_val = min(values)
     max_val = max(values)
     for record in partition:
-        if min_val != max_val:
-            record[dim] = f"[{min_val}-{max_val}]"
-        else:
-            record[dim] = f"{min_val}"
+        record[dim] = f"[{min_val}-{max_val}]"
 # endregion
 
 
@@ -84,6 +81,10 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
         dim = QIs[0]
     else:
         # choose the QI with the most different values
+        distinct_counts = {QI: len(set(record[QI] for record in dataset)) for QI in QIs}
+        dim = max(distinct_counts, key=distinct_counts.get)
+
+        '''
         values = []
         for QI in QIs:
             # This will create a set with all the distinct values
@@ -98,7 +99,7 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
         # inside the dataset
         dim = QIs[values.index(max(values))]
 
-        '''
+        
         dataset = {
             ZIP CODE = [3, 3, 4, 5, 5, 5, 6, 7, 7, 7, 9] <- set(3, 4, 5, 6, 7, 9) <- 6
             CITY     = [A, A, A, A, B, B, B, B, B, E, E] <- set(A, B, E)          <- 3
@@ -142,7 +143,9 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
     r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
 
-    return l + r
+    f = l+ r
+    print(is_k_anon(f, QIs, k))
+    return f
 
 
 '''
