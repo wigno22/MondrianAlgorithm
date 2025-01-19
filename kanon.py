@@ -1,25 +1,20 @@
-import csv
-
-
-'''
-Function that return true / false
-is dataset is k-anonymous
-
-k-anonymous means
-for each set of attrs (QI attributes) exists 
-at least k rows in dataset with that set of QIs
-'''
 def is_k_anon(dataset, attrs, k):
+    """
+    Function that return true|false if dataset is k-anonymous
 
-    groups = {} # dictionary
-    '''
-    create a dictionary [attrs] -> rows
+    k-anonymous means
+        for each set of attrs (QI attributes) exists
+        at least k rows in dataset with that set of QIs
 
-    for each row in dataset:
-        put row in dictionary[row[attrs]]
+    # TODO: commentare
+    :param dataset:
+    :param attrs:
+    :param k:
 
-    result = all(len(group) >= k for group in dictionary)
-    '''
+    :return: True or False
+    """
+
+    groups = {}
     for row in dataset:
         key = []
         for attr in attrs:
@@ -38,20 +33,3 @@ def is_k_anon(dataset, attrs, k):
             break
 
     return result
-
-
-'''
-small_dataset = []
-
-with open("dataset-small.csv", "r") as f:
-    for row in csv.DictReader(f):
-        small_dataset.append(row)
-
-
-print(small_dataset)
-print("LENGTH OF DATASET", len(small_dataset))
-
-print("IS DATASET 1-ANON", is_k_anon(small_dataset, ["education"], 1))
-print("IS DATASET 2-ANON", is_k_anon(small_dataset, ["education"], 2))
-print("IS DATASET 3-ANON", is_k_anon(small_dataset, ["education"], 3))
-'''

@@ -1,8 +1,19 @@
-import kanon
 from kanon import is_k_anon
 
 
 # region FUNCTIONS
+def chooseDimension(dataset, QIs, choice):
+    dim = None
+    if choice:
+        # Choose the first attribute of the list
+        dim = QIs[0]
+    else:
+        # Choose the QI with the most different values
+        distinct_counts = {QI: len(set(record[QI] for record in dataset)) for QI in QIs}
+        dim = max(distinct_counts, key=distinct_counts.get)
+    return dim
+
+
 def find_median(dataset, dim):
     # Estrai i valori della colonna `dim`
     values = [row[dim] for row in dataset]
@@ -11,24 +22,44 @@ def find_median(dataset, dim):
     if isinstance(values[0], (int, float)):  # Numerico
         return median(values)
     elif isinstance(values[0], str):  # Categoriale
-        return median2(values)
+        return medianIndex(values)
     else:
         raise ValueError(f"Unsupported data type for dimension: {dim}")
 
 
 def median(sequence):
     sequence = list(sorted(sequence))
-    median = -1
     if len(sequence) % 2 == 0:
         return (sequence[len(sequence) // 2 - 1] + sequence[len(sequence) // 2]) / 2.0
     else:
         return sequence[len(sequence) // 2]
 
 
-def median2(sequence):
+def medianIndex(sequence):
     sequence = list(sorted(sequence))
-    #return sequence[len(sequence) // 2]
     return len(sequence) // 2
+
+
+def splitDataset(dataset, dim, splitVal):
+    LHS = None
+    RHS = None
+
+    if isinstance(dataset[0][dim], (int, float)):
+        # Numerical
+        LHS = [record for record in dataset if record[dim] <= splitVal]
+        RHS = [record for record in dataset if record[dim] > splitVal]
+
+    elif isinstance(dataset[0][dim], str):
+        # Categorical
+        dataset_sorted = sorted(dataset, key=lambda x: x[dim])
+
+        LHS = dataset_sorted[:splitVal]
+        RHS = dataset_sorted[splitVal:]
+    else:
+        # TODO: manage the error
+        print('Tipo dell\'attributo non gestito')
+
+    return LHS, RHS
 
 
 def generalize(partition, dim):
@@ -45,159 +76,56 @@ def generalize(partition, dim):
 # endregion
 
 
-# Makes the dataset k-anonymous by
-# generalizing QIs
 def mondrianAnon(dataset, QIs, k, choose_dimension=True):
-    '''
-    # TODO: scrivere cosa fa questa funzione
+    """
+    Makes the dataset k-anonymous by generalizing QIs
 
     :param dataset: è una lista di record
-                Esempio:    [
-                                {'ID': 0, 'Age': 25, ... },
-                                {'ID': 1, 'Age': 25, ... },
-                                ...
-                            ]
+                    Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
     :param QIs: quasi-identifiers
     :param k: k-anonymization
     :param choose_dimension: SCELTA DELL'ATTRIBUTO DA PARTIZIONARE
-    :return:
-    '''
+    :return: dataset k-anonymized
+    """
 
-    # region CHECK K-ANONYMINITY
     # Check if dataset in already K anonymous
-    # If true stop
-    if is_k_anon(dataset, QIs, k) == True:
+    # If True, stop
+    if is_k_anon(dataset, QIs, k):
         return dataset
 
-    # se non è k anon dovrò generalizzare, splittare il dataset e k anonimizzare
-    # endregion
-
-    # region CHECK QI TO GENERALIZE
-    # I don't have any new quasi identifiers to generalize
-    # in order to reach k-anonymization
-    # TODO: verificare che questo controllo funzioni. L'algoritmo passa mai di qui?
+    # Check if I have any QI to partition in order to reach k-anonymization
+    # If I have not, stop
     if len(QIs) == 0:
         return dataset
-    # else I have some quasi-identifier to generalize
-    # endregion
 
-    # region dim ← choose dimension()
-    # ^ choose one elements inside QIs to split my dataset
-    dim = None
-    if choose_dimension:
-        # Scelgo il primo attributo della lista
-        dim = QIs[0]
-    else:
-        # choose the QI with the most different values
-        distinct_counts = {QI: len(set(record[QI] for record in dataset)) for QI in QIs}
-        dim = max(distinct_counts, key=distinct_counts.get)
+    # Choose one elements inside QIs to split my dataset
+    dim = chooseDimension(dataset, QIs, choose_dimension)
 
-        '''
-        values = []
-        for QI in QIs:
-            # This will create a set with all the distinct values
-            # for the currenct quasi-identifier
-            temp = []
-            for record in dataset:
-                temp.append(record[QI])
+    # TODO: cosa fa questa parte dello pseudo-codice?
+    # fs ← frequency_set(partition, dim)
 
-            values.append(len(set(temp)))
-
-        # Takes the first element that has the maximum different values
-        # inside the dataset
-        dim = QIs[values.index(max(values))]
-
-        
-        dataset = {
-            ZIP CODE = [3, 3, 4, 5, 5, 5, 6, 7, 7, 7, 9] <- set(3, 4, 5, 6, 7, 9) <- 6
-            CITY     = [A, A, A, A, B, B, B, B, B, E, E] <- set(A, B, E)          <- 3
-            DEGREE   = [B, B, B, B, P, P, P, M, M, H, H] <- set(B, P, M, H)       <- 4
-        }
-        '''
-    # endregion
-
-    # fs ← frequency set(partition, dim)
-    # splitV al ← ﬁnd median(f s)
-    # ^ find the median value for the choosen attribute (dim)
-    # se dim è un valore numerico chiamo median altrimenti median2
-
-    medValue = find_median(dataset, dim)
-    print(medValue)
-    # medValue is:
+    # Find the median value for the chosen attribute (dim)
+    # splitVal will be the:
     #   - median value      if it is numerical
     #   - index of median   if it is categorical
+    splitVal = find_median(dataset, dim)
 
-    LHS = None
-    RHS = None
-    if isinstance(dataset[0][dim], (int, float)):
-        # region HANDLE NUMERICAL
+    # Split dataset in two partition
+    # lhs ← {t ∈ partition : t.dim ≤ splitVal} all the elements <= median (index_of_median)
+    # rhs ← {t ∈ partition : t.dim > splitVal} all the elements >  median (index_of_median)
+    LHS, RHS = splitDataset(dataset, dim, splitVal)
 
-        # lhs ← {t ∈ partition : t.dim ≤ splitV all}
-        # rhs ← {t ∈ partition : t.dim > splitV all}
-        # ^ split dataset in two partition
-        # LHS <- all the elements <= median
-        # RHS <- all the elements > median
+    # Generalization
+    generalize(LHS, dim)
+    generalize(RHS, dim)
 
-        LHS = [record for record in dataset if record[dim] <= medValue]
-        RHS = [record for record in dataset if record[dim] > medValue]
-
-        # TODO: Generalize LHS and RHS according to the previous example
-        generalize(LHS, dim)
-        generalize(RHS, dim)
-
-        for other_dim in QIs:
-            if other_dim != dim:
-                generalize(LHS, other_dim)
-                generalize(RHS, other_dim)
-        # endregion
-    elif isinstance(dataset[0][dim], str):
-        # region HANDLE CATEGORICAL
-        # Metodo 2 (andrea)
-
-        dataset_sorted = sorted(dataset, key=lambda x: x[dim])
-
-        LHS = dataset_sorted[:medValue]
-        RHS = dataset_sorted[medValue:]
-
-        generalize(LHS, dim)
-        generalize(RHS, dim)
-
-        for other_dim in QIs:
-            if other_dim != dim:
-                generalize(LHS, other_dim)
-                generalize(RHS, other_dim)
-        # endregion
-    else:
-        print('Tipo dell\'attributo non gestito')
-
+    for other_dim in QIs:
+        if other_dim != dim:
+            generalize(LHS, other_dim)
+            generalize(RHS, other_dim)
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
-    # TODO: scrivere mondrian(LHS) + mondrian(RHS)
-    l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
-    r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
-
-    f = l + r
-    print(is_k_anon(f, QIs, k))
-    return f
-
-
-'''
-mondrian(dataset, [zip code, city, degree], 3)
-
-generalize and split by city
-
-mondrian(LHS, [zip code, degree], 3) + mondrian(RHS, [zip code, degree], 3)
-
-generalize and split by zip code
-
-mondrian(LHS1, [degree], 3) + mondrian(LHS2, [degree], 3) + ...
-
-generalize and split by degree level
-
-mondrian(LHS11, [], 3) + 
-
-
-'''
+    return mondrianAnon(LHS, QIsNew, k, choose_dimension) + mondrianAnon(RHS, QIsNew, k, choose_dimension)

@@ -3,10 +3,11 @@ from generate import generatePaperdataset
 
 from mondrian import find_median
 from kanon import is_k_anon
-from mondrian import mondrianAnon
+from refactored import mondrianAnon
 
 import csv
 import pandas as pd
+
 
 def main():
     # region GENERAZIONE DATASET
@@ -19,15 +20,15 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets\paper.csv', 'r') as f:
+    with open('datasets/prova.csv', 'r') as f:
         for row in csv.DictReader(f):
+            # TODO: gestire meglio
             row['Age'] = int(row['Age'])
             row['Zipcode'] = int(row['Zipcode'])
+
             dataset.append(row)
 
-    print(type(dataset))
-    print(dataset)
-    print(pd.DataFrame.from_dict(dataset))
+    print(pd.DataFrame.from_dict(dataset), '\n')
 
     # endregion
 
@@ -58,9 +59,7 @@ def main():
     # endregion
 
     # region TEST mondrianAnon()
-    #dataset_after = mondrianAnon(dataset, QIs=['Age', 'Sex'], k=3)
-
-    dataset_after = mondrianAnon(dataset, QIs=['Education'], k=4, choose_dimension=True)
+    dataset_after = mondrianAnon(dataset, QIs=['Sex'], k=40, choose_dimension=True)
 
     df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
 
@@ -70,17 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-'''
-1 2 3 4 5 6
-
-LHS = [1,2,3]
-RHS = [4,5,6]
-
-1 -> [1,2,3] [1-3]
-3 -> [1,2,3]
-2
-5 -> [4,5,6]
-4
-6
-'''
