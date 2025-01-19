@@ -27,6 +27,16 @@ def median(sequence):
 def median2(sequence):
     sequence = list(sorted(sequence))
     return sequence[ len(sequence) // 2 ]
+
+def generalize(partition, dim):
+    values = [record[dim] for record in partition]
+    min_val = min(values)
+    max_val = max(values)
+    for record in partition:
+        if min_val != max_val:
+            record[dim] = f"[{min_val}-{max_val}]"
+        else:
+            record[dim] = f"{min_val}"
 # endregion
 
 
@@ -113,40 +123,17 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # LHS <- all the elements <= median
     # RHS <- all the elements > median
 
-    LHS = []
-    RHS = []
-
-    for item in dataset:
-        if item[dim] <= medValue:
-            LHS.append(item)
-        else:
-            RHS.append(item)
-
-    lhs = []
-    for item in LHS:
-        lhs.append(item[dim])
-    min_LHS = min(lhs)
-    max_LHS = max(lhs)
-
-    rhs = []
-    for item in RHS:
-        rhs.append(item[dim])
-    min_RHS = min(rhs)
-    max_RHS = max(rhs)
-
-    for lhs in LHS:
-        if min_LHS != max_LHS:
-            lhs[dim] = f'[{min_LHS}-{max_LHS}]'
-        else:
-            lhs[dim] = f'{min_LHS}'
-
-    for rhs in RHS:
-        if min_RHS != max_RHS:
-            rhs[dim] = f'[{min_RHS}-{max_RHS}]'
-        else:
-            rhs[dim] = f'{min_RHS}'
+    LHS = [record for record in dataset if record[dim] <= medValue]
+    RHS = [record for record in dataset if record[dim] > medValue]
 
     # TODO: Generalize LHS and RHS according to the previous example
+    generalize(LHS, dim)
+    generalize(RHS, dim)
+
+    for other_dim in QIs:
+        if other_dim != dim:
+            generalize(LHS, other_dim)
+            generalize(RHS, other_dim)
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
@@ -155,8 +142,6 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     l = mondrianAnon(LHS, QIsNew, k, choose_dimension)
     r = mondrianAnon(RHS, QIsNew, k, choose_dimension)
 
-    # TODO: valutare il cambiamento a questa versione:
-    # r = mondrianAnon(RHS, [], k, choose_dimension)
     return l + r
 
 

@@ -10,8 +10,8 @@ import pandas as pd
 
 def main():
     # region GENERAZIONE DATASET
-    # generateDataset(6, 'prova.csv')
-    # generatePaperdataset(6, 'paper.csv')
+    generateDataset(6, 'prova.csv')
+    generatePaperdataset(6, 'paper.csv')
     # endregion
 
     # region IMPORTAZIONE DEL DATASET
