@@ -8,9 +8,10 @@ from mondrian import mondrianAnon
 import csv
 import pandas as pd
 
+from test_metrics import a
+
 
 def main():
-
     # region GENERAZIONE DATASET
     # generateDataset(50, 'prova.csv')
     # generatePaperdataset(6, 'paper.csv')
@@ -31,9 +32,13 @@ def main():
     # endregion
 
     # region TEST mondrianAnon()
-    dataset_after = mondrianAnon(dataset, QIs=['Zipcode','Age','Sex'], k=2, choose_dimension=False)
-    df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
-    print(df)
+    # dataset_after = mondrianAnon(dataset, QIs=['Zipcode','Age','Sex'], k=2, choose_dimension=False)
+    # df = pd.DataFrame.from_dict(dataset_after).sort_values(by='ID', ascending=True)
+    # print(df)
+    # endregion
+
+    # region TEST METRICS
+    a(dataset, QIs=['Zipcode', 'Age'], K=6, choose_dimension=True)
     # endregion
 
 
