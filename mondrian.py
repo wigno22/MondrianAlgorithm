@@ -132,6 +132,12 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     if len(QIs) == 0:
         return dataset
 
+    #TODO: check this condition on k
+    #check if partition(dataset) is at least as big as the k
+    if len(dataset) < k:
+        return dataset
+
+
     # Choose one elements inside QIs to split my dataset
     dim = chooseDimension(dataset, QIs, choose_dimension)
 
