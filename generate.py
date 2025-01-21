@@ -6,6 +6,8 @@ import csv
 from faker import Faker
 import datetime
 
+import pandas as pd
+
 medial_conditions = ["Flu", "Hepatitis", "Brochitis", "Broken Arm", "AIDS", "Hang Nail"]
 genders = ["Male", "Female"]
 
@@ -93,6 +95,10 @@ def generatePaperdataset(n=6, filename=None):
             writer.writeheader()
             for row in generated:
                 writer.writerow(row)
+
+
+def dict2table(dataset):
+    return pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
 
 # Esegui il codice di esempio per generare i file
 # generateDataset(n = 6, filename="datasetmondrian.csv")

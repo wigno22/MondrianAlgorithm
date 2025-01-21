@@ -1,4 +1,4 @@
-from generate import generateDataset
+from generate import generateDataset, dict2table
 from generate import generatePaperdataset
 
 from mondrian import find_median
@@ -20,7 +20,7 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/test_metrics.csv', 'r') as f:
+    with open('datasets/paper.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -33,33 +33,30 @@ def main():
 
     # region TEST mondrianAnon()
 
-    dataset = [
-        {'ID': 1, 'Age': 25, 'Sex': 'M', 'Zipcode': '12345', 'Disease': 'Flu'},
-        {'ID': 2, 'Age': 35, 'Sex': 'F', 'Zipcode': '12346', 'Disease': 'Cold'},
-        {'ID': 3, 'Age': 45, 'Sex': 'M', 'Zipcode': '12347', 'Disease': 'Cancer'},
-        {'ID': 4, 'Age': 50, 'Sex': 'F', 'Zipcode': '12348', 'Disease': 'Diabetes'},
-        {'ID': 5, 'Age': 23, 'Sex': 'M', 'Zipcode': '12349', 'Disease': 'Flu'},
-        {'ID': 6, 'Age': 33, 'Sex': 'F', 'Zipcode': '12350', 'Disease': 'Cold'},
-        {'ID': 7, 'Age': 43, 'Sex': 'M', 'Zipcode': '12351', 'Disease': 'Cancer'},
-        {'ID': 8, 'Age': 53, 'Sex': 'F', 'Zipcode': '12352', 'Disease': 'Diabetes'},
-    ]
-
-    QIs = ['Age', 'Sex', 'Zipcode']
+    QIs = ['Age', 'Zipcode']
     choose_dim = False
 
-    dataset_after2 = mondrianAnon(dataset, QIs, k=1, choose_dimension=choose_dim)
-    df = pd.DataFrame.from_dict(dataset_after2).sort_values(by='ID', ascending=True)
-    print(df, '\n')
-    
-    dataset_after3 = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
-    df = pd.DataFrame.from_dict(dataset_after3).sort_values(by='ID', ascending=True)
-    print(df, '\n\n\n')
+    print('k = 2 -------------------------------')
+    dataset_after2 = mondrianAnon(dataset, QIs, k=2, choose_dimension=choose_dim)
+    print(dict2table(dataset_after2))
+    print(f'is 2-anon? {is_k_anon(dataset_after2, QIs, k=2)}')
+    print(f'is 3-anon? {is_k_anon(dataset_after2, QIs, k=3)}')
+    print(f'is 4-anon? {is_k_anon(dataset_after2, QIs, k=4)}')
+    print(f'is 5-anon? {is_k_anon(dataset_after2, QIs, k=5)}')
 
-    print("!!!!!!!!!!!!!UGUALI!!!!!!!!!!!!!!!!!!!!!") if dataset_after2 == dataset_after3 else None
+    '''
+    print('k = 5 -------------------------------')
+    dataset_after3 = mondrianAnon(dataset, QIs, k=5, choose_dimension=choose_dim)
+    print(dict2table(dataset_after3))
+    print(f'is 2-anon? {is_k_anon(dataset_after3, QIs, k=2)}')
+    print(f'is 3-anon? {is_k_anon(dataset_after3, QIs, k=3)}')
+    print(f'is 4-anon? {is_k_anon(dataset_after3, QIs, k=4)}')
+    print(f'is 5-anon? {is_k_anon(dataset_after3, QIs, k=5)}')
+    '''
     # endregion
 
     # region TEST METRICS
-    a(dataset, QIs, K=3, choose_dimension=choose_dim, print_metrics=True)
+    # a(dataset, QIs, K=6, choose_dimension=choose_dim, print_metrics=True)
     # endregion
 
 

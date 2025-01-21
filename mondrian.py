@@ -152,13 +152,17 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     generalize(LHS_copy, dim)
     generalize(RHS_copy, dim)
 
+    '''
     for other_dim in QIs:
         if other_dim != dim:
             generalize(LHS_copy, other_dim)
             generalize(RHS_copy, other_dim)
+    '''
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
-    return mondrianAnon(LHS_copy, QIsNew, k, choose_dimension) + mondrianAnon(RHS_copy, QIsNew, k, choose_dimension)
+    left = mondrianAnon(LHS_copy, QIsNew, k, choose_dimension)
+    right = mondrianAnon(RHS_copy, QIsNew, k, choose_dimension)
+    return left + right
