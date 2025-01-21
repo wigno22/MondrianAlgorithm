@@ -9,7 +9,8 @@ import datetime
 medial_conditions = ["Flu", "Hepatitis", "Brochitis", "Broken Arm", "AIDS", "Hang Nail"]
 genders = ["Male", "Female"]
 
-def generateDataset(n = 6, filename = None):
+
+def generateDataset(n, filename=None):
     # Crea la cartella datasets se non esiste
     if filename is not None:
         os.makedirs('datasets', exist_ok=True)  # Crea la cartella 'datasets' se non esiste
@@ -44,14 +45,15 @@ def generateDataset(n = 6, filename = None):
 
     return generated
 
-def generatePaperdataset (n= 6, filename = None):
+
+def generatePaperdataset(n=6, filename=None):
     # Crea la cartella datasets se non esiste
     if filename is not None:
         os.makedirs('datasets', exist_ok=True)  # Crea la cartella 'datasets' se non esiste
 
     generated = []
     entry = {
-        "ID": 0,"Age": 25,"Sex": "Male","Zipcode": 53711,"Disease": "Flu",
+        "ID": 0, "Age": 25, "Sex": "Male", "Zipcode": 53711, "Disease": "Flu",
     }
     generated.append(entry)
     entry = {

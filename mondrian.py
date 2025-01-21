@@ -1,7 +1,7 @@
+import copy
 from kanon import is_k_anon
 
-
-# region FUNCTIONS
+# region FUNCTIONS (le funzioni ausiliarie rimangono identiche)
 def chooseDimension(dataset, QIs, choice):
     """
     Choose one elements inside QIs to split my dataset
@@ -103,8 +103,6 @@ def generalize(partition, dim):
             record[dim] = f'{min_val}'
         else:
             record[dim] = f"[{min_val}-{max_val}]"
-
-
 # endregion
 
 
@@ -146,17 +144,21 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     # Split dataset in two partition
     LHS, RHS = splitDataset(dataset, dim, splitVal)
 
+    # Copia le partizioni prima di generalizzare
+    LHS_copy = copy.deepcopy(LHS)
+    RHS_copy = copy.deepcopy(RHS)
+
     # Generalization
-    generalize(LHS, dim)
-    generalize(RHS, dim)
+    generalize(LHS_copy, dim)
+    generalize(RHS_copy, dim)
 
     for other_dim in QIs:
         if other_dim != dim:
-            generalize(LHS, other_dim)
-            generalize(RHS, other_dim)
+            generalize(LHS_copy, other_dim)
+            generalize(RHS_copy, other_dim)
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
-    return mondrianAnon(LHS, QIsNew, k, choose_dimension) + mondrianAnon(RHS, QIsNew, k, choose_dimension)
+    return mondrianAnon(LHS_copy, QIsNew, k, choose_dimension) + mondrianAnon(RHS_copy, QIsNew, k, choose_dimension)

@@ -3,9 +3,13 @@ from mondrian import mondrianAnon
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import copy
 
 def metrics(dataset, QIs, k, print_metrics=False):
+    print(f'\nk={k} ------------') if print_metrics else None
+
     df = pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
+    print(df) if print_metrics else None
 
     # Equivalent classes
     E = df.groupby(QIs).groups
@@ -28,7 +32,7 @@ def metrics(dataset, QIs, k, print_metrics=False):
     return Cdm, Cavg
 
 
-def a(dataset, QIs, K, choose_dimension=True):
+def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     k_label = []
     discernability_penalty_multimensional_cdm = []
     discernability_penalty_multimensional_cavg = []
@@ -37,7 +41,7 @@ def a(dataset, QIs, K, choose_dimension=True):
         # Mondrian (multi-dimensional)
         dataset_after = mondrianAnon(dataset, QIs, k, choose_dimension)
 
-        Cdm, Cavg = metrics(dataset_after, QIs, k, print_metrics=False)
+        Cdm, Cavg = metrics(dataset_after, QIs, k, print_metrics)
         discernability_penalty_multimensional_cdm.append(Cdm)
         discernability_penalty_multimensional_cavg.append(Cavg)
 
@@ -58,8 +62,8 @@ def a(dataset, QIs, K, choose_dimension=True):
     ax.plot(k_label, discernability_penalty_multimensional_cdm,
             marker='o', linestyle='-', color='blue', label='cdm')
 
-    ax.plot(k_label, discernability_penalty_multimensional_cavg,
-            marker='o', linestyle='-', color='lightblue', label='cavg')
+    # ax.plot(k_label, discernability_penalty_multimensional_cavg,
+    #        marker='o', linestyle='-', color='lightblue', label='cavg')
 
     plt.show()
     # endregion
