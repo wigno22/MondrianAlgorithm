@@ -3,9 +3,17 @@ from mondrian import mondrianAnon
 import pandas as pd
 import matplotlib.pyplot as plt
 
-import copy
+from kanon import is_k_anon
+
 
 def metrics(dataset, QIs, k, print_metrics=False):
+    # region DEBUG
+    # TODO: togliere queste linee di debug
+    print(f'\nk={k} ------------') if print_metrics else None
+    for i in range(k, 16):
+        print(f'is {i}-anon? {is_k_anon(dataset, QIs, i)}') if print_metrics else None
+    # endregion
+
     print(f'\nk={k} ------------') if print_metrics else None
 
     df = pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)

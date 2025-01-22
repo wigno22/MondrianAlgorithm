@@ -132,7 +132,7 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
 
     # TODO: check this condition on k
     # Check if partition(dataset) is at least as big as the k
-    if len(dataset) < k:
+    if len(dataset) <= (2*k - 1):
         return dataset
 
     # Choose one elements inside QIs to split my dataset
@@ -152,12 +152,12 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
     generalize(LHS_copy, dim)
     generalize(RHS_copy, dim)
 
-    '''
     for other_dim in QIs:
         if other_dim != dim:
-            generalize(LHS_copy, other_dim)
-            generalize(RHS_copy, other_dim)
-    '''
+            if len(LHS_copy) <= (2 * k - 1):
+                generalize(LHS_copy, other_dim)
+            if len(RHS_copy) <= (2 * k - 1):
+                generalize(RHS_copy, other_dim)
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
