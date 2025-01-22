@@ -8,8 +8,10 @@ from mondrian import mondrianAnon
 import csv
 import pandas as pd
 
-from test_metrics import a
+from qualityMeasurement import a
 import math
+
+from statisticalAnalysis import showDistributions, showDistributionsTogether
 
 
 def main():
@@ -21,7 +23,7 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/500-records.csv', 'r') as f:
+    with open('datasets/test_metrics.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -34,7 +36,6 @@ def main():
 
     QIs = ['Zipcode', 'Sex']
     choose_dim = False
-
 
     # region TEST mondrianAnon()
     '''
@@ -60,7 +61,13 @@ def main():
 
     # region STATISTICAL ANALYSIS
 
+    showDistributions(dataset)
+    # showDistributionsTogether(dataset)
+    dataset_after = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
+    showDistributions(dataset)
+
     # endregion
+
 
 if __name__ == "__main__":
     main()

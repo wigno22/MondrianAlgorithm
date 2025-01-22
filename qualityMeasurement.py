@@ -16,16 +16,9 @@ def metrics(dataset, QIs, k, print_metrics=False):
 
     print(f'\nk={k} ------------') if print_metrics else None
 
-    df = pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
-    print(df) if print_metrics else None
-
     # Equivalent classes
-    E = df.groupby(QIs).groups
-    print(f'equivalent classes: {E}') if print_metrics else None
-
-    # Total equivalent classes
+    E = getEquivalentClasses(dataset, QIs)
     total_equiv_classes = len(E)
-    print(f'total_equiv_classes: {total_equiv_classes}') if print_metrics else None
 
     # Discernability metric
     Cdm = 0
@@ -38,6 +31,11 @@ def metrics(dataset, QIs, k, print_metrics=False):
     print(f'Cavg: {Cavg}') if print_metrics else None
 
     return Cdm, Cavg
+
+
+def getEquivalentClasses(dataset, QIs):
+    df = pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
+    return df.groupby(QIs).groups
 
 
 def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
