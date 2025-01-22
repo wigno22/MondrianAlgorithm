@@ -32,13 +32,13 @@ def main():
     print(pd.DataFrame.from_dict(dataset), '\n')
     # endregion
 
-    # region TEST mondrianAnon()
-
-    QIs = ['Age', 'Zipcode', 'Sex']
+    QIs = ['Zipcode', 'Sex']
     choose_dim = False
 
+
+    # region TEST mondrianAnon()
     '''
-    print('k = 2 -------------------------------')
+    print('k = 3 -------------------------------')
     dataset_after2 = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
     print(dict2table(dataset_after2))
     print(f'is 2-anon? {is_k_anon(dataset_after2, QIs, k=2)}')
@@ -49,10 +49,13 @@ def main():
     # endregion
 
     # region TEST METRICS
-    a(dataset, QIs, K=20, choose_dimension=choose_dim, print_metrics=False)
+    a(dataset, QIs, K=math.floor(len(dataset)/2), choose_dimension=choose_dim, print_metrics=False)
+    # endregion
 
-    # TODO: usare questo intervallo di k: (2 - |dataset|/2)
-    # a(dataset, QIs, K=math.floor(len(dataset)/2), choose_dimension=choose_dim, print_metrics=False)
+    # region SINGLE-DIMENSIONAL
+    # dataset_after = mondrianAnon(dataset, QIs, k=2, choose_dimension=choose_dim, single_dimensional=True)
+    # print(dict2table(dataset_after))
+
     # endregion
 
 

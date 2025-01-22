@@ -42,21 +42,27 @@ def metrics(dataset, QIs, k, print_metrics=False):
 
 def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     k_label = []
-    discernability_penalty_multimensional_cdm = []
-    discernability_penalty_multimensional_cavg = []
+    discernability_penalty_multi_dimensional_cdm = []
+    discernability_penalty_multi_dimensional_cavg = []
+
+    discernability_penalty_single_dimensional_cdm = []
+    discernability_penalty_single_dimensional_cavg = []
 
     for k in range(2, K + 1):
         # Mondrian (multi-dimensional)
-        dataset_after = mondrianAnon(dataset, QIs, k, choose_dimension)
+        dataset_after_multi_dim = mondrianAnon(dataset, QIs, k, choose_dimension)
 
-        Cdm, Cavg = metrics(dataset_after, QIs, k, print_metrics)
-        discernability_penalty_multimensional_cdm.append(Cdm)
-        discernability_penalty_multimensional_cavg.append(Cavg)
+        Cdm, Cavg = metrics(dataset_after_multi_dim, QIs, k, print_metrics)
+        discernability_penalty_multi_dimensional_cdm.append(Cdm)
+        discernability_penalty_multi_dimensional_cavg.append(Cavg)
 
         k_label.append(k)
 
-        # TODO: Mondrian (single-dimensional)
-        # ...
+        # Mondrian (single-dimensional)
+        dataset_after_single_dim = mondrianAnon(dataset, QIs, k, choose_dimension, single_dimensional=True)
+        Cdm, Cavg = metrics(dataset_after_single_dim, QIs, k, print_metrics)
+        discernability_penalty_single_dimensional_cdm.append(Cdm)
+        discernability_penalty_single_dimensional_cavg.append(Cavg)
 
     # region PLOT GRAPHS
     fig, ax = plt.subplots()
@@ -67,11 +73,11 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     ax.set_title('a')
     ax.grid(True)
 
-    ax.plot(k_label, discernability_penalty_multimensional_cdm,
+    ax.plot(k_label, discernability_penalty_multi_dimensional_cdm,
             marker='o', linestyle='-', color='blue', label='cdm')
 
-    # ax.plot(k_label, discernability_penalty_multimensional_cavg,
-    #        marker='o', linestyle='-', color='lightblue', label='cavg')
+    ax.plot(k_label, discernability_penalty_single_dimensional_cdm,
+            marker='o', linestyle='-', color='green', label='cdm')
 
     plt.show()
     # endregion

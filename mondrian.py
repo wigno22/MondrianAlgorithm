@@ -106,7 +106,7 @@ def generalize(partition, dim):
 # endregion
 
 
-def mondrianAnon(dataset, QIs, k, choose_dimension=True):
+def mondrianAnon(dataset, QIs, k, choose_dimension=True, single_dimensional=False):
     """
     Makes the dataset k-anonymous by generalizing quasi-identifiers (QIs)
 
@@ -161,6 +161,9 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True):
 
     # Remove the used attributes from the available list
     QIsNew = [q for q in QIs if q != dim]
+
+    if single_dimensional:
+        return LHS_copy + RHS_copy
 
     # return Anonymize(lhs) ∪ Anonymize(rhs)
     left = mondrianAnon(LHS_copy, QIsNew, k, choose_dimension)
