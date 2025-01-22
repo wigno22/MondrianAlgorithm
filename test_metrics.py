@@ -72,12 +72,32 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     ax.set_ylabel('Discernability Penalty')
     ax.set_title('a')
     ax.grid(True)
-
+    
+    '''
     ax.plot(k_label, discernability_penalty_multi_dimensional_cdm,
             marker='o', linestyle='-', color='blue', label='cdm')
 
     ax.plot(k_label, discernability_penalty_single_dimensional_cdm,
             marker='o', linestyle='-', color='green', label='cdm')
 
+    plt.legend(["Multidimensional", "Single-dimensional"], loc="lower right")
+    '''
+    ax.plot(
+        k_label,
+        discernability_penalty_multi_dimensional_cdm,
+        '--b',
+        label='Multidimensional',
+        marker='o',
+    )
+
+    ax.plot(
+        k_label,
+        discernability_penalty_single_dimensional_cdm,
+        '--g',
+        label='Single-dimensional',
+        marker='o',
+    )
+
+    ax.legend(loc='lower right')
     plt.show()
     # endregion

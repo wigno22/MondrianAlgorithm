@@ -21,7 +21,7 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/test_metrics.csv', 'r') as f:
+    with open('datasets/500-records.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -49,7 +49,7 @@ def main():
     # endregion
 
     # region TEST METRICS
-    a(dataset, QIs, K=math.floor(len(dataset)/2), choose_dimension=choose_dim, print_metrics=False)
+    # a(dataset, QIs, K=math.floor(len(dataset)/2), choose_dimension=choose_dim, print_metrics=False)
     # endregion
 
     # region SINGLE-DIMENSIONAL
@@ -58,6 +58,9 @@ def main():
 
     # endregion
 
+    # region STATISTICAL ANALYSIS
+
+    # endregion
 
 if __name__ == "__main__":
     main()
