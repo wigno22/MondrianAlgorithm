@@ -8,9 +8,9 @@ from mondrian import mondrianAnon
 import csv
 import pandas as pd
 
-from qualityMeasurement import a
 import math
 
+from qualityMeasurement import privacy_utility_analysis
 from statisticalAnalysis import showDistributions, showDistributionsTogether
 
 
@@ -23,7 +23,7 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/test_metrics.csv', 'r') as f:
+    with open('datasets/9-records.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -68,6 +68,7 @@ def main():
 
     # endregion
 
-
+    #testo privacy e utilità
+    privacy_utility_analysis(dataset, dataset_after, QIs)
 if __name__ == "__main__":
     main()
