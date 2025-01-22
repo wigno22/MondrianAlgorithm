@@ -1,3 +1,5 @@
+import math
+
 from generate import generateDataset, dict2table
 from generate import generatePaperdataset
 
@@ -8,10 +10,8 @@ from mondrian import mondrianAnon
 import csv
 import pandas as pd
 
-import math
-
 from qualityMeasurement import privacy_utility_analysis
-from statisticalAnalysis import showDistributions, showDistributionsTogether
+from statisticalAnalysis import analysis
 
 
 def main():
@@ -23,7 +23,9 @@ def main():
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    with open('datasets/9-records.csv', 'r') as f:
+    dataset_name = 'test_metrics'
+
+    with open(f'datasets/{dataset_name}.csv', 'r') as f:
         for row in csv.DictReader(f):
             # TODO: gestire meglio
             row['Age'] = int(row['Age'])
@@ -34,7 +36,7 @@ def main():
     print(pd.DataFrame.from_dict(dataset), '\n')
     # endregion
 
-    QIs = ['Zipcode', 'Sex']
+    QIs = ['Zipcode', 'Sex', 'Age']
     choose_dim = False
 
     # region TEST mondrianAnon()
@@ -60,15 +62,16 @@ def main():
     # endregion
 
     # region STATISTICAL ANALYSIS
+    dataset_anon = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
+    print(dict2table(dataset_anon))
 
-    showDistributions(dataset)
-    # showDistributionsTogether(dataset)
-    dataset_after = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
-    showDistributions(dataset)
+    analysis(dataset, dataset_anon, QIs, math.floor(len(dataset)/2), f'output/{dataset_name}')
 
     # endregion
 
-    #testo privacy e utilità
-    privacy_utility_analysis(dataset, dataset_after, QIs)
+    # testo privacy e utilità
+    # privacy_utility_analysis(dataset, dataset_anon, QIs)
+    
+
 if __name__ == "__main__":
     main()

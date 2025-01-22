@@ -7,13 +7,6 @@ from kanon import is_k_anon
 
 
 def metrics(dataset, QIs, k, print_metrics=False):
-    # region DEBUG
-    # TODO: togliere queste linee di debug
-    print(f'\nk={k} ------------') if print_metrics else None
-    for i in range(k, 16):
-        print(f'is {i}-anon? {is_k_anon(dataset, QIs, i)}') if print_metrics else None
-    # endregion
-
     print(f'\nk={k} ------------') if print_metrics else None
 
     # Equivalent classes
@@ -70,16 +63,7 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     ax.set_ylabel('Discernability Penalty')
     ax.set_title('a')
     ax.grid(True)
-    
-    '''
-    ax.plot(k_label, discernability_penalty_multi_dimensional_cdm,
-            marker='o', linestyle='-', color='blue', label='cdm')
 
-    ax.plot(k_label, discernability_penalty_single_dimensional_cdm,
-            marker='o', linestyle='-', color='green', label='cdm')
-
-    plt.legend(["Multidimensional", "Single-dimensional"], loc="lower right")
-    '''
     ax.plot(
         k_label,
         discernability_penalty_multi_dimensional_cdm,
@@ -97,8 +81,11 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     )
 
     ax.legend(loc='lower right')
-    plt.show()
+    # plt.show()
     # endregion
+
+    return fig
+
 
 # Funzione per calcolare il livello di generalizzazione e soppressione
 def calculate_generalization_and_suppression(dataset_original, dataset_anon, QIs):
@@ -150,26 +137,37 @@ def calculate_data_utility_metrics(dataset_original, dataset_anon, QIs):
 
     return discernability_metric, avg_equiv_class_size, similarity_scores
 
+
 # Funzione per misurare privacy, utility e ulteriori metriche
 def privacy_utility_analysis(dataset, dataset_anon, QIs):
-    print("Privacy and Utility Analysis")
-
     # Convertire i dataset in DataFrame se non lo sono già
     dataset_original = pd.DataFrame.from_dict(dataset) if isinstance(dataset, list) else dataset
     dataset_anon = pd.DataFrame.from_dict(dataset_anon) if isinstance(dataset_anon, list) else dataset_anon
 
     # Calcolo Generalization e Suppression Level
-    generalization_level, suppression_percentage = calculate_generalization_and_suppression(dataset_original, dataset_anon, QIs)
-    print(f"Generalization Level: {generalization_level:.4f}")
-    print(f"Suppression Percentage: {suppression_percentage:.4f}")
+    generalization_level, suppression_percentage = calculate_generalization_and_suppression(
+        dataset_original, dataset_anon, QIs
+    )
 
     # Calcolo Information Loss
     information_loss = calculate_information_loss(dataset_original, dataset_anon)
-    print(f"Information Loss: {information_loss:.4f}")
 
     # Calcolo Data Utility Metrics
-    discernability_metric, avg_equiv_class_size, similarity_scores = calculate_data_utility_metrics(dataset_original, dataset_anon, QIs)
-    print(f"Discernability Metric (Cdm): {discernability_metric}")
-    print(f"Normalized Average Equivalence Class Size (Cavg): {avg_equiv_class_size:.4f}")
+    discernability_metric, avg_equiv_class_size, similarity_scores = calculate_data_utility_metrics(
+        dataset_original, dataset_anon, QIs
+    )
+
+    # Preparazione dei dati per la tabella
+    table_data = [
+        ["Metric", "Value"],
+        ["Generalization Level", f"{generalization_level:.4f}"],
+        ["Suppression Percentage", f"{suppression_percentage:.4f}"],
+        ["Information Loss", f"{information_loss:.4f}"],
+        ["Discernability Metric (Cdm)", f"{discernability_metric}"],
+        ["Normalized Avg. Equiv. Class Size (Cavg)", f"{avg_equiv_class_size:.4f}"],
+    ]
+
     for qi, score in similarity_scores.items():
-        print(f"Similarity Score for {qi}: {score:.4f}")
+        table_data.append([f"Similarity Score for {qi}", f"{score:.4f}"])
+
+    return table_data
