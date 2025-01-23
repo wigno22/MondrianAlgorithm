@@ -80,8 +80,8 @@ def splitDataset(dataset, dim, splitVal):
 
         LHS = dataset_sorted[:splitVal]
         RHS = dataset_sorted[splitVal:]
+
     else:
-        # TODO: manage the error
         print('Tipo dell\'attributo non gestito')
 
     return LHS, RHS
@@ -110,6 +110,7 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True, single_dimensional=Fals
     """
     Makes the dataset k-anonymous by generalizing quasi-identifiers (QIs)
 
+
     :param dataset: the dataset to be partitioned
                     Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
     :param QIs: a list of quasi-identifiers
@@ -117,6 +118,7 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True, single_dimensional=Fals
     :param choose_dimension: boolean flag to determine how to choose the attribute to partition.
                             - if True, use the first attribute
                             - if False, use the one with the most distinct values
+    :param single_dimensional: boolean flag to determine if the algorithm should return a single-dimensional anonymized dataset or a multi-dimensional one.
     :return: the k-anonymized dataset
     """
 
@@ -130,7 +132,6 @@ def mondrianAnon(dataset, QIs, k, choose_dimension=True, single_dimensional=Fals
     if len(QIs) == 0:
         return dataset
 
-    # TODO: check this condition on k
     # Check if partition(dataset) is at least as big as the k
     if len(dataset) <= (2*k - 1):
         return dataset

@@ -6,10 +6,19 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.ticker import MaxNLocator
 
-from qualityMeasurement import privacy_utility_analysis, a
+from qualityMeasurement import privacy_utility_analysis, compareDiscernability
 
 
-def analysis(before, after, QIs, K, output):
+def analysis(before, after, QIs, k, K, output):
+    """
+    generate a PDF file containing statistical analysis results
+    :param before: dataset before anonymization
+    :param after: dataset after anonymization
+    :param QIs: a  list of quasi-identifiers
+    :param k: k value for k-anonymity
+    :param K: maximum K value for k-anonymity for discernability penalty analysis
+    :param output: name of the output file (PDF)
+    """
     output = resolve_filename_conflict(f"{output}.pdf")
 
     with PdfPages(output) as pdf:
@@ -19,11 +28,11 @@ def analysis(before, after, QIs, K, output):
         # Genera la pagina per il secondo dataset
         generateDistributionPage(after, pdf, title="After")
 
-        table = privacy_utility_analysis(before, after, QIs)
+        table = privacy_utility_analysis(before, after, QIs, k)
 
         generateTablePage(table, pdf, title='Privacy and Utility Analysis')
 
-        fig = a(before, QIs, K, choose_dimension=False, print_metrics=False)
+        fig = compareDiscernability(before, QIs, K, choose_dimension=False, print_metrics=False)
 
         generateDiscernabilityPenaltyPage(fig, pdf, title='Discernability Penalty Analysis')
 
@@ -31,7 +40,14 @@ def analysis(before, after, QIs, K, output):
 
 
 def generateDiscernabilityPenaltyPage(fig, pdf, title):
-    # Aggiungi il titolo
+
+    """
+    print discernability penalty analysis results on a new page
+    :param fig: figure object
+    :param pdf: file object
+    :param title: title of the page
+    """
+
     fig.suptitle(title, fontsize=20, fontweight='bold', y=0.98)
 
     # Salva la pagina nel PDF
@@ -40,6 +56,14 @@ def generateDiscernabilityPenaltyPage(fig, pdf, title):
 
 
 def generateTablePage(table_data, pdf, title):
+
+    """
+    print table on a new page
+    :param table_data: data of the table
+    :param pdf: file object
+    :param title: title of the page
+    """
+
     fig, ax = plt.subplots(figsize=(8, len(table_data) * 0.6))  # Dimensione dinamica in base al numero di righe
     ax.axis('off')  # Rimuove gli assi
 
@@ -64,6 +88,12 @@ def generateTablePage(table_data, pdf, title):
 
 
 def generateDistributionPage(dataset, pdf, title):
+    """
+    create a new page with a histogram for each attribute in the dataset
+    :param dataset: dataset to be analyzed
+    :param pdf: file object
+    :param title: title of the page
+    """
     # Converti il dataset in un DataFrame
     df = pd.DataFrame(dataset)
 

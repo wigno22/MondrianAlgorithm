@@ -4,7 +4,6 @@ import random
 import csv
 
 from faker import Faker
-import datetime
 
 import pandas as pd
 import numpy as np
@@ -50,6 +49,20 @@ education_weights = [2, 8, 10, 30, 25, 20, 5]
 
 
 def generateDataset(n, filename=None):
+    """
+    Generate a synthetic dataset containing information about individuals and optionally save it to a CSV file.
+
+    :param n: int
+    Number of records to generate in the dataset.
+    :param filename: str, optional
+    Name of the CSV file where the dataset will be saved. If None, the dataset will not be saved to a file.
+    :return: list
+    A list of dictionaries, each representing a record in the dataset.
+
+    If the number of records (n) exceeds 30, male and female names are reduced to a subset of at most 15 names to improve histogram readability.
+    The generated dataset can be saved to a CSV file in the 'datasets' directory, which will be automatically created if it does not exist.
+
+    """
     # Crea la cartella datasets se non esiste
     if filename is not None:
         os.makedirs('datasets', exist_ok=True)  # Crea la cartella 'datasets' se non esiste
@@ -125,8 +138,14 @@ def generateDataset(n, filename=None):
     return generated
 
 
-def generatePaperdataset(n=6, filename=None):
-    # Crea la cartella datasets se non esiste
+def generatePaperdataset(filename=None):
+
+    """
+    create the dataset used in the paper("Mondrian Multidimensional K-Anonymity") at page:1
+    Kristen LeFevre David J. DeWitt Raghu Ramakrishnan, University of Wisconsin, Madison
+    https://www.researchgate.net/publication/4234803_Mondrian_Multidimensional_K-Anonymity
+    """
+
     if filename is not None:
         os.makedirs('datasets', exist_ok=True)  # Crea la cartella 'datasets' se non esiste
 
@@ -175,6 +194,9 @@ def generatePaperdataset(n=6, filename=None):
 
 
 def dict2table(dataset):
+    """
+    transform a dataset in a pandas dataframe
+    """
     return pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
 
 
@@ -189,6 +211,3 @@ def is_float(value):
         return False
 
 
-# Esegui il codice di esempio per generare i file
-# generateDataset(n = 6, filename="datasetmondrian.csv")
-# generatePaperdataset(n=6, filename="datasetpaper.csv")

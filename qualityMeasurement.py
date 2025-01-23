@@ -3,10 +3,19 @@ from mondrian import mondrianAnon
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from kanon import is_k_anon
-
-
 def metrics(dataset, QIs, k, print_metrics=False):
+    """
+    from a dataset and a list of quasi-identifiers, calculate the two metrics: Cdm and Cavg
+
+    :param dataset: the dataset to be partitioned
+                    Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param QIs: a list of quasi-identifiers
+    :param k: the value k for k-anonymization
+    :param print_metrics: is a boolean value
+        if True, the metrics are printed in the console
+        else nothing is printed.
+    :return: return the two metrics: Cdm and Cavg
+    """
     print(f'\nk={k} ------------') if print_metrics else None
 
     # Equivalent classes
@@ -27,11 +36,33 @@ def metrics(dataset, QIs, k, print_metrics=False):
 
 
 def getEquivalentClasses(dataset, QIs):
+    """
+    return the equivalent classes of the dataset, grouped by the QIs
+    :param dataset: the dataset to be partitioned
+                    Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param QIs: a list of quasi-identifiers
+    :return: the equivalent classes of the dataset, grouped by the QIs
+    """
     df = pd.DataFrame.from_dict(dataset).sort_values(by='ID', ascending=True)
     return df.groupby(QIs).groups
 
 
-def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
+def compareDiscernability(dataset, QIs, K, choose_dimension=True, print_metrics=False):
+    """
+     Compare the discernability penalty of multi-dimensional and single-dimensional Mondrian anonymization looking for k from 2 to K.
+
+    :param dataset: the dataset to be partitioned
+                    Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param QIs: a list of quasi-identifiers
+    :param K: the maximum value of k for k-anonymization
+    :param choose_dimension: boolean flag to determine how to choose the attribute to partition.
+                            - if True, use the first attribute
+                            - if False, use the one with the most distinct values
+    :param print_metrics: is a boolean value
+        if True, the metrics are printed in the console
+        else nothing is printed.
+    :return: a plot of the discernability penalty for k from 2 to K
+    """
     k_label = []
     discernability_penalty_multi_dimensional_cdm = []
     discernability_penalty_multi_dimensional_cavg = []
@@ -87,8 +118,15 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     return fig
 
 
-# Funzione per calcolare il livello di generalizzazione e soppressione
 def calculate_generalization_and_suppression(dataset_original, dataset_anon, QIs):
+    """
+    calculate the generalization level and suppression percentage
+    :param dataset_original: the dataset to be partitioned
+                             Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param dataset_anon:the dataset after anonymization
+    :param QIs: a list of quasi-identifiers
+    :return: a tuple containing the generalization level and the suppression percentage
+    """
     generalization_level = 0
     suppression_count = 0
 
@@ -106,11 +144,15 @@ def calculate_generalization_and_suppression(dataset_original, dataset_anon, QIs
     return generalization_level, suppression_percentage
 
 
-# Funzione per calcolare Information Loss (IL)
-
 def calculate_information_loss(dataset_original, dataset_anon):
+    """
+    calculate the information loss afer anonymization
+    :param dataset_original: the dataset to be partitioned
+                             Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param dataset_anon:the dataset after anonymization
+    :return: a percentage value representing the information loss
+    """
     total_loss = 0
-    total_values = dataset_original.size
 
     for column in dataset_original.columns:
         original_values = dataset_original[column]
@@ -122,24 +164,17 @@ def calculate_information_loss(dataset_original, dataset_anon):
     return total_loss / len(dataset_original.columns)
 
 
-# Funzione per calcolare le Data Utility Metrics
 
-def calculate_data_utility_metrics(dataset_original, dataset_anon, QIs):
-    discernability_metric, avg_equiv_class_size = metrics(dataset_anon.to_dict('records'), QIs, k=2)
-
-    # Calcolo della similarità fra distribuzioni pre e post-anonimizzazione
-    similarity_scores = {}
-    for qi in QIs:
-        original_dist = dataset_original[qi].value_counts(normalize=True)
-        anonymized_dist = dataset_anon[qi].value_counts(normalize=True).reindex(original_dist.index).fillna(0)
-
-        similarity_scores[qi] = 1 - sum(abs(original_dist - anonymized_dist)) / 2
-
-    return discernability_metric, avg_equiv_class_size, similarity_scores
-
-
-# Funzione per misurare privacy, utility e ulteriori metriche
-def privacy_utility_analysis(dataset, dataset_anon, QIs):
+def privacy_utility_analysis(dataset, dataset_anon, QIs, k):
+    """
+    generate a table containing all the metrics calculated by the algorithm.
+    :param k: k value for k-anonymity
+    :param dataset: the dataset to be partitioned
+                             Esempio:    [ {'ID': 0, 'Age': 25, ... }, {'ID': 1, 'Age': 25, ... }, ... ]
+    :param dataset_anon:the dataset after anonymization
+    :param QIs: a list of quasi-identifiers
+    :return: a table containing all the metrics calculated by the algorithm.
+    """
     # Convertire i dataset in DataFrame se non lo sono già
     dataset_original = pd.DataFrame.from_dict(dataset) if isinstance(dataset, list) else dataset
     dataset_anon = pd.DataFrame.from_dict(dataset_anon) if isinstance(dataset_anon, list) else dataset_anon
@@ -153,9 +188,7 @@ def privacy_utility_analysis(dataset, dataset_anon, QIs):
     information_loss = calculate_information_loss(dataset_original, dataset_anon)
 
     # Calcolo Data Utility Metrics
-    discernability_metric, avg_equiv_class_size, similarity_scores = calculate_data_utility_metrics(
-        dataset_original, dataset_anon, QIs
-    )
+    discernability_metric, avg_equiv_class_size = metrics(dataset, QIs, k)
 
     # Preparazione dei dati per la tabella
     table_data = [
@@ -167,7 +200,5 @@ def privacy_utility_analysis(dataset, dataset_anon, QIs):
         ["Normalized Avg. Equiv. Class Size (Cavg)", f"{avg_equiv_class_size:.2f}"],
     ]
 
-    for qi, score in similarity_scores.items():
-        table_data.append([f"Similarity Score for {qi}", f"{score:.2f}"])
 
     return table_data

@@ -1,24 +1,28 @@
+"""
+   Mondrian Algorithm.
+    K-anonymize a Dataset using Mondrian Algorithm.
+
+    Authors:
+        Andrea Cattarinich, Walter Signoretti.
+        Unige, Data Protection & Privacy.
+
+    Paper:
+       "Mondrian Multidimensional K-Anonymity"
+        Kristen LeFevre David J. DeWitt Raghu Ramakrishnan, University of Wisconsin, Madison
+        https://www.researchgate.net/publication/4234803_Mondrian_Multidimensional_K-Anonymity
+"""
 import math
-
 from generate import generateDataset, dict2table, is_float
-from generate import generatePaperdataset
-
-from mondrian import find_median
-from kanon import is_k_anon
 from mondrian import mondrianAnon
-
 import csv
-import pandas as pd
-
-from qualityMeasurement import privacy_utility_analysis
 from statisticalAnalysis import analysis
 
 
 def main():
-    dataset_name = '29-records-prod'
+    dataset_name = '100-record-exam'
 
     # GENERAZIONE DATASET
-    generateDataset(29, f'{dataset_name}.csv')
+    generateDataset(100, f'{dataset_name}.csv')
 
     # region IMPORTAZIONE DEL DATASET
     dataset = []
@@ -50,7 +54,7 @@ def main():
 
     print(dict2table(dataset_anon), '\n')
 
-    analysis(dataset, dataset_anon, QIs, k_max, f'output/{dataset_name}')
+    analysis(dataset, dataset_anon, QIs, k, k_max, f'output/{dataset_name}')
 
     # endregion
 
