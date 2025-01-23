@@ -160,14 +160,14 @@ def privacy_utility_analysis(dataset, dataset_anon, QIs):
     # Preparazione dei dati per la tabella
     table_data = [
         ["Metric", "Value"],
-        ["Generalization Level", f"{generalization_level:.4f}"],
-        ["Suppression Percentage", f"{suppression_percentage:.4f}"],
-        ["Information Loss", f"{information_loss:.4f}"],
+        ["Generalization Level", f"{generalization_level:.2f}"],
+        ["Suppression Percentage", f"{suppression_percentage:.2f}"],
+        ["Information Loss", f"{information_loss:.2f}"],
         ["Discernability Metric (Cdm)", f"{discernability_metric}"],
-        ["Normalized Avg. Equiv. Class Size (Cavg)", f"{avg_equiv_class_size:.4f}"],
+        ["Normalized Avg. Equiv. Class Size (Cavg)", f"{avg_equiv_class_size:.2f}"],
     ]
 
     for qi, score in similarity_scores.items():
-        table_data.append([f"Similarity Score for {qi}", f"{score:.4f}"])
+        table_data.append([f"Similarity Score for {qi}", f"{score:.2f}"])
 
     return table_data

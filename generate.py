@@ -32,6 +32,15 @@ F_names = [
     "Stefania", "Roberta", "Carla", "Claudia", "Francesca"
 ]
 
+european_countries = [
+    "AT", "BE", "BG", "HR", "CZ",        # Austria, Belgium, Bulgaria, Croatia, Czech Republic
+    "DK", "FI", "FR", "DE", "GR",        # Denmark, Finland, France, Germany, Greece
+    "HU", "IS", "IE", "IT",              # Hungary, Iceland, Ireland, Italy,
+    "LU", "NL", "NO", "PL", "PT",        # Luxembourg, Netherlands, Norway, Poland, Portugal
+    "RO", "SK", "SI", "ES", "SE", "CH",  # Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland
+    "GB"                                 # United Kingdom
+]
+
 medial_conditions = ["Flu", "Hepatitis", "Brochitis", "Broken Arm", "AIDS", "Hang Nail"]
 genders = ['M', 'F', 'O']
 genders_weights = [50, 48, 2]
@@ -44,6 +53,16 @@ def generateDataset(n, filename=None):
     # Crea la cartella datasets se non esiste
     if filename is not None:
         os.makedirs('datasets', exist_ok=True)  # Crea la cartella 'datasets' se non esiste
+
+    #se dataset ha più di 30 records, riduciamo a 15 il dominio dei nomi per rappresentarli meglio
+    #altrimenti lascio dominio originale
+    if n>30:
+        max_names=15
+        M_names_reduced= random.sample(M_names, min(len(M_names), max_names))
+        F_names_reduced= random.sample(F_names, min(len(F_names), max_names))
+    else:
+        M_names_reduced=M_names
+        F_names_reduced=F_names
 
     education_random = random.choices(education, education_weights, k=n)
     genders_random = random.choices(genders, genders_weights, k=n)
@@ -60,14 +79,14 @@ def generateDataset(n, filename=None):
         # Sex
         sex = genders_random[i]
         if sex == 'M':
-            name = random.choice(M_names)
+            name = random.choice(M_names_reduced)
         elif sex == 'F':
-            name = random.choice(F_names)
+            name = random.choice(F_names_reduced)
         else:
             if random.getrandbits(1):
-                name = random.choice(M_names)
+                name = random.choice(M_names_reduced)
             else:
-                name = random.choice(F_names)
+                name = random.choice(F_names_reduced)
 
         entry = {
             "ID": i,
@@ -75,7 +94,7 @@ def generateDataset(n, filename=None):
             "Age": random.randint(18, 60),
             "Sex": sex,
             "Zipcode": random.randint(16121, 16167),
-            "Country": fake.country_code(),
+            "Country": random.choice(european_countries),
             "Education": education_random[i],
             "Disease": random.choice(medial_conditions),
             "Salary": salary

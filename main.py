@@ -15,10 +15,10 @@ from statisticalAnalysis import analysis
 
 
 def main():
-    dataset_name = '200-records-prod'
+    dataset_name = '29-records-prod'
 
     # GENERAZIONE DATASET
-    generateDataset(200, f'{dataset_name}.csv')
+    generateDataset(29, f'{dataset_name}.csv')
 
     # region IMPORTAZIONE DEL DATASET
     dataset = []
@@ -41,7 +41,7 @@ def main():
     # region PARAMETERS
     QIs = ['Zipcode', 'Sex', 'Age', 'Country', 'Education']
     choose_dim = False
-    k = 10
+    k = 4
     k_max = math.floor(len(dataset) / 2)
     # endregion
 
