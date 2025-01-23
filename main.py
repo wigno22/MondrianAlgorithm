@@ -1,5 +1,5 @@
 """
-   Mondrian Algorithm.
+    Mondrian Algorithm.
     K-anonymize a Dataset using Mondrian Algorithm.
 
     Authors:
@@ -8,7 +8,7 @@
 
     Paper:
        "Mondrian Multidimensional K-Anonymity"
-        Kristen LeFevre David J. DeWitt Raghu Ramakrishnan, University of Wisconsin, Madison
+        by Kristen LeFevre David J. DeWitt Raghu Ramakrishnan, University of Wisconsin, Madison
         https://www.researchgate.net/publication/4234803_Mondrian_Multidimensional_K-Anonymity
 """
 import math
