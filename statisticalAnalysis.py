@@ -79,6 +79,7 @@ def generateDiscernabilityPenaltyPage(fig, pdf, title):
     pdf.savefig(fig)
     plt.close(fig)
 
+
 def generateTablePage(table_data, pdf, title):
     fig, ax = plt.subplots(figsize=(8, len(table_data) * 0.6))  # Dimensione dinamica in base al numero di righe
     ax.axis('off')  # Rimuove gli assi

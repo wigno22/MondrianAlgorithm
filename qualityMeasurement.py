@@ -61,7 +61,7 @@ def a(dataset, QIs, K, choose_dimension=True, print_metrics=False):
     # Personalization
     ax.set_xlabel('k')
     ax.set_ylabel('Discernability Penalty')
-    ax.set_title('a')
+    # ax.set_title('a')
     ax.grid(True)
 
     ax.plot(

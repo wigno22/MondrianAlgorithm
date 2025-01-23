@@ -1,6 +1,6 @@
 import math
 
-from generate import generateDataset, dict2table
+from generate import generateDataset, dict2table, is_float
 from generate import generatePaperdataset
 
 from mondrian import find_median
@@ -15,63 +15,45 @@ from statisticalAnalysis import analysis
 
 
 def main():
-    # region GENERAZIONE DATASET
-    # generateDataset(500, '500-records.csv')
-    # generatePaperdataset(6, 'paper.csv')
-    # endregion
+    dataset_name = '200-records-prod'
+
+    # GENERAZIONE DATASET
+    generateDataset(200, f'{dataset_name}.csv')
 
     # region IMPORTAZIONE DEL DATASET
     dataset = []
 
-    dataset_name = 'test_metrics'
-
     with open(f'datasets/{dataset_name}.csv', 'r') as f:
         for row in csv.DictReader(f):
-            # TODO: gestire meglio
-            row['Age'] = int(row['Age'])
-            row['Zipcode'] = int(row['Zipcode'])
+            for key, value in row.items():
+                if value.isdigit():
+                    row[key] = int(value)
+                elif is_float(value):
+                    row[key] = float(value)
+                else:
+                    row[key] = value
 
             dataset.append(row)
 
-    print(pd.DataFrame.from_dict(dataset), '\n')
+    print(dict2table(dataset), '\n')
     # endregion
 
-    QIs = ['Zipcode', 'Sex', 'Age']
+    # region PARAMETERS
+    QIs = ['Zipcode', 'Sex', 'Age', 'Country', 'Education']
     choose_dim = False
-
-    # region TEST mondrianAnon()
-    '''
-    print('k = 3 -------------------------------')
-    dataset_after2 = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
-    print(dict2table(dataset_after2))
-    print(f'is 2-anon? {is_k_anon(dataset_after2, QIs, k=2)}')
-    print(f'is 3-anon? {is_k_anon(dataset_after2, QIs, k=3)}')
-    print(f'is 4-anon? {is_k_anon(dataset_after2, QIs, k=4)}')
-    print(f'is 5-anon? {is_k_anon(dataset_after2, QIs, k=5)}')
-    '''
-    # endregion
-
-    # region TEST METRICS
-    # a(dataset, QIs, K=math.floor(len(dataset)/2), choose_dimension=choose_dim, print_metrics=False)
-    # endregion
-
-    # region SINGLE-DIMENSIONAL
-    # dataset_after = mondrianAnon(dataset, QIs, k=2, choose_dimension=choose_dim, single_dimensional=True)
-    # print(dict2table(dataset_after))
-
+    k = 10
+    k_max = math.floor(len(dataset) / 2)
     # endregion
 
     # region STATISTICAL ANALYSIS
-    dataset_anon = mondrianAnon(dataset, QIs, k=3, choose_dimension=choose_dim)
-    print(dict2table(dataset_anon))
+    dataset_anon = mondrianAnon(dataset, QIs, k, choose_dimension=choose_dim)
 
-    analysis(dataset, dataset_anon, QIs, math.floor(len(dataset)/2), f'output/{dataset_name}')
+    print(dict2table(dataset_anon), '\n')
+
+    analysis(dataset, dataset_anon, QIs, k_max, f'output/{dataset_name}')
 
     # endregion
 
-    # testo privacy e utilità
-    # privacy_utility_analysis(dataset, dataset_anon, QIs)
-    
 
 if __name__ == "__main__":
     main()
