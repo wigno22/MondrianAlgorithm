@@ -1,0 +1,2501 @@
+ID,Name,Age,Sex,Zipcode,Country,Education,Disease,Salary
+0,Roberta,36,F,16129,DK,PR,Brochitis,44863
+1,Nicola,50,M,16135,GB,BSc,Hang Nail,50189
+2,Tommaso,46,M,16160,FI,None,AIDS,36577
+3,Valerio,21,M,16134,RO,MSc,Broken Arm,27090
+4,Rita,40,F,16163,IE,BSc,Flu,46337
+5,Pietro,43,M,16126,DK,PhD,Broken Arm,55180
+6,Roberta,40,F,16140,DK,BSc,Flu,44457
+7,Giovanni,48,M,16150,IS,BSc,Brochitis,50714
+8,Angelo,57,M,16153,SE,MSc,AIDS,36583
+9,Valentina,52,F,16129,FR,MSc,Broken Arm,17621
+10,Domenico,60,M,16125,FR,BSc,Brochitis,37706
+11,Lucia,52,F,16150,HU,HS,Hang Nail,27172
+12,Giuseppina,19,F,16152,ES,BSc,Broken Arm,21907
+13,Roberta,19,F,16148,IE,MSc,Hepatitis,46420
+14,Tommaso,53,M,16165,IE,PhD,Hepatitis,24773
+15,Alessandra,55,F,16164,IE,MSc,Hang Nail,28085
+16,Federica,19,F,16136,SK,HS,Broken Arm,25293
+17,Silvia,39,F,16144,LU,MSc,Brochitis,35633
+18,Michele,21,M,16154,HU,MSc,Hepatitis,22796
+19,Roberta,21,F,16144,NL,MS,Hepatitis,28874
+20,Alessandra,57,F,16162,ES,BSc,Flu,42985
+21,Roberto,20,M,16121,NL,BSc,Broken Arm,26913
+22,Roberto,47,M,16148,FR,HS,Broken Arm,40972
+23,Roberta,24,F,16136,GR,BSc,Brochitis,18143
+24,Valerio,19,M,16127,FI,MSc,Broken Arm,28927
+25,Silvia,60,F,16139,NL,PhD,Brochitis,33584
+26,Elena,37,F,16128,SK,BSc,Broken Arm,46612
+27,Raffaele,35,M,16141,GB,PhD,Brochitis,39818
+28,Roberto,55,M,16155,HU,BSc,Flu,21660
+29,Lucia,30,F,16137,LU,MSc,AIDS,37354
+30,Giovanni,51,M,16135,CH,MS,Flu,48205
+31,Silvia,47,O,16128,BG,HS,Broken Arm,49693
+32,Angelo,34,M,16123,CZ,PhD,Hang Nail,51862
+33,Giovanni,59,M,16153,GR,HS,Brochitis,32957
+34,Elena,39,F,16146,DK,MSc,Flu,24378
+35,Antonio,38,M,16131,RO,HS,Hepatitis,47451
+36,Roberto,48,M,16131,RO,MSc,Broken Arm,27812
+37,Giovanna,43,F,16128,GR,HS,Flu,35095
+38,Paola,47,F,16131,PT,BSc,Broken Arm,9793
+39,Antonio,58,M,16129,SE,HS,Flu,45335
+40,Maria,53,F,16165,PL,BSc,Broken Arm,34891
+41,Paola,56,F,16155,CZ,HS,Hepatitis,30521
+42,Maria,52,F,16140,IT,MSc,Hang Nail,51954
+43,Paola,47,F,16137,PT,MSc,Brochitis,24923
+44,Luca,39,M,16154,IS,BSc,AIDS,30671
+45,Bruno,29,M,16148,FR,PR,Broken Arm,44253
+46,Roberto,58,M,16144,SI,BSc,Brochitis,39209
+47,Giovanni,33,M,16125,RO,MS,Brochitis,28973
+48,Alessandra,36,F,16153,CH,MS,Flu,21719
+49,Tommaso,48,M,16151,ES,MSc,Hepatitis,24563
+50,Alessandra,23,F,16164,PT,HS,AIDS,24839
+51,Silvia,53,F,16133,BE,BSc,AIDS,47492
+52,Paola,51,F,16142,GR,HS,Flu,39871
+53,Luca,56,M,16135,PT,HS,Hang Nail,22405
+54,Roberta,27,F,16164,SE,MSc,Broken Arm,35733
+55,Sara,57,F,16141,SK,BSc,Hang Nail,18471
+56,Valentina,56,F,16150,SI,BSc,Hepatitis,39936
+57,Silvia,18,F,16133,BE,BSc,Flu,44078
+58,Michele,42,M,16144,IT,MS,Hepatitis,31894
+59,Nicola,28,M,16121,IT,HS,Flu,24934
+60,Valerio,21,M,16146,HR,None,Brochitis,29534
+61,Angelo,53,M,16159,CZ,MS,Broken Arm,39148
+62,Giovanna,58,F,16127,SE,MSc,Brochitis,41099
+63,Giuseppina,58,F,16121,LU,BSc,Hepatitis,26424
+64,Enrico,53,M,16126,IT,HS,AIDS,44295
+65,Paola,42,F,16122,IS,HS,AIDS,23046
+66,Lucia,32,F,16146,NL,MSc,Broken Arm,34423
+67,Rita,21,F,16124,IT,HS,AIDS,9376
+68,Enrico,55,M,16131,ES,MSc,Hepatitis,31219
+69,Angelo,30,M,16130,NL,BSc,Broken Arm,43116
+70,Angelo,18,M,16144,IS,BSc,Brochitis,25272
+71,Federica,23,F,16145,CZ,BSc,Hang Nail,29663
+72,Pietro,20,M,16130,BE,HS,Hang Nail,54546
+73,Tommaso,34,M,16142,BE,MSc,Flu,54559
+74,Raffaele,26,M,16136,HU,PhD,Hepatitis,31573
+75,Domenico,28,M,16149,FI,MSc,Broken Arm,38126
+76,Rita,26,F,16140,GB,BSc,AIDS,43585
+77,Roberta,47,F,16122,PT,MS,Hepatitis,37788
+78,Giovanni,58,M,16128,BE,MSc,Hang Nail,42392
+79,Roberta,44,F,16163,GR,HS,AIDS,47318
+80,Elena,31,F,16124,BG,MSc,AIDS,21678
+81,Luca,50,M,16155,ES,HS,Broken Arm,46801
+82,Giovanni,35,M,16165,NL,HS,AIDS,44540
+83,Giuseppina,47,F,16162,PT,BSc,AIDS,50665
+84,Nicola,23,M,16157,HU,MSc,Flu,22251
+85,Alessandra,37,F,16135,CH,HS,Flu,19415
+86,Valerio,25,M,16134,DK,MSc,Hang Nail,31883
+87,Domenico,43,M,16146,SK,HS,Hepatitis,24989
+88,Roberto,54,M,16135,PL,None,Hang Nail,45561
+89,Valentina,49,F,16165,PT,BSc,Hang Nail,48114
+90,Raffaele,58,M,16128,IE,MSc,Broken Arm,29173
+91,Rita,60,F,16122,RO,HS,Broken Arm,16874
+92,Pietro,49,M,16124,FR,BSc,AIDS,38419
+93,Silvia,36,F,16132,NO,MSc,AIDS,34824
+94,Antonio,22,M,16141,BG,BSc,Brochitis,19235
+95,Federica,51,F,16140,SI,BSc,Hepatitis,26413
+96,Luca,58,M,16124,HU,MS,Flu,53288
+97,Raffaele,50,M,16165,CZ,PR,Hepatitis,32087
+98,Pietro,19,M,16160,PL,BSc,Flu,33628
+99,Maria,22,F,16155,IS,MSc,Broken Arm,31006
+100,Bruno,51,M,16162,SI,MSc,AIDS,32101
+101,Claudia,47,F,16150,PT,PR,Hang Nail,35481
+102,Maria,35,F,16143,LU,MSc,Flu,23278
+103,Angelo,22,M,16132,DK,PR,AIDS,31674
+104,Maria,54,F,16146,FI,MSc,AIDS,40254
+105,Sara,32,F,16130,NL,HS,Flu,34884
+106,Angelo,51,M,16164,NL,MSc,AIDS,33617
+107,Michele,57,M,16155,SI,HS,Hepatitis,26804
+108,Giovanna,37,F,16127,GR,HS,Flu,40309
+109,Nicola,57,M,16128,PT,MSc,Brochitis,25466
+110,Giovanna,46,F,16157,SE,MS,AIDS,30470
+111,Tommaso,46,M,16139,CH,HS,AIDS,42222
+112,Antonio,52,M,16150,PT,MS,Hepatitis,10647
+113,Lucia,55,F,16138,BG,HS,Hang Nail,17613
+114,Lucia,20,F,16157,IE,PhD,Hang Nail,33516
+115,Raffaele,49,M,16158,SK,BSc,Hang Nail,25022
+116,Roberto,38,M,16163,DE,BSc,Flu,42460
+117,Leonardo,36,M,16148,FR,HS,Hepatitis,20875
+118,Enrico,52,M,16158,BG,BSc,Broken Arm,21234
+119,Pietro,26,M,16137,BE,HS,Hang Nail,55847
+120,Lucia,33,F,16142,BG,MS,Brochitis,30823
+121,Francesca,24,F,16129,FR,HS,Broken Arm,43630
+122,Rita,47,F,16147,CH,HS,Flu,34819
+123,Luca,55,M,16150,BE,MSc,Broken Arm,31952
+124,Valentina,43,F,16157,PT,HS,Hang Nail,48551
+125,Domenico,34,M,16160,RO,HS,Hepatitis,29888
+126,Raffaele,42,M,16124,AT,BSc,Hang Nail,30007
+127,Roberto,21,M,16149,AT,PhD,Brochitis,41344
+128,Luca,46,M,16141,GB,PhD,Hepatitis,48172
+129,Federica,60,F,16134,SE,HS,Broken Arm,40367
+130,Leonardo,31,M,16163,FI,PhD,Broken Arm,30166
+131,Rita,46,F,16138,DE,HS,Hepatitis,15145
+132,Tommaso,60,M,16126,CH,HS,AIDS,31928
+133,Leonardo,53,M,16125,NO,PR,AIDS,25961
+134,Giuseppina,54,F,16158,PL,PhD,Hepatitis,43749
+135,Michele,49,M,16128,LU,HS,AIDS,40440
+136,Giovanna,28,F,16128,ES,BSc,Hang Nail,40292
+137,Angelo,51,M,16166,GB,HS,Broken Arm,46368
+138,Leonardo,32,M,16154,HR,MSc,Broken Arm,42021
+139,Valerio,25,M,16126,NL,PhD,Brochitis,48658
+140,Leonardo,50,M,16140,AT,BSc,Brochitis,23252
+141,Leonardo,42,M,16136,IT,BSc,Hepatitis,35170
+142,Giovanna,54,F,16149,BG,HS,Broken Arm,38805
+143,Silvia,34,F,16147,SE,BSc,AIDS,41105
+144,Paola,53,F,16125,ES,PR,Flu,37481
+145,Silvia,42,F,16128,DE,BSc,Broken Arm,33920
+146,Alessandra,20,F,16126,PL,MSc,Brochitis,50812
+147,Claudia,43,F,16164,NL,BSc,Broken Arm,29081
+148,Giovanni,60,M,16162,SK,HS,Hepatitis,30817
+149,Enrico,20,M,16137,IE,BSc,Hang Nail,35774
+150,Enrico,42,M,16149,AT,MS,Hang Nail,49507
+151,Sara,33,F,16155,CZ,HS,Flu,30792
+152,Antonio,43,M,16134,HR,PR,Hang Nail,27660
+153,Nicola,47,M,16133,IE,PR,Hang Nail,29654
+154,Enrico,45,M,16122,GB,PR,Brochitis,35284
+155,Bruno,20,M,16152,SE,MSc,Broken Arm,19324
+156,Raffaele,56,M,16132,SE,HS,Hepatitis,30167
+157,Giovanna,42,F,16139,BG,MS,AIDS,32905
+158,Bruno,44,M,16166,CZ,BSc,Broken Arm,33569
+159,Raffaele,37,M,16123,SK,MS,Brochitis,33808
+160,Leonardo,36,M,16123,RO,BSc,AIDS,29405
+161,Rita,36,F,16123,NL,MSc,Flu,39882
+162,Nicola,28,M,16161,CH,BSc,Hang Nail,51296
+163,Elena,56,F,16145,ES,HS,Hang Nail,25672
+164,Giuseppina,34,F,16149,GB,MSc,Flu,30128
+165,Enrico,20,M,16139,CH,HS,Flu,21992
+166,Angelo,30,M,16142,DK,MSc,Hepatitis,48755
+167,Raffaele,23,M,16123,HR,MSc,Hepatitis,27116
+168,Tommaso,38,M,16152,PT,MSc,AIDS,17363
+169,Leonardo,48,M,16122,IE,BSc,AIDS,38454
+170,Luca,42,M,16136,SE,PR,AIDS,44454
+171,Raffaele,53,M,16127,IT,HS,AIDS,51061
+172,Enrico,32,M,16156,AT,PR,AIDS,15905
+173,Roberto,54,M,16156,HU,BSc,Broken Arm,36970
+174,Elena,42,F,16156,SK,MSc,Hang Nail,37085
+175,Valentina,26,F,16148,DK,BSc,Flu,38647
+176,Leonardo,25,M,16167,GR,HS,Hepatitis,26940
+177,Nicola,40,M,16151,NL,MSc,AIDS,39561
+178,Roberta,55,F,16138,SK,HS,Hang Nail,44681
+179,Valerio,34,M,16125,ES,BSc,AIDS,44992
+180,Rita,33,F,16162,GB,None,AIDS,22561
+181,Giovanna,32,F,16137,CH,BSc,Hepatitis,26426
+182,Pietro,26,M,16124,LU,HS,Brochitis,23446
+183,Raffaele,57,M,16136,GR,HS,Hang Nail,32340
+184,Maria,45,F,16149,NL,MS,Hang Nail,42168
+185,Bruno,29,M,16156,IE,MSc,Hang Nail,16697
+186,Pietro,49,M,16162,SE,MSc,Brochitis,47688
+187,Tommaso,35,M,16131,IS,BSc,Hang Nail,35104
+188,Roberto,51,M,16167,IS,MS,Flu,23857
+189,Elena,45,F,16136,ES,HS,Brochitis,39422
+190,Michele,40,M,16136,ES,HS,Flu,41251
+191,Angelo,52,M,16163,SI,PR,Hang Nail,55318
+192,Lucia,20,F,16157,IS,HS,AIDS,26662
+193,Bruno,42,M,16163,HR,BSc,Flu,28649
+194,Alessandra,18,F,16157,DK,MSc,Broken Arm,33098
+195,Michele,31,M,16144,BG,MSc,AIDS,36371
+196,Roberta,43,F,16132,LU,BSc,AIDS,51749
+197,Claudia,50,F,16138,ES,MSc,Broken Arm,46929
+198,Elena,29,F,16144,SI,BSc,Hepatitis,25168
+199,Claudia,59,F,16129,BG,PR,Hang Nail,29585
+200,Nicola,43,M,16131,DK,PR,Hepatitis,37543
+201,Domenico,36,M,16127,BE,MS,AIDS,32515
+202,Valerio,18,M,16159,ES,MS,Hepatitis,44182
+203,Maria,58,F,16149,ES,BSc,Hepatitis,33943
+204,Paola,42,F,16140,CZ,HS,Brochitis,30929
+205,Angelo,57,M,16145,HR,HS,AIDS,47687
+206,Leonardo,30,M,16142,AT,BSc,Broken Arm,31751
+207,Antonio,30,M,16131,AT,HS,AIDS,30946
+208,Tommaso,47,M,16135,GB,HS,Flu,51930
+209,Claudia,31,F,16159,SE,MS,Hepatitis,37064
+210,Silvia,33,F,16136,ES,HS,AIDS,41730
+211,Rita,51,F,16154,AT,MSc,AIDS,34161
+212,Giovanna,30,F,16149,BE,MSc,Flu,30094
+213,Raffaele,44,M,16129,SI,BSc,Broken Arm,24263
+214,Giovanna,32,F,16136,BE,HS,Brochitis,41323
+215,Raffaele,53,M,16163,DK,BSc,Broken Arm,38392
+216,Alessandra,52,F,16136,DE,MSc,Brochitis,39073
+217,Domenico,58,M,16159,PL,HS,Hepatitis,36118
+218,Tommaso,55,M,16136,HR,HS,AIDS,37130
+219,Maria,39,F,16140,PL,HS,Hepatitis,40527
+220,Federica,26,F,16147,HU,PhD,AIDS,20693
+221,Tommaso,56,M,16122,CH,MS,Hang Nail,20084
+222,Luca,33,M,16122,HU,MS,Broken Arm,54182
+223,Bruno,31,M,16146,HR,MS,Broken Arm,34461
+224,Giovanni,58,M,16146,NL,BSc,AIDS,50067
+225,Luca,30,M,16149,HR,MSc,Hang Nail,27667
+226,Pietro,30,M,16162,DK,PR,Hang Nail,39067
+227,Tommaso,56,M,16166,DE,BSc,Flu,41890
+228,Michele,60,M,16163,IE,BSc,Flu,33053
+229,Elena,30,F,16153,HU,PhD,Brochitis,16141
+230,Pietro,54,M,16134,CH,HS,Broken Arm,22674
+231,Luca,27,M,16149,BE,HS,Broken Arm,28552
+232,Luca,43,M,16146,BE,BSc,Hang Nail,40161
+233,Maria,36,F,16143,FR,MS,Hang Nail,36217
+234,Valentina,47,F,16156,NL,MSc,Broken Arm,46917
+235,Maria,53,F,16133,HR,MS,Brochitis,31932
+236,Roberto,37,M,16148,SE,PR,Hepatitis,39388
+237,Roberto,28,M,16138,PT,HS,Brochitis,30548
+238,Pietro,53,M,16158,IS,BSc,Flu,30346
+239,Pietro,41,M,16148,NO,None,Broken Arm,38896
+240,Antonio,48,M,16135,HR,HS,Hepatitis,37506
+241,Giovanna,56,F,16149,RO,MSc,Broken Arm,23181
+242,Bruno,24,M,16126,IE,MSc,Broken Arm,32879
+243,Domenico,35,M,16133,SK,MS,Hang Nail,35347
+244,Giuseppina,54,F,16163,SI,MSc,Brochitis,29420
+245,Paola,42,F,16155,NO,BSc,Flu,29635
+246,Bruno,33,O,16152,IE,MS,Brochitis,29647
+247,Leonardo,35,M,16126,DK,HS,Broken Arm,41454
+248,Claudia,21,F,16134,IS,BSc,Hepatitis,36320
+249,Roberta,36,F,16157,HR,MS,Hepatitis,31415
+250,Alessandra,59,F,16121,IT,MSc,Brochitis,45091
+251,Raffaele,27,M,16158,CZ,HS,AIDS,32783
+252,Rita,53,F,16133,HR,PhD,Brochitis,49474
+253,Pietro,49,M,16133,GR,MSc,AIDS,26525
+254,Giovanni,20,M,16166,RO,BSc,Hepatitis,35357
+255,Raffaele,39,M,16163,NO,MSc,Hepatitis,21915
+256,Valentina,59,F,16148,HR,BSc,Brochitis,34305
+257,Paola,54,F,16166,DE,BSc,Hepatitis,32517
+258,Bruno,58,M,16165,ES,HS,AIDS,26116
+259,Lucia,42,F,16155,IE,HS,Broken Arm,26424
+260,Michele,38,M,16142,CZ,HS,Brochitis,26817
+261,Silvia,35,F,16159,LU,PR,Hepatitis,30738
+262,Silvia,47,F,16133,IE,MSc,Broken Arm,32768
+263,Claudia,46,F,16166,HR,MSc,AIDS,31229
+264,Roberta,34,F,16140,IT,BSc,Brochitis,35199
+265,Giovanni,37,M,16133,IS,HS,Hang Nail,48774
+266,Federica,26,F,16163,RO,HS,Hepatitis,29258
+267,Luca,59,M,16127,GB,HS,Broken Arm,30644
+268,Valentina,34,F,16155,PL,PR,Hang Nail,36575
+269,Sara,33,F,16129,SI,HS,AIDS,34124
+270,Pietro,22,M,16142,BE,BSc,Hang Nail,41132
+271,Domenico,46,M,16137,SK,HS,Hang Nail,49143
+272,Bruno,60,M,16124,RO,HS,Hepatitis,28677
+273,Maria,40,F,16126,DK,MSc,Hang Nail,27906
+274,Roberta,30,F,16133,GB,MSc,Hang Nail,9284
+275,Leonardo,20,M,16153,RO,MSc,AIDS,35366
+276,Giovanni,58,M,16154,AT,MSc,Hang Nail,33370
+277,Francesca,49,F,16161,BE,HS,AIDS,29664
+278,Silvia,33,F,16154,FR,HS,Hang Nail,44822
+279,Michele,38,M,16148,DK,MS,Flu,15735
+280,Nicola,50,M,16160,IE,HS,Brochitis,20426
+281,Angelo,19,M,16150,HU,MS,Broken Arm,40673
+282,Antonio,49,M,16151,IS,HS,Hang Nail,31255
+283,Sara,28,F,16148,BE,MSc,Hang Nail,36560
+284,Giovanni,51,M,16142,DE,PR,AIDS,29366
+285,Maria,19,F,16145,CZ,MSc,Broken Arm,24194
+286,Valerio,42,M,16155,RO,PR,Hang Nail,36596
+287,Antonio,29,M,16135,NO,BSc,Flu,48806
+288,Roberto,57,M,16131,IT,HS,Broken Arm,34839
+289,Federica,55,F,16162,SE,HS,Flu,13660
+290,Valerio,20,M,16157,RO,PhD,Broken Arm,41785
+291,Michele,51,M,16146,AT,PR,Hepatitis,35135
+292,Elena,32,F,16165,IE,MS,Brochitis,36447
+293,Valentina,24,F,16162,IE,MSc,Brochitis,37618
+294,Maria,56,F,16125,FI,BSc,Brochitis,32904
+295,Angelo,20,M,16162,IT,MSc,AIDS,33064
+296,Nicola,37,M,16148,GR,HS,Hang Nail,42157
+297,Luca,28,M,16131,GB,MS,AIDS,52434
+298,Leonardo,26,M,16163,ES,BSc,Flu,40476
+299,Leonardo,18,M,16148,FI,MSc,Hepatitis,38270
+300,Giuseppina,24,F,16121,IT,PR,Hepatitis,35520
+301,Giovanna,36,F,16154,SE,HS,Broken Arm,32688
+302,Federica,60,F,16132,GB,MSc,AIDS,44848
+303,Paola,43,F,16133,GB,HS,Hang Nail,42403
+304,Silvia,36,F,16141,HR,HS,Hang Nail,32926
+305,Claudia,53,F,16128,NL,MSc,Flu,34907
+306,Elena,53,F,16145,IS,BSc,AIDS,31291
+307,Silvia,21,F,16127,LU,PR,Brochitis,51069
+308,Bruno,55,M,16141,SE,None,Broken Arm,28636
+309,Raffaele,37,M,16150,BE,MSc,Hepatitis,30670
+310,Lucia,52,F,16128,GB,HS,AIDS,42460
+311,Michele,59,M,16126,IT,HS,Broken Arm,46389
+312,Giovanna,23,F,16148,IS,MSc,AIDS,44592
+313,Paola,28,F,16165,PT,MS,Broken Arm,31296
+314,Antonio,59,M,16166,RO,MSc,AIDS,29866
+315,Nicola,44,M,16139,CH,HS,Broken Arm,30841
+316,Antonio,33,M,16134,PT,BSc,AIDS,35490
+317,Valentina,26,F,16124,DE,BSc,Hang Nail,40398
+318,Maria,46,F,16149,SI,MS,Hepatitis,35590
+319,Valerio,36,M,16155,GR,MS,Hepatitis,38692
+320,Claudia,29,F,16154,BG,MS,Hang Nail,31897
+321,Raffaele,28,M,16147,DK,MSc,Hepatitis,27140
+322,Domenico,44,M,16137,HU,HS,Hang Nail,25041
+323,Roberta,53,F,16135,IT,BSc,Brochitis,38007
+324,Federica,18,F,16167,FR,MSc,Hepatitis,36447
+325,Sara,36,F,16124,HR,BSc,Hepatitis,9563
+326,Leonardo,19,M,16148,PT,MS,Flu,27403
+327,Giovanna,20,F,16132,SI,HS,AIDS,44130
+328,Maria,52,F,16149,SE,BSc,Hang Nail,20007
+329,Francesca,58,F,16130,IS,BSc,Broken Arm,9223
+330,Alessandra,32,F,16164,PT,MSc,Broken Arm,25621
+331,Alessandra,53,F,16161,DE,MSc,Flu,38835
+332,Giovanna,36,F,16122,GR,BSc,Hang Nail,35073
+333,Luca,21,M,16139,BE,BSc,Flu,50893
+334,Angelo,40,M,16128,SI,BSc,AIDS,41461
+335,Antonio,35,M,16166,BE,MSc,Flu,44092
+336,Giovanna,35,F,16142,IS,PhD,Hepatitis,36845
+337,Elena,35,F,16152,DE,HS,Flu,50502
+338,Valerio,44,M,16145,NL,HS,Hepatitis,47951
+339,Alessandra,57,F,16147,LU,BSc,Broken Arm,25621
+340,Valentina,47,F,16153,SK,PR,Flu,45816
+341,Giovanni,50,M,16146,IE,MSc,Hepatitis,33881
+342,Valentina,57,F,16129,BE,HS,Hang Nail,30160
+343,Raffaele,47,M,16143,IS,MSc,Hang Nail,43851
+344,Elena,24,F,16137,FR,BSc,Brochitis,34380
+345,Tommaso,19,M,16164,DE,HS,Broken Arm,35908
+346,Giuseppina,34,F,16162,HU,HS,Hang Nail,34569
+347,Giovanni,23,M,16166,SE,HS,Flu,36901
+348,Lucia,45,F,16165,CZ,HS,Hepatitis,40010
+349,Roberto,56,M,16144,RO,BSc,Broken Arm,37609
+350,Elena,18,F,16136,PL,None,Hang Nail,22707
+351,Federica,29,F,16135,SI,MSc,Flu,25083
+352,Valerio,24,M,16133,SE,MS,Hang Nail,39266
+353,Valerio,20,M,16147,SE,HS,Brochitis,26467
+354,Roberta,18,F,16150,SK,MSc,AIDS,32634
+355,Valentina,21,F,16160,GB,MSc,Flu,34158
+356,Federica,24,F,16123,FI,PhD,Brochitis,36883
+357,Michele,42,M,16157,RO,None,Hepatitis,24010
+358,Sara,38,F,16146,GR,BSc,Hepatitis,50088
+359,Paola,36,F,16140,DE,BSc,AIDS,34013
+360,Silvia,41,F,16135,FR,BSc,Flu,57855
+361,Federica,42,F,16130,IS,MS,Brochitis,21567
+362,Angelo,56,M,16154,PT,PhD,Brochitis,22771
+363,Nicola,21,M,16154,BE,HS,Flu,27160
+364,Alessandra,45,F,16142,NO,BSc,Brochitis,17406
+365,Giovanna,33,F,16140,NO,MS,Brochitis,23104
+366,Francesca,51,F,16155,HU,PR,Hepatitis,20983
+367,Roberta,52,F,16127,SI,HS,AIDS,51815
+368,Raffaele,60,M,16135,ES,MS,Brochitis,28897
+369,Francesca,45,F,16137,NO,HS,Hang Nail,42124
+370,Roberto,57,M,16163,SK,MSc,Brochitis,27212
+371,Silvia,37,F,16149,LU,MSc,Flu,36962
+372,Giuseppina,53,F,16147,AT,MSc,AIDS,24376
+373,Michele,37,M,16160,NO,BSc,Hepatitis,40937
+374,Pietro,22,M,16128,FR,HS,Brochitis,53177
+375,Antonio,41,M,16163,GR,HS,Hepatitis,47843
+376,Lucia,60,F,16127,SE,BSc,Hepatitis,30275
+377,Domenico,49,M,16142,PL,PhD,Hepatitis,41057
+378,Rita,20,F,16124,HR,BSc,Hepatitis,35126
+379,Giuseppina,47,F,16164,NO,HS,Flu,39695
+380,Enrico,21,M,16157,SE,BSc,Hepatitis,27940
+381,Michele,37,M,16121,SK,BSc,AIDS,39211
+382,Giuseppina,33,F,16160,GB,BSc,Hang Nail,45443
+383,Valentina,31,F,16166,CZ,PhD,AIDS,38926
+384,Paola,43,F,16129,PT,HS,Hang Nail,24824
+385,Roberta,28,F,16143,SI,MSc,Flu,31010
+386,Rita,19,F,16164,SI,MSc,Broken Arm,35858
+387,Antonio,23,M,16123,ES,BSc,Hang Nail,18621
+388,Antonio,26,M,16145,SK,HS,Brochitis,30220
+389,Domenico,21,M,16123,NO,BSc,Flu,47277
+390,Raffaele,32,M,16160,SE,MSc,Brochitis,37421
+391,Luca,25,M,16157,GR,HS,Hepatitis,22108
+392,Bruno,55,M,16127,NL,HS,Hepatitis,24176
+393,Elena,34,F,16128,PL,HS,Flu,31020
+394,Sara,39,F,16129,GB,BSc,Hepatitis,46441
+395,Valentina,39,F,16158,LU,MS,Brochitis,46675
+396,Leonardo,60,M,16121,PT,BSc,Flu,25078
+397,Giovanni,35,M,16157,PL,HS,Hepatitis,18271
+398,Bruno,52,M,16162,CH,PR,Brochitis,29211
+399,Nicola,56,M,16139,PL,MS,Hepatitis,22490
+400,Pietro,18,M,16152,PL,BSc,Hepatitis,20673
+401,Silvia,41,F,16157,GB,BSc,AIDS,53463
+402,Roberto,41,M,16165,CH,HS,AIDS,17146
+403,Francesca,49,F,16151,IS,MS,Broken Arm,44694
+404,Claudia,22,F,16127,GB,HS,Hepatitis,37327
+405,Domenico,38,M,16134,BE,MSc,Hang Nail,36923
+406,Elena,56,F,16158,ES,BSc,Flu,35062
+407,Leonardo,40,M,16135,CH,MSc,AIDS,13828
+408,Enrico,42,O,16124,SI,HS,Flu,29077
+409,Francesca,55,F,16138,SI,HS,AIDS,43702
+410,Angelo,22,M,16127,HU,BSc,Hepatitis,24576
+411,Rita,42,F,16150,DK,HS,Hang Nail,28311
+412,Roberta,44,F,16166,NL,MSc,Hepatitis,39420
+413,Maria,50,F,16131,FI,BSc,Hang Nail,41534
+414,Sara,29,F,16163,BG,PhD,AIDS,48870
+415,Giovanni,57,M,16160,AT,BSc,Flu,34000
+416,Valentina,46,F,16137,BE,PR,Broken Arm,20215
+417,Nicola,35,M,16147,SE,HS,Hepatitis,34959
+418,Giuseppina,25,F,16125,FI,MS,Hepatitis,27971
+419,Valentina,19,F,16132,IT,BSc,Hang Nail,34452
+420,Alessandra,49,F,16149,HU,PR,Hepatitis,30385
+421,Sara,30,F,16147,BG,PhD,Broken Arm,24463
+422,Giovanni,41,M,16144,BG,PhD,AIDS,49477
+423,Pietro,47,M,16154,SI,BSc,AIDS,53724
+424,Giovanni,18,M,16133,DE,PhD,Brochitis,51576
+425,Rita,19,F,16133,FR,BSc,Broken Arm,18826
+426,Rita,41,F,16164,RO,PR,Broken Arm,17947
+427,Giuseppina,25,F,16167,PL,MSc,Flu,56712
+428,Silvia,58,F,16134,CH,HS,Brochitis,16038
+429,Claudia,45,F,16137,ES,MSc,Hang Nail,23378
+430,Elena,33,F,16124,GR,MSc,Flu,21879
+431,Roberto,37,M,16157,CZ,MSc,Broken Arm,30140
+432,Angelo,51,M,16126,GB,HS,Brochitis,28045
+433,Claudia,46,F,16151,DK,MSc,Hepatitis,21746
+434,Paola,18,F,16155,AT,HS,Hepatitis,43709
+435,Domenico,31,M,16141,RO,BSc,Flu,49096
+436,Paola,42,F,16147,NO,HS,Hang Nail,32823
+437,Nicola,42,M,16163,PT,HS,Brochitis,33251
+438,Francesca,46,F,16139,NO,HS,Brochitis,36433
+439,Alessandra,30,F,16129,PL,BSc,Hang Nail,33825
+440,Tommaso,52,M,16127,SE,MSc,Broken Arm,24090
+441,Rita,43,F,16166,DK,BSc,Hang Nail,44950
+442,Bruno,23,M,16152,SI,HS,Flu,50769
+443,Roberta,55,O,16129,DK,HS,AIDS,35549
+444,Claudia,43,F,16156,FI,BSc,AIDS,27832
+445,Enrico,40,M,16165,PT,PhD,Broken Arm,37072
+446,Raffaele,44,M,16158,DE,BSc,Hepatitis,42979
+447,Domenico,55,M,16144,RO,BSc,AIDS,40533
+448,Maria,36,F,16139,NO,PR,Brochitis,38934
+449,Roberto,27,M,16134,CH,PhD,Broken Arm,45502
+450,Maria,35,F,16128,SE,HS,Hang Nail,28784
+451,Claudia,21,F,16161,SK,HS,Flu,26354
+452,Giuseppina,26,F,16152,LU,MS,AIDS,26093
+453,Enrico,32,M,16164,BE,MS,Broken Arm,14615
+454,Roberta,21,F,16139,LU,HS,Flu,25662
+455,Raffaele,50,M,16162,SK,HS,Hepatitis,46417
+456,Valentina,58,F,16165,DK,MSc,Hepatitis,47297
+457,Raffaele,19,M,16145,SK,MSc,Flu,29625
+458,Domenico,43,M,16160,IS,HS,Brochitis,37335
+459,Rita,27,F,16141,HU,MSc,AIDS,44210
+460,Giovanni,39,M,16161,BE,MSc,Brochitis,48743
+461,Antonio,28,M,16126,AT,MS,Hang Nail,48533
+462,Maria,49,F,16164,HR,HS,Hepatitis,31474
+463,Francesca,57,F,16154,IT,HS,AIDS,30111
+464,Michele,34,M,16154,IT,MS,Flu,54959
+465,Elena,47,F,16134,BE,HS,AIDS,47524
+466,Bruno,36,M,16147,BG,MSc,Brochitis,23072
+467,Rita,55,F,16146,BE,HS,AIDS,33188
+468,Nicola,60,M,16138,CZ,MSc,Hepatitis,12719
+469,Bruno,28,M,16149,BE,MSc,AIDS,67913
+470,Leonardo,44,M,16165,HR,PR,AIDS,33471
+471,Roberto,20,M,16154,DK,BSc,Hang Nail,33829
+472,Sara,60,F,16162,LU,None,Flu,32947
+473,Bruno,53,M,16121,CZ,HS,Hepatitis,53795
+474,Bruno,52,M,16123,NO,BSc,Hang Nail,24187
+475,Paola,33,F,16159,ES,BSc,Broken Arm,39671
+476,Federica,24,F,16152,IS,BSc,Brochitis,32851
+477,Raffaele,60,M,16134,FR,PR,Flu,34131
+478,Pietro,31,M,16131,ES,HS,Brochitis,53543
+479,Michele,23,M,16165,FI,MSc,Hepatitis,41874
+480,Nicola,22,M,16149,CH,HS,Brochitis,34687
+481,Angelo,33,M,16130,DK,BSc,AIDS,28195
+482,Elena,33,F,16148,BG,MSc,Brochitis,30902
+483,Giovanna,52,F,16132,CH,HS,Flu,44382
+484,Domenico,52,M,16164,BE,MS,Brochitis,31812
+485,Bruno,53,M,16158,NL,BSc,Broken Arm,38081
+486,Valerio,55,M,16128,IS,HS,Hang Nail,27026
+487,Rita,50,F,16153,PT,BSc,Hang Nail,36727
+488,Leonardo,60,M,16137,DK,HS,Hang Nail,33270
+489,Leonardo,36,M,16139,NL,BSc,AIDS,38739
+490,Rita,50,F,16162,RO,BSc,Broken Arm,25847
+491,Michele,21,M,16125,BG,MS,Brochitis,19471
+492,Leonardo,44,M,16162,IE,MSc,Brochitis,12930
+493,Angelo,54,M,16126,ES,HS,Hepatitis,22040
+494,Alessandra,53,F,16157,SE,BSc,Broken Arm,26157
+495,Giovanna,44,F,16135,PL,PhD,Brochitis,39580
+496,Giovanni,44,M,16142,SK,BSc,Brochitis,17051
+497,Roberta,20,F,16128,SE,BSc,Flu,34992
+498,Giuseppina,25,F,16167,NL,BSc,Hang Nail,38220
+499,Roberto,40,M,16138,HR,BSc,Brochitis,49051
+500,Enrico,25,M,16131,NO,MS,Hang Nail,40640
+501,Giovanna,46,F,16167,GB,MSc,AIDS,30369
+502,Roberto,23,M,16152,HU,BSc,AIDS,48516
+503,Michele,38,M,16127,CH,BSc,Flu,38718
+504,Luca,33,M,16152,FR,MSc,Broken Arm,24231
+505,Angelo,20,O,16131,BE,BSc,Flu,49818
+506,Francesca,39,F,16140,PL,PhD,AIDS,22862
+507,Federica,33,F,16143,CZ,BSc,Hang Nail,46672
+508,Nicola,22,M,16161,FI,HS,Flu,34465
+509,Raffaele,40,M,16148,SI,BSc,Brochitis,27355
+510,Valerio,28,M,16134,IE,MS,AIDS,47946
+511,Roberta,29,F,16136,LU,BSc,Hepatitis,31843
+512,Paola,57,F,16160,CH,BSc,Brochitis,32667
+513,Leonardo,38,M,16131,SI,BSc,Brochitis,30986
+514,Luca,54,O,16160,GR,PhD,Hepatitis,30384
+515,Alessandra,30,F,16131,GR,HS,Flu,39025
+516,Raffaele,26,M,16122,IT,BSc,Flu,40194
+517,Angelo,46,M,16130,IT,PhD,Hepatitis,35959
+518,Silvia,28,F,16155,IS,BSc,Hang Nail,28522
+519,Roberta,22,F,16166,DE,PhD,Brochitis,40390
+520,Rita,21,F,16154,GR,PR,Hang Nail,42292
+521,Roberta,56,F,16151,SK,PhD,Flu,49835
+522,Elena,47,F,16161,CH,HS,Broken Arm,41739
+523,Leonardo,23,M,16122,AT,PhD,Flu,30023
+524,Maria,19,F,16134,IS,HS,Hepatitis,27041
+525,Silvia,46,F,16123,ES,PR,Flu,35836
+526,Valentina,37,F,16133,PL,BSc,Hepatitis,42624
+527,Valentina,54,F,16133,IS,MS,AIDS,37703
+528,Valerio,26,M,16157,ES,MSc,Flu,48941
+529,Rita,28,F,16155,GB,HS,Hang Nail,27991
+530,Antonio,60,M,16152,AT,HS,AIDS,30408
+531,Giuseppina,22,F,16121,LU,MS,Brochitis,34687
+532,Leonardo,40,M,16143,IT,PR,Hepatitis,52850
+533,Federica,25,F,16127,LU,MSc,Hang Nail,20164
+534,Domenico,38,M,16131,SK,None,Flu,31299
+535,Enrico,19,M,16153,LU,MSc,Flu,28907
+536,Pietro,56,M,16129,GR,MSc,Brochitis,30861
+537,Tommaso,21,M,16151,NL,HS,Flu,38886
+538,Leonardo,27,M,16121,NL,BSc,AIDS,14329
+539,Francesca,20,F,16136,HR,HS,Hang Nail,26948
+540,Enrico,52,M,16154,AT,HS,AIDS,20910
+541,Silvia,37,F,16121,AT,HS,Hepatitis,39058
+542,Giovanna,58,F,16145,DE,MS,Hang Nail,21570
+543,Angelo,18,M,16134,RO,BSc,Hang Nail,21541
+544,Enrico,31,M,16167,LU,HS,AIDS,40151
+545,Elena,21,F,16129,GB,PR,AIDS,39344
+546,Paola,35,F,16162,BE,BSc,Flu,18860
+547,Enrico,24,M,16124,NL,PR,AIDS,49150
+548,Giuseppina,27,F,16128,ES,PR,Broken Arm,34489
+549,Tommaso,29,M,16124,HR,HS,AIDS,29272
+550,Giuseppina,22,F,16132,HU,MS,Broken Arm,53570
+551,Elena,52,F,16131,ES,BSc,Broken Arm,48564
+552,Federica,41,F,16137,ES,MS,Brochitis,19916
+553,Silvia,48,F,16132,SI,PR,Brochitis,38411
+554,Luca,19,M,16132,FR,BSc,Flu,26136
+555,Giovanni,42,M,16125,HR,HS,Brochitis,23550
+556,Elena,24,F,16137,SI,HS,Hepatitis,43296
+557,Roberta,41,F,16127,LU,BSc,Flu,33525
+558,Angelo,51,M,16155,BG,HS,Broken Arm,25815
+559,Leonardo,45,M,16126,NO,HS,AIDS,44674
+560,Claudia,47,F,16159,NL,PR,Brochitis,34395
+561,Enrico,47,M,16151,IE,BSc,Broken Arm,29129
+562,Michele,42,M,16142,GB,MSc,Hang Nail,36815
+563,Federica,18,F,16125,DK,BSc,Broken Arm,58127
+564,Francesca,19,F,16126,SE,HS,Broken Arm,25915
+565,Pietro,50,M,16159,HU,BSc,Flu,34858
+566,Roberto,19,M,16153,SK,PR,Flu,30683
+567,Antonio,51,M,16132,LU,HS,Brochitis,40463
+568,Giovanni,44,M,16125,NO,BSc,Hang Nail,57245
+569,Paola,31,F,16148,HU,PhD,Broken Arm,53728
+570,Elena,45,F,16162,IE,BSc,Hang Nail,41396
+571,Pietro,19,M,16157,ES,HS,Hang Nail,38224
+572,Giovanna,59,F,16156,HR,BSc,Hepatitis,36144
+573,Domenico,43,M,16155,GB,HS,Hepatitis,31371
+574,Silvia,34,F,16134,NL,HS,Hang Nail,36345
+575,Roberta,39,F,16167,SE,HS,AIDS,31822
+576,Sara,24,F,16131,RO,HS,Hang Nail,33878
+577,Sara,49,F,16122,GR,BSc,Flu,39377
+578,Nicola,60,M,16155,HR,BSc,Brochitis,28162
+579,Antonio,28,M,16147,DE,HS,Brochitis,35483
+580,Tommaso,38,M,16137,DK,BSc,AIDS,46710
+581,Paola,31,F,16160,RO,HS,AIDS,17717
+582,Michele,56,M,16131,DE,BSc,Flu,39936
+583,Valentina,20,F,16164,SI,MSc,Hepatitis,55666
+584,Luca,58,M,16158,CH,MSc,Hang Nail,25589
+585,Sara,47,F,16162,PL,HS,Flu,29099
+586,Giovanna,53,F,16136,DK,MSc,Broken Arm,29250
+587,Francesca,56,F,16131,BE,MSc,Brochitis,55975
+588,Giovanni,18,M,16141,CH,HS,Hang Nail,19996
+589,Roberta,27,F,16144,FR,HS,Hang Nail,31685
+590,Leonardo,20,M,16166,GB,PR,Hang Nail,42807
+591,Silvia,44,F,16162,DK,BSc,Brochitis,35945
+592,Paola,31,F,16161,FR,MSc,Broken Arm,43060
+593,Lucia,35,F,16158,SK,BSc,AIDS,35742
+594,Luca,54,M,16153,NL,BSc,Hepatitis,26798
+595,Domenico,28,M,16166,BG,MSc,AIDS,42353
+596,Valerio,47,M,16129,IE,MS,Hepatitis,29787
+597,Maria,24,F,16124,BE,MSc,AIDS,41365
+598,Roberto,21,M,16160,NL,HS,Broken Arm,30938
+599,Federica,19,F,16152,DE,MS,Brochitis,40772
+600,Lucia,42,F,16151,HR,MSc,Flu,40638
+601,Tommaso,58,M,16145,IT,MSc,Hepatitis,51134
+602,Valentina,51,F,16130,BG,HS,Hang Nail,24976
+603,Alessandra,36,F,16134,GB,HS,Flu,44464
+604,Rita,35,F,16129,FR,HS,Brochitis,47045
+605,Angelo,28,M,16127,HR,MS,Hang Nail,17282
+606,Valentina,37,F,16136,SK,HS,Flu,23963
+607,Bruno,39,M,16159,SE,BSc,Broken Arm,43692
+608,Valerio,41,M,16160,SI,PR,Hang Nail,26237
+609,Claudia,47,F,16150,HU,HS,Hang Nail,31411
+610,Lucia,39,F,16164,CH,HS,AIDS,29776
+611,Maria,50,F,16126,CZ,MSc,Hepatitis,29688
+612,Bruno,19,M,16136,FI,PhD,Hang Nail,36499
+613,Pietro,45,M,16140,SK,PR,Hepatitis,31256
+614,Michele,42,O,16154,NO,MSc,Flu,27077
+615,Leonardo,30,M,16125,FI,PR,Hepatitis,23369
+616,Angelo,31,M,16167,HU,MSc,Hepatitis,35712
+617,Tommaso,40,M,16146,ES,BSc,Brochitis,46955
+618,Maria,47,F,16133,CH,HS,Hang Nail,51708
+619,Claudia,47,F,16130,IE,BSc,Broken Arm,25309
+620,Valentina,38,F,16142,FR,BSc,Broken Arm,27830
+621,Giuseppina,43,F,16167,AT,MSc,Broken Arm,23608
+622,Angelo,59,M,16161,NL,HS,Brochitis,40023
+623,Maria,46,F,16146,SI,BSc,AIDS,16305
+624,Federica,55,F,16164,NL,HS,Broken Arm,42813
+625,Giovanni,36,M,16124,NO,BSc,Broken Arm,36601
+626,Valentina,23,F,16162,GR,MS,Hang Nail,31798
+627,Roberta,46,F,16134,DE,HS,Hepatitis,27003
+628,Giovanna,37,F,16167,IE,HS,Flu,24396
+629,Valentina,54,F,16159,NL,HS,Flu,29246
+630,Lucia,58,F,16137,GB,MSc,AIDS,41816
+631,Lucia,22,F,16145,BE,PhD,AIDS,30701
+632,Luca,20,M,16133,ES,HS,Broken Arm,37763
+633,Nicola,31,M,16146,HU,HS,Brochitis,44877
+634,Antonio,57,M,16153,DE,BSc,Hang Nail,28016
+635,Domenico,34,M,16159,DK,HS,Broken Arm,37981
+636,Enrico,49,M,16156,FR,HS,Hepatitis,30087
+637,Francesca,56,F,16149,BG,HS,Hang Nail,19798
+638,Domenico,42,M,16124,AT,HS,Hang Nail,42292
+639,Valerio,40,M,16133,HR,MS,Hang Nail,31522
+640,Bruno,48,M,16133,BE,HS,Hang Nail,38185
+641,Raffaele,38,M,16123,SI,PR,AIDS,23682
+642,Tommaso,31,M,16133,GB,None,Broken Arm,40687
+643,Silvia,51,F,16125,PT,None,Hepatitis,24062
+644,Tommaso,20,M,16130,AT,HS,Hang Nail,44507
+645,Elena,21,F,16158,PL,MSc,Hepatitis,19368
+646,Federica,29,F,16141,CZ,MSc,Hepatitis,15233
+647,Giovanni,43,M,16158,CH,HS,Flu,47978
+648,Maria,55,F,16142,NO,MS,Hang Nail,43313
+649,Elena,19,F,16134,BG,MS,Hang Nail,25019
+650,Giuseppina,47,F,16125,DK,MSc,Brochitis,26740
+651,Nicola,51,M,16122,GB,BSc,Broken Arm,38928
+652,Alessandra,36,F,16158,PL,MSc,AIDS,41233
+653,Valerio,29,M,16141,HR,PR,Hang Nail,33560
+654,Leonardo,36,M,16166,GR,HS,Hepatitis,27580
+655,Paola,51,F,16128,AT,MSc,Brochitis,33204
+656,Roberto,31,M,16134,CH,BSc,Hepatitis,46884
+657,Luca,30,M,16152,HU,BSc,Broken Arm,23621
+658,Elena,56,F,16151,SE,HS,Flu,28672
+659,Rita,22,F,16150,DE,PR,Broken Arm,25081
+660,Giovanni,21,M,16122,HU,BSc,Broken Arm,43653
+661,Federica,18,F,16136,PL,HS,Hepatitis,27236
+662,Bruno,43,M,16127,FR,None,Flu,18809
+663,Lucia,57,F,16144,HR,BSc,Flu,26251
+664,Lucia,35,F,16167,CZ,BSc,Hepatitis,33200
+665,Giovanna,56,F,16130,NL,MS,Flu,38555
+666,Francesca,46,F,16166,AT,MSc,Flu,43442
+667,Rita,58,F,16148,GR,MSc,Broken Arm,19156
+668,Maria,46,F,16141,IT,HS,Hang Nail,31257
+669,Maria,28,F,16138,IS,MS,Hepatitis,49399
+670,Michele,27,M,16160,ES,HS,Brochitis,46760
+671,Francesca,52,F,16155,PT,MS,Hang Nail,37079
+672,Lucia,51,F,16141,IS,HS,Broken Arm,47805
+673,Roberta,57,F,16134,IT,MSc,Hepatitis,28359
+674,Michele,23,M,16131,AT,MS,Hang Nail,43086
+675,Bruno,23,M,16150,NO,HS,AIDS,32757
+676,Claudia,29,F,16143,NO,HS,AIDS,39474
+677,Sara,29,F,16132,SE,HS,Broken Arm,46627
+678,Michele,47,M,16127,AT,HS,Broken Arm,43471
+679,Elena,59,F,16144,IE,BSc,Hang Nail,35588
+680,Raffaele,55,M,16144,CZ,HS,AIDS,21228
+681,Valentina,42,F,16141,FI,BSc,AIDS,28196
+682,Domenico,58,M,16155,HR,MSc,Brochitis,37083
+683,Antonio,31,M,16158,SI,MS,Broken Arm,47684
+684,Roberta,34,F,16124,DK,HS,Hepatitis,30038
+685,Federica,49,F,16155,FI,BSc,Flu,41947
+686,Francesca,58,F,16143,NL,BSc,AIDS,55193
+687,Silvia,44,F,16135,FI,PhD,Hang Nail,33766
+688,Claudia,18,F,16130,GB,MSc,Broken Arm,32147
+689,Leonardo,31,M,16152,DE,BSc,Broken Arm,35906
+690,Claudia,50,F,16125,HR,BSc,Brochitis,15889
+691,Raffaele,30,M,16164,IT,BSc,Brochitis,24971
+692,Francesca,34,F,16154,SK,BSc,Hepatitis,39433
+693,Francesca,44,F,16123,BE,MSc,Hang Nail,37510
+694,Giovanni,30,M,16144,IE,PR,Brochitis,34398
+695,Elena,44,F,16138,LU,HS,Hang Nail,28998
+696,Enrico,29,M,16129,ES,BSc,Broken Arm,30543
+697,Angelo,41,M,16158,CH,PhD,Brochitis,12083
+698,Giovanna,45,F,16123,IS,PR,Flu,40304
+699,Angelo,21,M,16134,SE,MS,AIDS,35955
+700,Silvia,40,F,16132,PL,PR,AIDS,31852
+701,Giovanni,36,M,16152,PL,PR,Hepatitis,22256
+702,Enrico,41,M,16144,AT,HS,Hepatitis,30771
+703,Roberto,29,M,16160,IS,HS,Hang Nail,35905
+704,Giovanni,48,M,16161,LU,PR,Hang Nail,28851
+705,Luca,30,M,16128,HU,BSc,Hang Nail,43415
+706,Roberto,19,M,16148,FR,MSc,Broken Arm,47508
+707,Tommaso,44,M,16138,BG,BSc,AIDS,34063
+708,Valerio,46,M,16128,SK,BSc,Flu,54868
+709,Domenico,18,M,16155,CH,PR,AIDS,25307
+710,Nicola,32,M,16136,BE,HS,AIDS,20286
+711,Giuseppina,60,F,16142,FI,MS,Hepatitis,23626
+712,Roberto,25,M,16122,ES,PR,Brochitis,26593
+713,Sara,35,F,16165,HR,BSc,Hepatitis,53545
+714,Angelo,46,M,16148,HU,MSc,Hang Nail,36760
+715,Bruno,50,M,16140,BG,MSc,Broken Arm,37501
+716,Valentina,28,F,16157,PT,MSc,AIDS,45645
+717,Valentina,51,F,16139,CH,HS,AIDS,22277
+718,Pietro,54,M,16151,GR,BSc,Hang Nail,33791
+719,Lucia,24,F,16156,SK,HS,Brochitis,25755
+720,Silvia,28,F,16132,NO,HS,Hang Nail,29971
+721,Leonardo,28,M,16148,ES,HS,Brochitis,23718
+722,Nicola,43,M,16146,FR,HS,Hepatitis,34491
+723,Enrico,28,M,16156,PL,MSc,Brochitis,31053
+724,Valerio,31,M,16130,GR,PR,Hang Nail,41761
+725,Pietro,22,M,16161,BG,HS,Hang Nail,49080
+726,Valerio,25,M,16162,GR,BSc,Flu,33145
+727,Raffaele,43,M,16146,SK,HS,Flu,37931
+728,Michele,56,M,16124,CZ,HS,Broken Arm,31455
+729,Francesca,36,F,16136,DK,MS,Broken Arm,39373
+730,Valentina,58,F,16158,FR,BSc,AIDS,22553
+731,Lucia,51,F,16147,GB,PR,Broken Arm,45645
+732,Leonardo,54,M,16165,GR,MSc,Hepatitis,40707
+733,Pietro,60,M,16153,GB,BSc,Hepatitis,32536
+734,Silvia,20,F,16129,SK,HS,AIDS,41104
+735,Raffaele,55,M,16121,NO,MSc,Brochitis,39030
+736,Giovanna,53,F,16132,ES,BSc,Flu,24320
+737,Rita,48,F,16155,GB,HS,AIDS,26612
+738,Roberta,32,F,16141,SK,MSc,Hang Nail,32793
+739,Roberta,31,F,16164,DK,HS,AIDS,48229
+740,Giuseppina,60,F,16136,CZ,MS,Hepatitis,23123
+741,Maria,50,F,16142,GB,MSc,Hepatitis,30322
+742,Enrico,47,M,16166,DE,BSc,Hang Nail,38485
+743,Raffaele,25,M,16123,BG,BSc,Flu,40874
+744,Lucia,49,F,16124,HR,MSc,Hang Nail,14379
+745,Tommaso,56,M,16144,GB,BSc,Brochitis,52317
+746,Valerio,31,M,16137,FI,BSc,Hepatitis,26604
+747,Angelo,35,M,16163,SE,PR,Brochitis,36660
+748,Angelo,20,M,16125,FI,PhD,Hepatitis,31602
+749,Enrico,59,M,16150,FI,PhD,AIDS,31695
+750,Maria,47,F,16146,IE,BSc,Brochitis,42288
+751,Pietro,41,M,16152,RO,MS,AIDS,54362
+752,Bruno,59,M,16137,SE,HS,Flu,24969
+753,Domenico,60,M,16124,IE,HS,Broken Arm,19673
+754,Angelo,43,O,16132,GR,HS,Hang Nail,44460
+755,Valentina,57,F,16126,GR,MS,Flu,45571
+756,Enrico,20,M,16150,AT,PR,Broken Arm,37843
+757,Valerio,52,M,16160,NL,HS,Brochitis,37598
+758,Roberto,19,M,16159,ES,MSc,Hang Nail,26262
+759,Valentina,32,F,16164,SK,BSc,Hepatitis,29720
+760,Elena,56,F,16165,HU,HS,Hepatitis,23231
+761,Pietro,34,M,16142,BE,HS,Broken Arm,38396
+762,Tommaso,19,M,16161,LU,HS,Flu,33916
+763,Francesca,19,F,16127,DK,BSc,Hang Nail,48777
+764,Valerio,19,M,16146,RO,BSc,Broken Arm,37575
+765,Roberta,22,F,16134,FI,None,Broken Arm,38929
+766,Leonardo,54,M,16165,IS,MS,Brochitis,39782
+767,Claudia,32,F,16133,HR,HS,Hepatitis,44611
+768,Leonardo,35,M,16143,ES,BSc,Hang Nail,50870
+769,Angelo,45,M,16137,IT,MSc,Brochitis,32128
+770,Pietro,32,M,16125,LU,BSc,Hepatitis,26957
+771,Pietro,35,M,16161,AT,HS,AIDS,34055
+772,Leonardo,38,M,16133,IS,HS,AIDS,30699
+773,Sara,37,F,16144,ES,HS,Hepatitis,30471
+774,Pietro,40,M,16141,PL,HS,AIDS,37700
+775,Nicola,35,M,16147,BG,BSc,Broken Arm,37344
+776,Valentina,46,F,16167,PT,HS,Hepatitis,30447
+777,Valerio,38,M,16151,LU,MSc,Flu,53035
+778,Alessandra,21,F,16140,CZ,PR,AIDS,33067
+779,Francesca,22,F,16139,PL,BSc,AIDS,36598
+780,Raffaele,38,M,16141,IE,PR,Broken Arm,39529
+781,Nicola,58,M,16163,PT,PR,Hepatitis,42204
+782,Roberto,34,M,16135,FR,HS,Broken Arm,29025
+783,Giovanni,54,M,16144,RO,MSc,AIDS,55148
+784,Giovanna,21,F,16140,LU,HS,AIDS,45938
+785,Nicola,40,M,16162,AT,HS,Hepatitis,41819
+786,Giuseppina,49,F,16122,BE,BSc,Broken Arm,32856
+787,Sara,45,F,16127,FI,HS,Hang Nail,34366
+788,Enrico,41,M,16148,LU,PhD,Broken Arm,34825
+789,Enrico,22,M,16152,DK,MSc,AIDS,54665
+790,Sara,31,F,16132,HR,HS,Hang Nail,20431
+791,Francesca,41,F,16135,DK,HS,Broken Arm,31697
+792,Giovanni,55,M,16143,ES,BSc,AIDS,30177
+793,Rita,27,F,16155,SI,HS,Hepatitis,32198
+794,Elena,32,F,16137,PL,BSc,Hepatitis,41875
+795,Pietro,22,M,16126,FI,PR,AIDS,29214
+796,Enrico,49,M,16123,HU,HS,Hepatitis,44612
+797,Michele,45,M,16126,HU,HS,Hepatitis,25941
+798,Elena,48,F,16136,IS,MS,Hang Nail,45931
+799,Alessandra,55,F,16157,FI,MS,Brochitis,30691
+800,Roberta,46,F,16167,CH,MSc,Flu,42037
+801,Pietro,19,M,16127,DE,MSc,AIDS,29177
+802,Tommaso,24,M,16167,GR,BSc,Hepatitis,34452
+803,Nicola,47,M,16167,FR,MSc,Hang Nail,51404
+804,Maria,44,F,16125,HU,PhD,Broken Arm,51618
+805,Giuseppina,46,F,16156,SK,BSc,Hepatitis,31211
+806,Francesca,35,F,16145,RO,BSc,Flu,39392
+807,Nicola,43,O,16163,IE,HS,Flu,36582
+808,Michele,41,M,16143,IS,PR,Broken Arm,44814
+809,Antonio,49,M,16134,SK,BSc,Hepatitis,42174
+810,Alessandra,27,F,16134,HR,BSc,Hang Nail,44948
+811,Roberto,18,M,16157,ES,MSc,Hepatitis,48039
+812,Giuseppina,39,F,16137,GR,MSc,Flu,41262
+813,Alessandra,31,F,16165,RO,HS,AIDS,41592
+814,Roberta,60,F,16137,ES,MSc,Hepatitis,53704
+815,Michele,54,M,16140,NO,BSc,Broken Arm,42712
+816,Angelo,55,M,16156,IS,HS,Hepatitis,31851
+817,Giovanna,47,F,16153,FR,BSc,Hang Nail,42789
+818,Rita,31,F,16156,SE,MSc,Brochitis,10394
+819,Raffaele,52,M,16129,IE,HS,Hang Nail,29393
+820,Roberto,36,M,16123,AT,MSc,Hang Nail,55838
+821,Roberto,20,M,16147,IS,HS,Flu,41239
+822,Giovanna,47,F,16158,SE,HS,Hang Nail,31141
+823,Giuseppina,58,F,16153,GR,HS,AIDS,45628
+824,Enrico,43,M,16164,CH,MSc,Brochitis,45420
+825,Lucia,49,F,16126,AT,HS,Hepatitis,12246
+826,Angelo,22,M,16162,IS,HS,Flu,38893
+827,Maria,58,F,16145,HU,HS,Hepatitis,43389
+828,Raffaele,45,M,16135,GR,MSc,Brochitis,39777
+829,Bruno,32,M,16134,DE,MS,Broken Arm,30229
+830,Lucia,48,F,16146,NL,HS,AIDS,35506
+831,Antonio,34,M,16122,LU,PR,Broken Arm,15701
+832,Giuseppina,51,F,16148,SE,MSc,AIDS,32593
+833,Valentina,56,F,16144,SK,PhD,Broken Arm,31099
+834,Raffaele,29,M,16163,PT,HS,Broken Arm,31162
+835,Luca,40,M,16160,NO,None,Flu,45080
+836,Silvia,31,F,16128,IS,BSc,Hang Nail,25953
+837,Maria,59,F,16166,LU,HS,Flu,33454
+838,Rita,58,F,16127,BG,MSc,AIDS,32309
+839,Nicola,41,M,16135,ES,PR,Flu,47625
+840,Angelo,26,M,16136,IS,BSc,Hepatitis,36508
+841,Tommaso,33,M,16153,IE,BSc,AIDS,32644
+842,Maria,18,F,16137,CH,BSc,Hang Nail,35052
+843,Lucia,49,F,16128,NL,HS,Hang Nail,35412
+844,Francesca,35,F,16127,BE,HS,Brochitis,35568
+845,Giuseppina,41,F,16155,RO,PhD,Brochitis,31424
+846,Valentina,45,F,16167,IE,None,Hepatitis,38095
+847,Leonardo,59,M,16144,BG,PhD,AIDS,27768
+848,Alessandra,46,F,16139,NL,BSc,Hang Nail,31478
+849,Nicola,41,M,16133,HU,BSc,Broken Arm,16606
+850,Alessandra,41,F,16131,LU,BSc,Brochitis,38566
+851,Tommaso,52,M,16167,CZ,MSc,Hepatitis,14117
+852,Federica,28,F,16142,SI,BSc,Hang Nail,26064
+853,Maria,25,F,16129,FI,PhD,Hepatitis,34956
+854,Luca,50,M,16124,IE,HS,Hepatitis,27265
+855,Rita,48,O,16150,HR,MSc,Flu,28001
+856,Enrico,27,M,16145,BG,BSc,Hang Nail,39707
+857,Nicola,56,M,16129,BG,PhD,AIDS,35846
+858,Lucia,36,F,16130,PT,HS,Hang Nail,18655
+859,Giovanni,39,M,16164,ES,HS,Flu,50166
+860,Leonardo,46,M,16126,NO,MSc,Hang Nail,39492
+861,Bruno,30,M,16154,CH,MSc,Brochitis,32790
+862,Giovanni,46,M,16128,FI,BSc,Flu,28739
+863,Paola,19,F,16164,PL,BSc,Flu,23827
+864,Lucia,58,F,16164,AT,BSc,Broken Arm,53357
+865,Silvia,59,F,16156,DK,HS,AIDS,52990
+866,Leonardo,56,M,16137,SE,MS,Hepatitis,34365
+867,Alessandra,20,F,16122,PT,HS,Hepatitis,38247
+868,Valerio,29,M,16167,ES,MS,Flu,43842
+869,Sara,41,F,16124,SI,MSc,Hang Nail,52310
+870,Sara,60,F,16140,HR,PhD,AIDS,30571
+871,Raffaele,31,M,16121,BE,HS,Hepatitis,38179
+872,Raffaele,44,M,16157,FR,None,Hepatitis,36323
+873,Bruno,50,O,16150,NL,HS,Flu,59903
+874,Alessandra,27,F,16152,DE,BSc,Broken Arm,48253
+875,Luca,40,M,16158,HU,PR,AIDS,28649
+876,Alessandra,60,F,16150,IT,HS,Hepatitis,29636
+877,Alessandra,41,F,16150,NL,HS,Broken Arm,32159
+878,Maria,30,F,16142,FI,BSc,Flu,40995
+879,Roberto,39,M,16150,BE,MSc,Hang Nail,17442
+880,Silvia,29,F,16137,SI,None,AIDS,47472
+881,Valentina,46,F,16166,IT,PR,Hepatitis,36530
+882,Domenico,29,M,16158,GB,PR,Flu,47232
+883,Giovanna,54,F,16141,NL,None,Hang Nail,51678
+884,Pietro,37,M,16156,DE,HS,Brochitis,35423
+885,Luca,50,M,16145,FR,HS,AIDS,44661
+886,Valerio,39,O,16140,DE,MSc,AIDS,47002
+887,Angelo,54,M,16145,DE,BSc,Hepatitis,34451
+888,Leonardo,57,M,16126,SK,MSc,Broken Arm,32472
+889,Raffaele,41,M,16156,SI,MSc,AIDS,41637
+890,Roberta,52,F,16159,BG,HS,Broken Arm,20060
+891,Antonio,41,M,16141,BG,MSc,AIDS,30360
+892,Luca,31,M,16135,SI,HS,Hang Nail,27877
+893,Nicola,27,M,16143,HU,MS,AIDS,23179
+894,Giovanna,50,F,16155,DK,MS,Hepatitis,40410
+895,Pietro,30,M,16158,FI,PhD,Hepatitis,49673
+896,Luca,20,M,16157,SK,MSc,Broken Arm,24911
+897,Valerio,47,M,16147,HU,HS,Hang Nail,32099
+898,Roberto,19,M,16141,DK,MS,Hepatitis,39541
+899,Valentina,44,F,16156,NL,MSc,Hepatitis,21833
+900,Giovanna,25,F,16128,PT,MSc,Flu,22328
+901,Maria,57,F,16150,DK,HS,Flu,32495
+902,Luca,23,M,16129,ES,MSc,Flu,43243
+903,Enrico,35,M,16133,IS,HS,Hang Nail,42307
+904,Giuseppina,58,F,16152,GB,HS,Broken Arm,37130
+905,Paola,49,F,16150,SK,HS,AIDS,28523
+906,Lucia,24,F,16142,HU,HS,Flu,30553
+907,Giuseppina,54,F,16164,IE,MSc,Brochitis,22180
+908,Francesca,39,F,16125,GR,HS,Hepatitis,33475
+909,Lucia,59,F,16163,AT,MSc,Hepatitis,17936
+910,Raffaele,29,M,16160,IE,MSc,Flu,50779
+911,Silvia,33,F,16146,DK,HS,Hang Nail,30847
+912,Lucia,40,F,16160,NO,HS,Hepatitis,30535
+913,Enrico,25,M,16160,IE,PR,Brochitis,36646
+914,Valerio,18,M,16127,FI,HS,Hang Nail,34731
+915,Domenico,42,M,16126,AT,MS,AIDS,31321
+916,Rita,40,F,16145,HR,BSc,Hepatitis,39824
+917,Paola,28,F,16134,FI,MS,Broken Arm,22822
+918,Valerio,51,M,16132,LU,MS,Brochitis,31373
+919,Antonio,32,M,16146,AT,MSc,Flu,31136
+920,Claudia,29,F,16124,FR,PR,Brochitis,63285
+921,Rita,24,F,16147,NL,BSc,Hepatitis,26059
+922,Roberto,58,M,16123,DE,MS,AIDS,52936
+923,Rita,31,F,16155,HU,None,Broken Arm,31908
+924,Roberta,36,F,16167,GR,HS,Flu,34908
+925,Angelo,49,M,16122,CH,PhD,AIDS,39875
+926,Elena,32,F,16135,BE,PR,AIDS,39328
+927,Sara,52,F,16139,DK,HS,Broken Arm,51060
+928,Tommaso,53,M,16125,FI,HS,Flu,17002
+929,Roberta,54,F,16121,HU,PR,Hepatitis,12599
+930,Giovanna,27,F,16124,FI,BSc,Hepatitis,21283
+931,Roberto,32,M,16130,SI,MSc,Hepatitis,44410
+932,Giovanna,59,F,16136,FR,BSc,Hang Nail,39958
+933,Federica,54,F,16139,NO,BSc,AIDS,44775
+934,Enrico,32,M,16167,PT,MSc,Hepatitis,29435
+935,Enrico,55,M,16163,SI,BSc,Hang Nail,23596
+936,Paola,26,F,16163,DK,PhD,Broken Arm,33955
+937,Enrico,50,M,16130,SI,BSc,Flu,15082
+938,Paola,51,F,16129,PL,MS,Hepatitis,50751
+939,Pietro,28,M,16151,FR,MSc,Broken Arm,51490
+940,Michele,38,M,16124,NL,BSc,Hepatitis,32967
+941,Giuseppina,27,F,16153,CH,PR,AIDS,30632
+942,Enrico,43,M,16128,GB,HS,Flu,37148
+943,Roberta,30,F,16160,PT,BSc,Hepatitis,44603
+944,Tommaso,57,M,16145,DE,MSc,Flu,38477
+945,Maria,48,F,16149,SK,MS,Flu,29536
+946,Elena,45,F,16129,IT,HS,Hepatitis,51704
+947,Alessandra,57,F,16122,AT,BSc,Brochitis,33591
+948,Federica,19,F,16136,CZ,HS,Hang Nail,36588
+949,Roberto,31,M,16164,NL,HS,AIDS,34718
+950,Tommaso,59,M,16131,NO,BSc,Hang Nail,26000
+951,Valentina,35,F,16144,IE,HS,AIDS,28143
+952,Maria,42,F,16125,PL,MS,Hang Nail,19719
+953,Francesca,36,F,16121,GR,BSc,Flu,34951
+954,Valerio,48,M,16128,IS,BSc,Hang Nail,32399
+955,Valentina,60,F,16160,DK,MS,AIDS,42305
+956,Bruno,59,M,16145,IE,HS,AIDS,30079
+957,Maria,28,F,16161,PL,BSc,Hepatitis,12675
+958,Sara,34,F,16151,RO,MSc,Hang Nail,43044
+959,Enrico,26,M,16127,IS,BSc,Hang Nail,42437
+960,Antonio,57,M,16136,DE,MSc,AIDS,44648
+961,Roberta,28,F,16149,SK,BSc,Broken Arm,46738
+962,Valentina,43,F,16161,BG,MSc,Hepatitis,37055
+963,Federica,45,F,16132,LU,MSc,Flu,58205
+964,Michele,21,M,16163,CZ,MSc,Hepatitis,58800
+965,Francesca,30,F,16159,IE,BSc,AIDS,34783
+966,Michele,38,M,16148,GB,MSc,Hang Nail,35671
+967,Alessandra,55,F,16145,GR,MS,Hang Nail,22172
+968,Valentina,44,F,16123,BE,MSc,Brochitis,44703
+969,Tommaso,42,M,16152,GR,BSc,Flu,38793
+970,Angelo,54,M,16130,BE,HS,Flu,16976
+971,Maria,29,F,16152,HU,MSc,Broken Arm,59317
+972,Federica,20,F,16149,HR,BSc,Hang Nail,30883
+973,Antonio,34,M,16133,IE,PR,Hepatitis,28256
+974,Francesca,32,F,16144,IE,BSc,Hang Nail,56061
+975,Claudia,48,F,16160,IE,HS,Brochitis,55562
+976,Domenico,59,M,16167,SE,MSc,Hang Nail,26221
+977,Sara,32,F,16124,BG,MS,Brochitis,44701
+978,Federica,21,F,16157,FI,BSc,Broken Arm,25317
+979,Valerio,53,M,16160,SE,HS,Hepatitis,45341
+980,Maria,22,F,16140,SK,HS,Flu,37208
+981,Paola,18,F,16154,SI,MS,Flu,38393
+982,Pietro,27,O,16149,DK,HS,Flu,59972
+983,Sara,20,F,16162,CH,HS,Hepatitis,32897
+984,Valentina,30,F,16156,AT,BSc,Broken Arm,37613
+985,Valerio,45,M,16135,SK,MSc,Hepatitis,35775
+986,Rita,21,F,16154,PL,PR,Brochitis,44169
+987,Francesca,20,F,16143,SE,MSc,Flu,46233
+988,Valerio,48,M,16157,IE,BSc,Hepatitis,39986
+989,Federica,48,F,16138,DK,MSc,Brochitis,34305
+990,Sara,36,F,16127,AT,HS,AIDS,42601
+991,Luca,43,O,16156,IE,HS,AIDS,22448
+992,Leonardo,55,M,16161,HR,HS,Hepatitis,37100
+993,Federica,28,F,16138,SK,HS,Brochitis,36300
+994,Maria,36,F,16133,IE,HS,Hang Nail,52493
+995,Roberto,58,M,16125,LU,BSc,Flu,43149
+996,Raffaele,21,M,16130,CZ,HS,Broken Arm,35390
+997,Roberta,27,F,16132,PT,MS,Hepatitis,40127
+998,Rita,54,F,16136,RO,MSc,Flu,20438
+999,Angelo,34,M,16128,BE,BSc,Hepatitis,37679
+1000,Claudia,21,F,16160,CH,BSc,Hang Nail,27726
+1001,Valentina,21,F,16140,CZ,HS,AIDS,31562
+1002,Federica,60,O,16132,LU,MS,Flu,53458
+1003,Enrico,18,M,16128,DK,BSc,Flu,38392
+1004,Maria,20,F,16142,NL,BSc,AIDS,37045
+1005,Giuseppina,35,F,16151,PL,MS,Flu,24096
+1006,Nicola,50,M,16164,PL,MSc,AIDS,38835
+1007,Valentina,32,F,16140,CH,PhD,AIDS,41047
+1008,Francesca,48,F,16122,GR,HS,AIDS,15728
+1009,Giovanni,48,M,16149,FI,BSc,Hang Nail,29112
+1010,Pietro,43,M,16130,DK,HS,Hepatitis,19090
+1011,Claudia,38,F,16134,NL,MS,Hang Nail,42088
+1012,Bruno,24,M,16142,SE,MSc,Flu,45923
+1013,Silvia,50,F,16141,RO,BSc,Hang Nail,31152
+1014,Valentina,26,F,16133,RO,HS,AIDS,13552
+1015,Angelo,31,M,16167,HU,BSc,Hepatitis,30046
+1016,Elena,44,F,16149,ES,MSc,Hepatitis,46081
+1017,Enrico,41,M,16144,CH,PR,Brochitis,41418
+1018,Tommaso,30,M,16143,HR,MS,Brochitis,54758
+1019,Leonardo,60,M,16165,DK,MS,Hang Nail,34471
+1020,Paola,27,F,16138,DK,BSc,AIDS,26913
+1021,Luca,34,M,16157,FR,BSc,Hepatitis,33125
+1022,Pietro,47,M,16134,SK,BSc,Hang Nail,32692
+1023,Tommaso,35,M,16162,SI,HS,Broken Arm,36858
+1024,Rita,28,F,16144,GR,HS,Flu,44202
+1025,Pietro,18,M,16154,RO,MSc,Broken Arm,42558
+1026,Elena,44,F,16139,ES,MSc,Brochitis,33701
+1027,Roberta,26,F,16164,PT,MSc,Flu,51782
+1028,Michele,54,M,16157,RO,HS,Flu,37462
+1029,Domenico,24,M,16132,FR,BSc,Brochitis,18028
+1030,Nicola,21,O,16135,IS,HS,Broken Arm,38303
+1031,Francesca,53,F,16137,LU,BSc,Broken Arm,17376
+1032,Roberto,59,M,16121,SE,MSc,AIDS,17771
+1033,Silvia,60,F,16166,IS,HS,Broken Arm,29532
+1034,Federica,54,F,16145,BG,BSc,Brochitis,31807
+1035,Leonardo,58,M,16127,IS,HS,Broken Arm,51115
+1036,Lucia,25,F,16148,CH,MS,Brochitis,24840
+1037,Domenico,48,M,16148,LU,HS,Hepatitis,32287
+1038,Valentina,41,F,16159,SE,MS,Hepatitis,31442
+1039,Francesca,26,F,16154,HU,MSc,Flu,42991
+1040,Giovanna,24,O,16125,SK,MS,AIDS,39886
+1041,Giovanni,31,M,16121,SK,BSc,Broken Arm,46593
+1042,Elena,38,F,16151,IT,HS,Hepatitis,35864
+1043,Paola,39,F,16167,FR,PR,Flu,30609
+1044,Domenico,36,M,16126,AT,PhD,Flu,41447
+1045,Bruno,46,M,16135,RO,HS,Brochitis,42923
+1046,Rita,56,F,16141,HR,HS,Hepatitis,41541
+1047,Tommaso,34,M,16161,CH,BSc,AIDS,25568
+1048,Claudia,57,F,16146,HU,HS,Broken Arm,37137
+1049,Pietro,38,M,16132,PT,PR,Brochitis,37064
+1050,Maria,36,F,16148,AT,MSc,AIDS,41738
+1051,Giovanna,56,F,16134,CZ,HS,Hang Nail,44934
+1052,Michele,52,M,16158,LU,BSc,Brochitis,34788
+1053,Silvia,39,F,16127,HR,BSc,Brochitis,16421
+1054,Enrico,58,M,16149,IT,PR,Broken Arm,30322
+1055,Bruno,57,M,16155,HU,HS,Flu,10696
+1056,Claudia,30,F,16145,FR,None,Hang Nail,40566
+1057,Tommaso,48,M,16148,SI,MSc,Brochitis,31381
+1058,Enrico,46,M,16150,IT,PhD,Flu,49645
+1059,Domenico,55,M,16139,NL,MS,Brochitis,12081
+1060,Antonio,22,M,16130,SI,MSc,Flu,29697
+1061,Michele,59,M,16167,NO,MSc,Broken Arm,55753
+1062,Elena,29,F,16144,CH,BSc,Hepatitis,34510
+1063,Michele,45,M,16154,AT,MS,Hepatitis,40183
+1064,Elena,45,F,16157,DK,MSc,AIDS,44909
+1065,Alessandra,23,F,16150,BE,HS,Hepatitis,21033
+1066,Roberto,41,M,16142,HR,PR,Hepatitis,36923
+1067,Valentina,58,F,16121,NL,BSc,Hepatitis,23247
+1068,Giuseppina,36,F,16133,PT,BSc,Brochitis,42352
+1069,Nicola,57,M,16157,DE,HS,Broken Arm,22034
+1070,Bruno,37,M,16141,BG,HS,Broken Arm,38504
+1071,Silvia,46,F,16151,BE,MSc,Brochitis,25017
+1072,Antonio,49,M,16144,AT,HS,Brochitis,39285
+1073,Silvia,30,F,16165,GB,HS,Hepatitis,35776
+1074,Michele,22,M,16140,IT,HS,Broken Arm,26692
+1075,Angelo,34,M,16164,SI,MS,AIDS,42412
+1076,Sara,35,F,16128,IE,BSc,Hepatitis,38036
+1077,Nicola,23,M,16151,GB,MS,Hepatitis,35858
+1078,Roberta,53,F,16153,PL,HS,Brochitis,35741
+1079,Valerio,36,M,16126,CH,MSc,Hepatitis,39626
+1080,Antonio,41,M,16149,FI,HS,Broken Arm,48086
+1081,Maria,36,F,16137,AT,None,Brochitis,42447
+1082,Pietro,29,M,16139,CH,BSc,AIDS,33513
+1083,Silvia,42,F,16139,FI,MSc,Brochitis,32774
+1084,Giovanni,40,M,16165,NL,HS,Brochitis,30239
+1085,Nicola,60,O,16137,SE,MS,Broken Arm,13809
+1086,Pietro,31,M,16134,FI,BSc,Brochitis,41958
+1087,Francesca,20,F,16121,PL,BSc,Hang Nail,44638
+1088,Michele,41,M,16145,IS,PR,Hepatitis,30491
+1089,Pietro,22,M,16123,FR,PhD,Hang Nail,24762
+1090,Giovanna,58,F,16156,SE,HS,Brochitis,35808
+1091,Domenico,44,M,16165,HU,BSc,Brochitis,15741
+1092,Alessandra,52,F,16140,BE,MSc,Brochitis,20487
+1093,Lucia,47,F,16162,IE,BSc,AIDS,1808
+1094,Leonardo,42,M,16123,PL,BSc,AIDS,45472
+1095,Domenico,35,M,16123,NO,BSc,Hang Nail,37548
+1096,Valentina,34,F,16124,SE,HS,Broken Arm,27516
+1097,Pietro,31,M,16142,LU,MS,Brochitis,40657
+1098,Domenico,42,M,16140,HR,PR,AIDS,25753
+1099,Luca,30,M,16131,NO,BSc,Broken Arm,37941
+1100,Tommaso,19,M,16148,PL,BSc,Flu,18083
+1101,Angelo,28,M,16141,BE,MSc,Hepatitis,31658
+1102,Elena,44,F,16151,FR,HS,Broken Arm,35353
+1103,Giovanna,60,F,16162,BG,MSc,Brochitis,49826
+1104,Giovanni,45,M,16131,ES,MSc,AIDS,40363
+1105,Luca,40,M,16127,HU,HS,Flu,54308
+1106,Valentina,21,F,16128,CZ,HS,Flu,40386
+1107,Valentina,53,F,16142,RO,MS,Hepatitis,42817
+1108,Antonio,42,M,16140,AT,MSc,Broken Arm,23350
+1109,Roberta,41,F,16151,PL,MSc,Broken Arm,48972
+1110,Pietro,48,M,16163,SE,HS,Broken Arm,53418
+1111,Roberto,43,M,16167,BG,PhD,Flu,57158
+1112,Luca,53,M,16143,SK,MS,Hepatitis,33707
+1113,Angelo,49,M,16147,AT,HS,Brochitis,32878
+1114,Claudia,21,F,16143,FR,BSc,Hepatitis,52004
+1115,Sara,21,F,16162,IE,BSc,Brochitis,47042
+1116,Giovanni,51,M,16146,SK,PhD,Hang Nail,31687
+1117,Bruno,26,M,16123,CH,BSc,Hepatitis,19724
+1118,Alessandra,32,F,16158,IE,None,Hang Nail,24935
+1119,Leonardo,38,M,16143,LU,MSc,AIDS,51950
+1120,Rita,20,F,16123,HR,MS,Flu,36579
+1121,Alessandra,55,F,16125,CZ,BSc,Flu,38950
+1122,Bruno,24,M,16121,IT,MSc,Brochitis,21456
+1123,Leonardo,60,M,16136,PL,MS,AIDS,20931
+1124,Silvia,33,F,16133,LU,PR,Broken Arm,45719
+1125,Paola,46,F,16146,AT,HS,Flu,22774
+1126,Domenico,37,M,16134,GR,BSc,Hang Nail,31486
+1127,Valerio,35,M,16141,DE,HS,AIDS,39105
+1128,Roberto,54,M,16163,GB,HS,Hang Nail,53480
+1129,Claudia,34,O,16155,FI,HS,Broken Arm,22187
+1130,Raffaele,55,M,16148,CZ,HS,AIDS,50188
+1131,Valerio,42,M,16121,HU,PR,Broken Arm,32335
+1132,Claudia,45,F,16162,PT,MSc,Flu,41237
+1133,Luca,49,M,16136,NL,BSc,Flu,34806
+1134,Silvia,29,F,16140,PT,BSc,Hang Nail,35113
+1135,Alessandra,34,F,16157,HU,MSc,Brochitis,17631
+1136,Silvia,32,F,16156,CH,MSc,AIDS,26451
+1137,Enrico,25,M,16139,FR,BSc,Hang Nail,27089
+1138,Lucia,43,F,16155,PT,BSc,Broken Arm,33351
+1139,Domenico,35,M,16156,FI,MSc,Hepatitis,26679
+1140,Alessandra,29,F,16155,FI,BSc,Hepatitis,40652
+1141,Lucia,58,F,16125,BG,MSc,Hang Nail,27696
+1142,Lucia,32,F,16134,PT,BSc,Brochitis,44798
+1143,Valerio,27,M,16162,CZ,PhD,Broken Arm,20693
+1144,Giuseppina,22,F,16154,PT,HS,Hepatitis,44277
+1145,Valerio,30,M,16151,LU,HS,Hepatitis,37101
+1146,Rita,21,F,16123,GB,BSc,Hang Nail,32128
+1147,Valentina,50,F,16166,CZ,MSc,Hepatitis,41102
+1148,Elena,60,F,16158,CH,BSc,Hepatitis,32693
+1149,Leonardo,47,M,16123,PT,MS,Brochitis,32180
+1150,Antonio,32,M,16133,BG,PhD,Broken Arm,42031
+1151,Tommaso,23,M,16122,IS,MSc,AIDS,36060
+1152,Giovanni,28,M,16141,GR,MS,Broken Arm,38862
+1153,Antonio,34,M,16127,LU,PR,Brochitis,30128
+1154,Angelo,51,M,16134,IT,BSc,Flu,23442
+1155,Giovanni,36,M,16135,CH,HS,Hang Nail,46299
+1156,Enrico,35,M,16128,FI,BSc,AIDS,49555
+1157,Valerio,35,M,16148,IS,HS,Flu,38501
+1158,Maria,59,F,16151,HU,BSc,Flu,31720
+1159,Nicola,41,M,16166,FR,MSc,AIDS,36431
+1160,Giovanni,22,M,16127,HR,MSc,Flu,39062
+1161,Francesca,37,F,16124,PT,BSc,AIDS,46419
+1162,Maria,40,F,16132,HU,HS,Broken Arm,29021
+1163,Rita,18,F,16162,LU,HS,Flu,22347
+1164,Federica,51,F,16153,SK,MSc,Hang Nail,37649
+1165,Pietro,21,M,16146,HR,HS,Broken Arm,45342
+1166,Sara,50,F,16127,SI,MSc,Brochitis,29388
+1167,Enrico,45,M,16127,CZ,HS,Brochitis,20083
+1168,Enrico,32,M,16145,LU,BSc,AIDS,27069
+1169,Pietro,55,O,16162,IE,MS,Hang Nail,25375
+1170,Luca,48,M,16147,DK,HS,Flu,28097
+1171,Sara,21,F,16135,HR,MS,Flu,39458
+1172,Giuseppina,41,F,16131,SE,BSc,Hepatitis,39675
+1173,Leonardo,59,M,16162,NL,BSc,AIDS,33657
+1174,Giovanni,21,M,16147,GB,BSc,Broken Arm,42369
+1175,Rita,55,F,16167,PT,MSc,Brochitis,48199
+1176,Federica,29,F,16134,RO,MSc,Broken Arm,17479
+1177,Nicola,32,M,16150,HU,MS,Hepatitis,20790
+1178,Claudia,29,F,16132,BE,BSc,Flu,34753
+1179,Giovanni,45,M,16153,HR,HS,Hang Nail,34855
+1180,Valerio,57,M,16159,IE,HS,Hepatitis,14105
+1181,Enrico,22,M,16148,IS,BSc,Broken Arm,43458
+1182,Antonio,53,M,16147,RO,PhD,Flu,47886
+1183,Domenico,46,M,16121,ES,HS,AIDS,39133
+1184,Sara,45,F,16123,GB,HS,Flu,26697
+1185,Francesca,21,F,16162,LU,HS,Broken Arm,31978
+1186,Rita,21,F,16158,RO,PhD,Broken Arm,43691
+1187,Giuseppina,34,F,16164,IT,HS,Hang Nail,18678
+1188,Federica,49,F,16165,GB,HS,Hepatitis,42314
+1189,Paola,55,F,16126,CZ,BSc,Brochitis,16456
+1190,Nicola,23,M,16146,FR,BSc,Flu,32986
+1191,Valerio,39,M,16160,GR,HS,Hang Nail,52793
+1192,Valerio,41,M,16149,SE,BSc,Hang Nail,31865
+1193,Valerio,50,M,16134,HR,BSc,Flu,42537
+1194,Lucia,45,F,16161,IT,MSc,Hang Nail,37298
+1195,Pietro,37,M,16136,CZ,HS,Brochitis,40429
+1196,Lucia,33,F,16121,HR,HS,Hang Nail,24461
+1197,Elena,20,F,16163,HU,MS,AIDS,40445
+1198,Raffaele,24,M,16160,SI,HS,Hang Nail,40243
+1199,Silvia,47,F,16159,HU,HS,AIDS,39237
+1200,Lucia,22,F,16159,FR,MS,Brochitis,54378
+1201,Sara,44,F,16140,DK,None,Hepatitis,43530
+1202,Alessandra,59,F,16139,FR,HS,Hepatitis,30170
+1203,Raffaele,32,M,16150,SI,MSc,Broken Arm,30288
+1204,Silvia,41,F,16163,AT,BSc,AIDS,28790
+1205,Rita,43,F,16124,IS,MSc,Hang Nail,29704
+1206,Valentina,38,F,16151,AT,HS,Broken Arm,45109
+1207,Rita,51,F,16125,BG,HS,Hepatitis,30429
+1208,Alessandra,21,F,16149,BG,BSc,Brochitis,27031
+1209,Giovanni,34,M,16136,CZ,MSc,Brochitis,39847
+1210,Luca,59,M,16144,IE,MSc,Broken Arm,40378
+1211,Pietro,29,M,16152,GB,MS,Brochitis,30164
+1212,Luca,44,M,16133,DE,BSc,AIDS,36660
+1213,Giuseppina,53,O,16126,AT,MS,Hepatitis,48646
+1214,Alessandra,41,F,16159,BG,HS,Flu,42670
+1215,Raffaele,56,M,16152,RO,HS,Broken Arm,33241
+1216,Francesca,59,F,16135,IT,MSc,Broken Arm,36237
+1217,Rita,46,F,16136,AT,BSc,AIDS,32579
+1218,Elena,29,F,16162,DK,MSc,Broken Arm,43732
+1219,Raffaele,54,M,16135,HR,HS,Flu,29974
+1220,Francesca,59,F,16154,BE,BSc,Hang Nail,12672
+1221,Valentina,38,F,16129,PT,PhD,Hang Nail,36559
+1222,Valerio,27,M,16157,IE,BSc,Flu,42659
+1223,Domenico,27,M,16149,SI,HS,Brochitis,29214
+1224,Silvia,48,F,16144,PL,HS,Hang Nail,37924
+1225,Luca,33,M,16166,BE,MS,Hepatitis,27575
+1226,Domenico,40,M,16137,PL,MS,Hepatitis,39873
+1227,Luca,38,M,16125,NO,BSc,Broken Arm,25997
+1228,Raffaele,33,M,16136,FI,PR,Hang Nail,45832
+1229,Angelo,32,M,16159,GB,BSc,AIDS,25533
+1230,Federica,39,F,16128,ES,BSc,Brochitis,31650
+1231,Federica,56,F,16129,NO,MS,Brochitis,25325
+1232,Raffaele,46,M,16143,CH,HS,Brochitis,26446
+1233,Enrico,20,O,16150,SE,PR,AIDS,35674
+1234,Lucia,45,F,16160,HU,HS,Flu,34460
+1235,Pietro,58,M,16144,GR,HS,Hepatitis,27111
+1236,Federica,21,F,16162,BE,PR,AIDS,49741
+1237,Pietro,30,M,16162,DE,BSc,Hepatitis,22176
+1238,Nicola,24,M,16144,NL,MS,AIDS,30543
+1239,Domenico,24,M,16156,AT,BSc,Hepatitis,30866
+1240,Valentina,40,F,16146,HR,BSc,Hepatitis,40254
+1241,Valerio,57,M,16132,GB,PhD,Flu,42996
+1242,Giuseppina,33,F,16135,PT,PR,Flu,34711
+1243,Rita,19,F,16144,BE,HS,Hepatitis,37482
+1244,Michele,48,M,16133,PL,HS,Brochitis,43684
+1245,Bruno,34,M,16163,LU,BSc,Flu,27762
+1246,Leonardo,32,M,16131,NO,PR,Hepatitis,49676
+1247,Enrico,40,M,16157,DK,PR,Hang Nail,49110
+1248,Giuseppina,46,F,16142,RO,PR,Flu,32459
+1249,Elena,24,F,16159,CH,MSc,AIDS,22870
+1250,Paola,42,F,16124,IS,PR,Flu,46702
+1251,Roberto,31,M,16149,ES,BSc,Broken Arm,49268
+1252,Enrico,60,M,16133,SI,MSc,Flu,30164
+1253,Roberto,55,M,16146,CZ,PR,Hepatitis,38772
+1254,Alessandra,59,O,16124,SE,MSc,Brochitis,41969
+1255,Angelo,37,M,16134,BE,HS,Brochitis,23365
+1256,Antonio,30,M,16140,AT,BSc,Broken Arm,19080
+1257,Maria,45,F,16124,IS,MS,AIDS,43774
+1258,Roberto,36,M,16148,GR,MS,Broken Arm,25462
+1259,Luca,35,M,16123,IE,BSc,Hang Nail,50764
+1260,Valerio,58,M,16123,SE,MSc,Hepatitis,27786
+1261,Alessandra,24,F,16127,SE,MSc,Flu,34928
+1262,Roberto,38,M,16134,GR,BSc,Hang Nail,32086
+1263,Francesca,54,F,16151,BE,PhD,Hang Nail,28657
+1264,Domenico,39,M,16162,HR,MSc,Flu,34640
+1265,Domenico,57,M,16158,CH,BSc,Flu,39947
+1266,Domenico,41,M,16156,IS,BSc,Hang Nail,29225
+1267,Elena,20,F,16129,IT,BSc,Hepatitis,34180
+1268,Giovanni,25,M,16138,CH,MSc,Hang Nail,44441
+1269,Enrico,27,M,16121,FI,HS,AIDS,58764
+1270,Nicola,44,M,16148,GR,HS,Brochitis,35621
+1271,Roberta,52,O,16165,DE,MSc,Hang Nail,28309
+1272,Paola,25,F,16130,BE,HS,Flu,55000
+1273,Antonio,22,M,16165,NO,HS,AIDS,24697
+1274,Roberto,34,M,16139,RO,MS,Hang Nail,40429
+1275,Giovanna,29,F,16151,FR,BSc,Hepatitis,19506
+1276,Bruno,37,M,16155,DE,PR,Flu,29165
+1277,Maria,54,F,16167,DK,HS,AIDS,39005
+1278,Bruno,40,M,16162,PL,MSc,Flu,51679
+1279,Leonardo,57,M,16158,PT,HS,AIDS,22277
+1280,Maria,40,F,16154,CZ,HS,AIDS,34158
+1281,Maria,51,F,16131,IT,HS,Broken Arm,52201
+1282,Domenico,47,M,16121,IT,BSc,AIDS,51369
+1283,Claudia,23,F,16121,DK,None,Brochitis,21722
+1284,Luca,42,M,16139,DK,PhD,Hang Nail,27356
+1285,Valerio,18,M,16149,AT,PhD,Hang Nail,29017
+1286,Roberto,30,M,16135,NO,HS,Hang Nail,36964
+1287,Roberta,55,F,16123,BG,PR,AIDS,66520
+1288,Tommaso,31,M,16125,GR,BSc,Flu,28649
+1289,Roberto,38,M,16152,BG,BSc,Flu,45696
+1290,Paola,18,F,16156,GB,BSc,Broken Arm,19897
+1291,Roberto,18,M,16132,SK,BSc,Hepatitis,28881
+1292,Giovanna,53,F,16128,GR,HS,Broken Arm,38209
+1293,Roberta,28,F,16140,SE,MS,Broken Arm,36169
+1294,Raffaele,26,M,16139,HU,HS,AIDS,34394
+1295,Sara,43,F,16160,RO,BSc,Broken Arm,58111
+1296,Tommaso,51,M,16139,SK,PR,Broken Arm,50653
+1297,Elena,37,F,16122,AT,MSc,Brochitis,30010
+1298,Lucia,28,F,16146,IT,MS,Broken Arm,14884
+1299,Giuseppina,49,F,16153,BE,BSc,AIDS,23933
+1300,Elena,33,F,16136,LU,PR,Hepatitis,21048
+1301,Bruno,25,M,16150,PT,HS,Broken Arm,41040
+1302,Francesca,53,F,16162,SI,HS,Brochitis,33937
+1303,Lucia,60,F,16124,IS,MS,AIDS,26218
+1304,Francesca,39,F,16145,SK,BSc,Broken Arm,21417
+1305,Bruno,54,M,16152,BE,BSc,Hepatitis,17314
+1306,Sara,55,F,16142,GR,BSc,Flu,25354
+1307,Giovanni,43,M,16126,IT,MSc,Hang Nail,37262
+1308,Domenico,51,M,16145,SI,MSc,Hang Nail,28809
+1309,Michele,30,M,16142,BG,MS,Flu,27487
+1310,Maria,53,F,16154,ES,HS,Flu,47551
+1311,Giovanni,36,M,16141,BG,BSc,Hang Nail,48443
+1312,Alessandra,34,F,16126,HR,HS,Hang Nail,45525
+1313,Nicola,18,M,16132,DE,BSc,AIDS,26264
+1314,Leonardo,20,M,16154,NO,MS,Flu,47611
+1315,Nicola,53,M,16142,DK,HS,AIDS,35895
+1316,Valentina,19,F,16137,RO,MS,Broken Arm,35841
+1317,Enrico,43,M,16147,FI,HS,AIDS,52416
+1318,Roberta,49,F,16132,BG,HS,Hepatitis,30093
+1319,Roberto,54,M,16135,NO,BSc,Flu,38387
+1320,Pietro,53,M,16134,FR,HS,Broken Arm,35069
+1321,Sara,55,F,16153,CH,BSc,Hepatitis,36187
+1322,Nicola,48,M,16135,PL,PR,AIDS,36051
+1323,Giuseppina,23,F,16132,IS,MSc,Brochitis,34184
+1324,Antonio,30,M,16125,PT,BSc,Broken Arm,43683
+1325,Claudia,20,F,16164,RO,MS,Flu,39542
+1326,Elena,54,F,16144,HR,HS,Brochitis,41063
+1327,Raffaele,39,M,16144,FR,HS,Hepatitis,35642
+1328,Domenico,25,M,16126,HU,BSc,Hepatitis,23167
+1329,Michele,27,M,16144,DK,PR,Hang Nail,32273
+1330,Claudia,33,F,16166,NL,MSc,Broken Arm,45660
+1331,Alessandra,28,F,16151,SK,MS,Flu,32794
+1332,Michele,48,M,16127,NO,MS,Hang Nail,55791
+1333,Rita,44,F,16147,HU,MSc,Brochitis,26720
+1334,Maria,41,F,16153,HU,MSc,Broken Arm,36493
+1335,Bruno,28,M,16131,CZ,MS,Flu,30327
+1336,Raffaele,37,M,16161,SI,HS,Brochitis,36569
+1337,Valentina,60,F,16161,FR,BSc,AIDS,33991
+1338,Angelo,19,M,16158,HU,BSc,AIDS,59956
+1339,Roberta,22,F,16126,IS,BSc,AIDS,25112
+1340,Sara,51,F,16143,NL,HS,Broken Arm,29936
+1341,Elena,40,F,16161,BG,MSc,Broken Arm,44469
+1342,Pietro,44,M,16124,IE,PhD,Hepatitis,26025
+1343,Giovanni,53,M,16139,BE,HS,Brochitis,37991
+1344,Valentina,60,F,16146,SE,MSc,Flu,50296
+1345,Roberto,43,M,16152,IT,BSc,Brochitis,32554
+1346,Giuseppina,31,F,16161,IE,BSc,AIDS,27314
+1347,Lucia,23,F,16130,GB,MSc,Flu,57173
+1348,Alessandra,49,O,16141,HU,BSc,Flu,41554
+1349,Lucia,60,F,16130,DK,BSc,Flu,46099
+1350,Giovanna,30,F,16153,SE,BSc,AIDS,59619
+1351,Maria,35,F,16151,HR,MSc,Brochitis,39626
+1352,Angelo,37,M,16138,IS,PhD,Hang Nail,35635
+1353,Domenico,32,M,16163,PL,BSc,Hepatitis,35545
+1354,Leonardo,47,M,16125,PL,BSc,AIDS,62279
+1355,Elena,60,F,16138,IE,BSc,Hepatitis,12636
+1356,Luca,27,M,16127,HU,HS,Hang Nail,44144
+1357,Claudia,37,F,16130,BE,PR,Hepatitis,34932
+1358,Sara,54,F,16121,ES,MS,Hang Nail,25837
+1359,Francesca,28,F,16136,BG,BSc,Hepatitis,43442
+1360,Lucia,47,F,16129,NL,BSc,Hepatitis,34483
+1361,Enrico,41,M,16140,AT,HS,Broken Arm,16039
+1362,Michele,35,M,16129,PT,HS,Broken Arm,39381
+1363,Alessandra,18,F,16140,SI,HS,Hepatitis,23974
+1364,Angelo,28,M,16125,DE,BSc,Flu,37042
+1365,Roberta,39,F,16163,CH,HS,Brochitis,4572
+1366,Luca,52,M,16162,SI,HS,Hepatitis,36169
+1367,Claudia,30,F,16149,DE,BSc,Hang Nail,38299
+1368,Sara,31,F,16134,LU,MSc,Hepatitis,40823
+1369,Giovanna,22,F,16126,IT,MS,Broken Arm,35440
+1370,Enrico,57,M,16156,SI,None,Broken Arm,44300
+1371,Raffaele,49,M,16157,SE,MSc,Brochitis,35486
+1372,Claudia,30,F,16140,HR,HS,Hang Nail,42942
+1373,Angelo,37,M,16143,BG,HS,Flu,30075
+1374,Valerio,38,M,16127,RO,BSc,Hepatitis,30983
+1375,Giuseppina,43,F,16145,CH,MSc,AIDS,45623
+1376,Valentina,33,F,16148,IT,HS,Hepatitis,32904
+1377,Angelo,35,M,16161,IS,HS,Flu,38711
+1378,Nicola,20,M,16165,ES,PR,Hang Nail,47303
+1379,Francesca,41,F,16152,PT,BSc,Hepatitis,28455
+1380,Angelo,23,M,16159,LU,MSc,Hepatitis,59445
+1381,Alessandra,52,O,16147,PL,MSc,AIDS,46235
+1382,Giovanni,57,M,16158,PL,MS,Broken Arm,30119
+1383,Francesca,26,F,16134,FI,MS,Flu,22751
+1384,Elena,28,F,16143,CZ,BSc,Brochitis,34519
+1385,Angelo,23,M,16163,AT,MSc,Flu,26068
+1386,Maria,34,F,16153,FI,HS,Hepatitis,32831
+1387,Giovanna,33,F,16142,NO,HS,AIDS,30864
+1388,Francesca,31,F,16126,GR,HS,Flu,11542
+1389,Valentina,24,F,16137,SE,BSc,Brochitis,44612
+1390,Domenico,54,M,16155,PL,BSc,Hepatitis,33116
+1391,Lucia,23,F,16133,SI,MSc,Hang Nail,26141
+1392,Silvia,38,F,16122,IS,PhD,Broken Arm,17327
+1393,Claudia,31,F,16163,PT,HS,Flu,23710
+1394,Maria,46,F,16140,PL,PR,Hepatitis,30183
+1395,Elena,50,F,16122,IE,PR,Broken Arm,35258
+1396,Roberta,46,F,16167,PL,BSc,Flu,45184
+1397,Maria,26,F,16140,NL,MSc,AIDS,35666
+1398,Antonio,58,M,16162,SK,MSc,AIDS,33812
+1399,Federica,20,F,16149,FR,MSc,Hepatitis,15728
+1400,Claudia,18,F,16148,GB,HS,Hepatitis,42050
+1401,Maria,21,F,16155,DE,BSc,Brochitis,33517
+1402,Claudia,32,F,16121,PL,PR,Hepatitis,40525
+1403,Michele,40,M,16161,FI,MSc,Brochitis,31990
+1404,Antonio,29,M,16163,LU,BSc,AIDS,43895
+1405,Raffaele,52,M,16141,DK,PR,Broken Arm,37596
+1406,Paola,31,F,16140,RO,HS,Hang Nail,48624
+1407,Pietro,34,M,16150,LU,BSc,Hepatitis,30856
+1408,Raffaele,29,M,16131,NL,BSc,Broken Arm,37214
+1409,Federica,38,F,16131,RO,HS,Hepatitis,36791
+1410,Tommaso,52,M,16162,SE,HS,Hang Nail,27281
+1411,Sara,19,F,16146,GB,HS,AIDS,32386
+1412,Tommaso,59,M,16132,PL,PhD,Brochitis,22952
+1413,Giovanni,24,M,16155,DE,PR,Flu,24399
+1414,Raffaele,58,M,16165,IT,MSc,Flu,48013
+1415,Nicola,22,M,16162,AT,MSc,AIDS,51767
+1416,Luca,18,M,16150,PL,None,Broken Arm,31672
+1417,Rita,56,F,16130,DK,HS,Flu,38863
+1418,Rita,55,O,16162,GB,BSc,Hang Nail,30958
+1419,Claudia,21,F,16128,CZ,MSc,Hepatitis,27116
+1420,Roberto,19,M,16137,FR,BSc,AIDS,25352
+1421,Giovanni,54,M,16133,SI,BSc,Flu,55485
+1422,Rita,44,F,16143,SE,PhD,Broken Arm,15716
+1423,Francesca,50,F,16133,DE,PR,Hang Nail,40445
+1424,Luca,30,M,16167,IT,BSc,Hepatitis,38396
+1425,Francesca,31,F,16127,HU,MSc,Hepatitis,30207
+1426,Francesca,33,F,16141,PL,HS,Brochitis,49665
+1427,Domenico,20,M,16134,DK,HS,Brochitis,27660
+1428,Lucia,57,F,16150,HR,BSc,Flu,32327
+1429,Raffaele,52,M,16144,FI,PR,Hepatitis,34081
+1430,Lucia,28,F,16128,FI,BSc,Broken Arm,35764
+1431,Enrico,37,O,16134,BG,PR,Brochitis,34676
+1432,Roberto,49,M,16153,LU,BSc,Hepatitis,27928
+1433,Roberto,57,M,16167,BE,MS,Brochitis,11834
+1434,Angelo,43,M,16157,SE,HS,Hepatitis,27652
+1435,Nicola,59,M,16142,HU,MSc,Broken Arm,38449
+1436,Raffaele,51,M,16127,GB,MSc,Broken Arm,17341
+1437,Roberta,27,F,16121,IE,PR,Hepatitis,29573
+1438,Raffaele,24,M,16156,SK,HS,Hepatitis,35761
+1439,Pietro,25,M,16124,CH,PR,AIDS,31980
+1440,Elena,49,F,16135,PL,MSc,Broken Arm,30107
+1441,Giovanni,40,M,16139,BG,PR,Hepatitis,47936
+1442,Angelo,19,M,16127,DE,BSc,Brochitis,30140
+1443,Lucia,53,F,16140,DK,HS,Broken Arm,33975
+1444,Federica,49,F,16141,IE,MSc,Brochitis,32542
+1445,Giovanna,43,F,16134,IT,BSc,Brochitis,24258
+1446,Michele,52,M,16149,GR,MSc,Brochitis,40000
+1447,Enrico,40,M,16166,SI,MSc,Flu,43525
+1448,Tommaso,26,M,16128,SE,HS,Brochitis,44859
+1449,Valerio,60,M,16136,NO,MS,AIDS,49666
+1450,Pietro,39,M,16129,RO,BSc,Flu,29274
+1451,Rita,28,F,16158,DE,BSc,AIDS,3132
+1452,Nicola,59,M,16146,ES,HS,Flu,44798
+1453,Federica,57,F,16135,GR,MSc,Brochitis,35399
+1454,Roberto,39,M,16153,SE,HS,AIDS,28062
+1455,Federica,20,F,16121,IT,HS,Brochitis,28687
+1456,Alessandra,18,F,16127,CZ,HS,AIDS,29360
+1457,Tommaso,24,M,16123,DE,HS,Flu,31205
+1458,Alessandra,56,F,16151,NL,HS,Flu,33625
+1459,Silvia,31,F,16133,SE,BSc,Flu,28338
+1460,Alessandra,40,F,16138,IS,MSc,AIDS,49351
+1461,Valerio,38,M,16141,NL,HS,Flu,29553
+1462,Paola,58,F,16129,CZ,MSc,AIDS,25955
+1463,Valerio,59,M,16136,ES,MSc,Flu,23869
+1464,Nicola,23,M,16123,BE,HS,Hepatitis,43039
+1465,Elena,40,F,16147,GB,HS,Hang Nail,30745
+1466,Raffaele,30,M,16134,IS,MSc,Hang Nail,36245
+1467,Valerio,32,M,16122,IT,PR,Brochitis,19983
+1468,Roberto,53,M,16162,IE,BSc,Hepatitis,32923
+1469,Angelo,60,M,16162,CZ,MSc,Flu,30036
+1470,Giuseppina,36,F,16167,IE,PhD,Broken Arm,34474
+1471,Elena,56,F,16127,FI,HS,Hang Nail,31547
+1472,Pietro,38,M,16166,PT,MS,Brochitis,33259
+1473,Federica,43,F,16145,LU,BSc,Brochitis,26215
+1474,Claudia,48,F,16124,NL,BSc,Hang Nail,38147
+1475,Michele,38,M,16132,GB,HS,Hepatitis,47938
+1476,Angelo,44,M,16130,PT,PR,Hepatitis,43479
+1477,Federica,29,F,16167,GB,BSc,AIDS,46981
+1478,Angelo,43,M,16126,RO,PR,Hepatitis,35996
+1479,Silvia,56,F,16167,RO,BSc,Hang Nail,42248
+1480,Giovanni,57,M,16130,SE,MSc,Hang Nail,16945
+1481,Alessandra,49,F,16144,DE,MSc,Hang Nail,32390
+1482,Roberta,37,F,16151,BE,HS,Broken Arm,26434
+1483,Roberta,57,F,16150,GR,BSc,Brochitis,38099
+1484,Leonardo,54,M,16128,IS,BSc,Broken Arm,36835
+1485,Valerio,24,M,16121,LU,HS,Flu,38200
+1486,Angelo,57,M,16152,RO,HS,Hepatitis,49947
+1487,Claudia,50,F,16122,CH,BSc,AIDS,49701
+1488,Lucia,44,F,16134,HU,PR,Broken Arm,5489
+1489,Pietro,56,M,16133,DK,MSc,Hang Nail,33094
+1490,Elena,29,F,16124,NL,MSc,Broken Arm,32056
+1491,Claudia,29,F,16121,SI,PR,AIDS,41497
+1492,Bruno,23,M,16150,PT,PhD,Broken Arm,45537
+1493,Angelo,30,M,16154,BE,HS,Brochitis,32944
+1494,Giuseppina,23,F,16144,DK,MS,Broken Arm,22342
+1495,Roberto,33,M,16166,BG,BSc,AIDS,34106
+1496,Tommaso,53,M,16158,BE,BSc,AIDS,30451
+1497,Enrico,27,M,16153,DE,BSc,Broken Arm,29641
+1498,Valerio,38,M,16148,FI,BSc,AIDS,23957
+1499,Michele,31,M,16144,PL,BSc,Broken Arm,41039
+1500,Luca,28,M,16141,IE,MS,Flu,14489
+1501,Valentina,43,F,16148,LU,MSc,Broken Arm,20177
+1502,Leonardo,36,M,16165,CZ,HS,Hepatitis,22192
+1503,Roberto,38,M,16122,PL,BSc,Flu,42643
+1504,Nicola,58,M,16126,HU,PhD,Broken Arm,36445
+1505,Nicola,21,M,16152,RO,BSc,Hang Nail,34276
+1506,Luca,25,M,16121,SK,BSc,Broken Arm,49114
+1507,Sara,33,F,16151,SI,HS,AIDS,22939
+1508,Silvia,36,F,16145,IS,MSc,Brochitis,38041
+1509,Elena,52,F,16134,ES,HS,Hang Nail,34862
+1510,Giovanni,52,M,16124,ES,HS,AIDS,37322
+1511,Pietro,25,M,16163,HR,MSc,AIDS,42460
+1512,Luca,25,O,16123,BG,BSc,Hepatitis,21501
+1513,Federica,36,F,16147,GB,HS,Flu,26301
+1514,Michele,25,M,16133,RO,MSc,Hepatitis,25997
+1515,Giuseppina,18,F,16132,FI,BSc,Hepatitis,16354
+1516,Valentina,28,F,16167,AT,None,Brochitis,25194
+1517,Luca,59,M,16122,FR,HS,Flu,47374
+1518,Alessandra,57,F,16130,DK,MS,Flu,35258
+1519,Valerio,44,M,16130,FI,MSc,Hang Nail,27344
+1520,Angelo,21,M,16125,SI,PR,Brochitis,39748
+1521,Tommaso,37,M,16124,FI,HS,Broken Arm,55052
+1522,Bruno,23,M,16154,BE,MSc,Flu,36729
+1523,Giuseppina,31,F,16128,SK,BSc,Flu,39015
+1524,Bruno,20,M,16161,IT,MS,Broken Arm,37689
+1525,Claudia,20,F,16122,PL,MSc,Flu,34795
+1526,Paola,34,F,16127,SI,HS,Brochitis,38477
+1527,Lucia,28,F,16144,BE,HS,Flu,57076
+1528,Luca,39,M,16142,CZ,HS,AIDS,39072
+1529,Enrico,23,O,16155,DE,BSc,AIDS,46695
+1530,Leonardo,23,M,16149,HR,HS,Flu,31029
+1531,Maria,21,F,16125,SK,MSc,Flu,24836
+1532,Roberta,30,F,16147,SI,PR,Brochitis,31788
+1533,Pietro,52,M,16156,CH,BSc,Hang Nail,42711
+1534,Valerio,36,M,16162,BG,MS,AIDS,26695
+1535,Claudia,57,F,16137,NO,BSc,Brochitis,22906
+1536,Domenico,46,M,16152,RO,PhD,Brochitis,24265
+1537,Enrico,45,M,16136,AT,BSc,Brochitis,33599
+1538,Michele,28,M,16164,SI,BSc,AIDS,56987
+1539,Elena,27,F,16153,ES,HS,Hepatitis,34882
+1540,Antonio,28,M,16160,AT,HS,AIDS,26698
+1541,Bruno,44,M,16145,HU,MSc,AIDS,21853
+1542,Elena,48,F,16159,PT,BSc,Brochitis,33312
+1543,Bruno,18,M,16121,BG,BSc,Hang Nail,34627
+1544,Roberta,33,F,16165,NL,BSc,Hepatitis,34950
+1545,Michele,23,M,16138,HR,MSc,Hepatitis,22156
+1546,Roberto,26,M,16140,CZ,MSc,Brochitis,39587
+1547,Roberta,52,F,16129,SE,BSc,Flu,26669
+1548,Paola,43,F,16151,FR,HS,Flu,43037
+1549,Domenico,47,M,16135,PL,BSc,AIDS,30121
+1550,Roberto,50,M,16151,PT,MS,Hepatitis,32615
+1551,Giovanni,37,M,16134,GB,BSc,Brochitis,41055
+1552,Roberto,36,M,16167,AT,HS,Hang Nail,49501
+1553,Leonardo,48,M,16154,SE,MSc,Hepatitis,23662
+1554,Pietro,43,M,16157,SI,BSc,Hang Nail,49029
+1555,Lucia,27,F,16164,DE,BSc,Broken Arm,31438
+1556,Enrico,28,M,16158,RO,MSc,Flu,32937
+1557,Antonio,37,M,16148,IT,MSc,AIDS,30170
+1558,Francesca,45,F,16145,DK,BSc,Hang Nail,51522
+1559,Luca,57,M,16145,FI,BSc,Hepatitis,50352
+1560,Claudia,59,F,16150,SI,MSc,Hang Nail,32832
+1561,Luca,54,M,16141,FR,MSc,Hang Nail,43991
+1562,Federica,42,F,16125,GR,BSc,Flu,44877
+1563,Claudia,42,F,16122,FI,MS,AIDS,35331
+1564,Enrico,53,M,16150,IE,HS,Brochitis,61485
+1565,Nicola,23,M,16136,IE,MSc,Flu,41672
+1566,Giovanna,36,F,16149,SI,HS,Brochitis,44282
+1567,Alessandra,34,F,16148,NO,MSc,Broken Arm,28913
+1568,Valerio,40,M,16141,FR,HS,Brochitis,42346
+1569,Elena,60,F,16122,DE,BSc,Hang Nail,37481
+1570,Giovanna,25,F,16151,CH,HS,Hang Nail,41175
+1571,Roberto,38,M,16140,BE,None,Flu,31701
+1572,Tommaso,52,M,16146,IE,MSc,Hepatitis,25927
+1573,Leonardo,23,M,16142,DE,MSc,Flu,41663
+1574,Rita,37,F,16135,NO,HS,Flu,39739
+1575,Silvia,42,F,16149,SI,HS,AIDS,34960
+1576,Angelo,39,M,16138,NL,BSc,Hepatitis,42575
+1577,Luca,59,M,16143,BE,HS,Broken Arm,38378
+1578,Enrico,52,M,16163,HU,HS,Broken Arm,35059
+1579,Maria,25,F,16142,RO,HS,Broken Arm,34834
+1580,Giuseppina,58,F,16154,HR,PhD,Brochitis,28762
+1581,Roberta,31,F,16121,SI,MS,Hang Nail,47640
+1582,Sara,46,F,16155,AT,MSc,Flu,40496
+1583,Silvia,26,F,16122,SE,PR,AIDS,28879
+1584,Pietro,21,M,16121,RO,MS,Flu,33762
+1585,Pietro,47,M,16152,SE,MSc,Broken Arm,43983
+1586,Angelo,44,M,16122,FI,MSc,Hepatitis,36915
+1587,Bruno,26,M,16158,BG,HS,Hepatitis,24094
+1588,Alessandra,30,F,16136,AT,BSc,Broken Arm,43549
+1589,Rita,33,F,16158,CZ,PR,Broken Arm,45851
+1590,Enrico,51,M,16163,NL,HS,Hepatitis,20136
+1591,Silvia,43,F,16137,NO,HS,Hang Nail,29721
+1592,Alessandra,36,F,16135,DK,HS,Brochitis,36352
+1593,Bruno,45,M,16138,IS,MSc,Flu,59164
+1594,Giovanni,40,M,16143,DK,MSc,Hang Nail,42400
+1595,Francesca,23,F,16125,GB,PR,Hepatitis,30689
+1596,Valerio,59,M,16162,SE,BSc,Flu,49712
+1597,Valentina,35,F,16129,HU,HS,AIDS,25135
+1598,Nicola,30,M,16163,SI,BSc,Flu,42772
+1599,Antonio,30,M,16159,ES,MSc,Flu,27015
+1600,Valerio,19,M,16153,PL,PR,Hang Nail,38277
+1601,Lucia,18,F,16126,NL,MSc,Flu,36562
+1602,Luca,43,M,16128,SK,HS,Broken Arm,41104
+1603,Enrico,43,M,16158,IS,HS,Broken Arm,36984
+1604,Rita,60,F,16141,LU,HS,Hang Nail,50767
+1605,Sara,34,F,16153,CZ,PR,AIDS,45762
+1606,Silvia,28,F,16128,IT,BSc,Hepatitis,32979
+1607,Federica,22,F,16133,ES,BSc,Broken Arm,49265
+1608,Elena,44,F,16165,PT,MSc,Brochitis,11647
+1609,Luca,60,M,16149,BE,MSc,Brochitis,28603
+1610,Roberta,54,F,16133,PT,BSc,Brochitis,59381
+1611,Francesca,35,F,16150,RO,BSc,Hepatitis,27036
+1612,Luca,43,M,16136,CZ,HS,Hang Nail,30117
+1613,Giovanni,39,M,16158,ES,HS,Hepatitis,17768
+1614,Valentina,42,F,16165,AT,MSc,Broken Arm,42798
+1615,Federica,60,F,16139,CZ,PhD,Hang Nail,39528
+1616,Domenico,54,M,16134,HU,MSc,Brochitis,39378
+1617,Lucia,21,F,16122,NO,MSc,Flu,37715
+1618,Valentina,43,F,16157,SE,MSc,Hepatitis,30229
+1619,Luca,55,M,16156,BE,HS,AIDS,28231
+1620,Valerio,59,M,16136,FR,HS,AIDS,20448
+1621,Rita,45,F,16141,BE,PR,Hang Nail,25911
+1622,Pietro,18,M,16156,SK,HS,AIDS,28004
+1623,Antonio,39,M,16167,HU,HS,Hepatitis,29944
+1624,Giovanni,32,M,16152,AT,BSc,Broken Arm,37950
+1625,Bruno,36,M,16156,IT,HS,Flu,47946
+1626,Tommaso,27,M,16167,CZ,BSc,Hang Nail,36883
+1627,Enrico,18,M,16148,NL,BSc,AIDS,50301
+1628,Federica,27,F,16133,ES,HS,Flu,30705
+1629,Angelo,58,M,16152,IT,BSc,Flu,47494
+1630,Rita,40,F,16134,BG,HS,Hepatitis,32509
+1631,Leonardo,44,M,16128,GB,BSc,AIDS,38496
+1632,Alessandra,44,F,16156,CZ,BSc,AIDS,13927
+1633,Enrico,44,M,16148,LU,HS,Broken Arm,44208
+1634,Nicola,57,M,16136,RO,MS,Broken Arm,35508
+1635,Paola,33,F,16164,BG,MS,Flu,36009
+1636,Angelo,40,M,16135,DE,PhD,Hang Nail,38556
+1637,Enrico,38,M,16163,DK,HS,Brochitis,24327
+1638,Valentina,30,F,16158,ES,HS,Hepatitis,32666
+1639,Giuseppina,28,F,16131,CZ,MSc,Hang Nail,46703
+1640,Valerio,52,M,16123,CH,HS,Broken Arm,25760
+1641,Rita,39,F,16151,GB,MSc,AIDS,48330
+1642,Rita,40,F,16167,GB,MS,Hang Nail,37425
+1643,Valerio,48,M,16147,LU,BSc,Hepatitis,41167
+1644,Luca,24,M,16164,CZ,MSc,Hepatitis,27428
+1645,Roberta,56,F,16158,FR,BSc,Hepatitis,35338
+1646,Angelo,44,M,16150,SK,HS,Broken Arm,32125
+1647,Giuseppina,24,F,16163,FI,MSc,Flu,29044
+1648,Giuseppina,43,F,16152,FI,MSc,AIDS,22289
+1649,Leonardo,46,M,16161,BG,BSc,AIDS,30182
+1650,Raffaele,47,M,16140,BE,MS,Broken Arm,44487
+1651,Elena,56,F,16165,GR,HS,Hepatitis,38745
+1652,Roberta,46,F,16140,SI,BSc,Brochitis,38787
+1653,Bruno,48,M,16151,GR,BSc,Brochitis,29623
+1654,Giovanna,48,F,16141,BG,PhD,Flu,50065
+1655,Antonio,53,M,16132,LU,MSc,Hang Nail,24391
+1656,Francesca,30,F,16167,CH,HS,Hang Nail,43559
+1657,Rita,35,F,16167,ES,MSc,Hepatitis,36807
+1658,Tommaso,42,M,16142,AT,PR,AIDS,43355
+1659,Michele,46,M,16155,SE,BSc,Hang Nail,33473
+1660,Giovanni,46,M,16143,SE,BSc,Broken Arm,36342
+1661,Lucia,42,F,16140,HR,MS,Flu,32001
+1662,Giovanni,21,M,16122,CZ,HS,Flu,41816
+1663,Tommaso,28,M,16123,NL,PR,Hang Nail,43140
+1664,Giovanni,45,M,16158,IT,MSc,Brochitis,27509
+1665,Francesca,50,F,16134,CZ,HS,AIDS,35830
+1666,Silvia,55,F,16163,AT,BSc,Broken Arm,23571
+1667,Pietro,39,M,16153,IE,HS,Hang Nail,23733
+1668,Sara,32,F,16136,FI,BSc,Hepatitis,27203
+1669,Giuseppina,30,F,16161,PT,PR,Brochitis,38314
+1670,Bruno,29,M,16126,DK,PR,Hang Nail,21432
+1671,Maria,45,F,16140,ES,PR,Flu,18052
+1672,Pietro,45,M,16160,FI,HS,Hepatitis,29874
+1673,Giuseppina,19,F,16153,RO,MSc,AIDS,27500
+1674,Roberto,55,M,16165,GR,BSc,Hang Nail,42446
+1675,Domenico,59,M,16159,FR,BSc,Flu,41094
+1676,Elena,39,F,16121,NL,HS,Broken Arm,25254
+1677,Valerio,32,M,16150,DK,HS,Hepatitis,30048
+1678,Roberto,27,M,16155,DK,BSc,Broken Arm,43245
+1679,Angelo,24,M,16136,SI,BSc,Brochitis,31280
+1680,Paola,45,F,16148,LU,MSc,Hang Nail,12501
+1681,Maria,43,F,16130,IT,MS,AIDS,40478
+1682,Lucia,42,F,16160,IS,HS,Brochitis,21060
+1683,Giovanni,45,M,16151,SE,PR,AIDS,57311
+1684,Pietro,24,O,16142,CH,PhD,Flu,34515
+1685,Raffaele,27,M,16140,ES,BSc,Hang Nail,17418
+1686,Luca,51,M,16166,ES,PR,Hepatitis,38152
+1687,Claudia,46,F,16152,IT,HS,AIDS,27133
+1688,Alessandra,24,F,16154,PL,MS,Hang Nail,45135
+1689,Antonio,42,M,16156,IE,BSc,Brochitis,23167
+1690,Lucia,37,F,16149,NL,BSc,Hang Nail,32213
+1691,Elena,47,F,16140,DE,PR,Broken Arm,34537
+1692,Domenico,33,M,16142,FI,MS,Hang Nail,39770
+1693,Luca,52,M,16156,IT,HS,Brochitis,36663
+1694,Roberto,25,M,16156,BE,HS,Brochitis,28229
+1695,Francesca,60,F,16151,HR,MSc,Flu,21024
+1696,Michele,47,M,16142,GR,PR,Broken Arm,39646
+1697,Claudia,41,F,16133,NL,HS,Flu,50458
+1698,Michele,46,M,16144,CH,BSc,Brochitis,23131
+1699,Pietro,37,M,16128,CH,PR,Broken Arm,28976
+1700,Elena,21,F,16134,CH,HS,Hang Nail,30680
+1701,Antonio,48,M,16128,GR,HS,Brochitis,27155
+1702,Roberto,33,M,16128,NL,BSc,Hepatitis,45751
+1703,Enrico,21,M,16123,AT,PhD,Flu,36210
+1704,Michele,35,M,16165,RO,PR,Flu,44068
+1705,Valentina,24,F,16137,PT,PR,Flu,30872
+1706,Leonardo,50,M,16155,NO,HS,Flu,29031
+1707,Lucia,57,F,16131,SE,HS,Hang Nail,42434
+1708,Giuseppina,26,F,16132,SE,MS,Hang Nail,42781
+1709,Leonardo,58,M,16164,FI,PR,Hepatitis,35377
+1710,Elena,43,F,16157,LU,PR,Hang Nail,39770
+1711,Paola,23,F,16125,SI,BSc,Hepatitis,34805
+1712,Giuseppina,40,F,16137,BE,PR,Brochitis,39800
+1713,Valentina,57,F,16154,DK,MSc,AIDS,41413
+1714,Giovanna,50,F,16131,LU,BSc,Hepatitis,50910
+1715,Giovanna,45,F,16165,IT,MSc,Hepatitis,22825
+1716,Paola,33,F,16121,GR,BSc,AIDS,42068
+1717,Pietro,20,M,16159,BE,BSc,Hepatitis,25079
+1718,Enrico,46,M,16130,SI,MSc,AIDS,39860
+1719,Paola,31,F,16167,PL,BSc,Broken Arm,28881
+1720,Valerio,24,M,16129,PL,BSc,Flu,37617
+1721,Pietro,34,M,16139,GB,MSc,Flu,34458
+1722,Luca,60,M,16158,IS,HS,Brochitis,47379
+1723,Pietro,36,M,16154,NO,HS,Flu,46440
+1724,Silvia,38,F,16122,AT,MSc,Broken Arm,33913
+1725,Antonio,29,M,16164,RO,MSc,AIDS,52112
+1726,Francesca,31,F,16157,AT,MSc,Hang Nail,31702
+1727,Domenico,30,M,16164,CZ,HS,Broken Arm,35186
+1728,Silvia,59,F,16124,IS,BSc,Broken Arm,42999
+1729,Enrico,29,M,16151,CH,PR,Hang Nail,42215
+1730,Raffaele,29,M,16154,RO,MSc,Hepatitis,48380
+1731,Antonio,25,M,16160,PL,MSc,Hang Nail,55920
+1732,Valentina,19,F,16157,DE,HS,Flu,25598
+1733,Angelo,58,M,16126,HU,HS,Broken Arm,22115
+1734,Elena,40,F,16158,NL,MS,Broken Arm,36821
+1735,Roberto,57,M,16137,BG,BSc,Hang Nail,41329
+1736,Tommaso,48,M,16163,NL,HS,AIDS,44355
+1737,Leonardo,56,O,16164,PT,MSc,Hang Nail,33204
+1738,Alessandra,47,F,16135,LU,HS,Brochitis,33074
+1739,Lucia,26,F,16161,PL,HS,Broken Arm,39599
+1740,Maria,24,F,16133,NL,HS,Hepatitis,39366
+1741,Domenico,59,M,16122,IT,PhD,Brochitis,42620
+1742,Sara,29,F,16129,SE,HS,Brochitis,40391
+1743,Pietro,20,M,16136,SK,MSc,Brochitis,27887
+1744,Leonardo,41,M,16157,HR,HS,Hang Nail,40284
+1745,Tommaso,39,M,16167,IT,HS,Flu,9670
+1746,Paola,59,F,16128,PL,HS,AIDS,34919
+1747,Valerio,28,M,16158,PT,PhD,Broken Arm,38332
+1748,Roberto,18,M,16134,IS,BSc,Hepatitis,40150
+1749,Michele,51,M,16133,PL,HS,Hepatitis,42485
+1750,Alessandra,56,F,16153,RO,HS,Hang Nail,52033
+1751,Giuseppina,26,F,16147,PL,HS,Flu,36437
+1752,Rita,45,F,16127,CZ,MS,Broken Arm,36693
+1753,Rita,25,O,16162,LU,BSc,AIDS,32656
+1754,Francesca,34,F,16121,LU,BSc,Brochitis,35455
+1755,Bruno,36,M,16141,SE,MS,Hepatitis,50660
+1756,Enrico,39,M,16155,NL,BSc,Hang Nail,42784
+1757,Michele,39,M,16154,IE,MS,Flu,45345
+1758,Luca,18,M,16153,LU,MS,Broken Arm,45123
+1759,Elena,60,F,16130,FR,MSc,AIDS,44328
+1760,Elena,24,F,16142,HR,HS,Hepatitis,42548
+1761,Pietro,26,M,16135,SI,HS,Brochitis,44325
+1762,Lucia,58,F,16130,BE,HS,Broken Arm,55801
+1763,Lucia,36,F,16138,IT,HS,Flu,28640
+1764,Giovanna,19,F,16138,HR,HS,Brochitis,40477
+1765,Maria,56,F,16164,FI,PR,Brochitis,39939
+1766,Pietro,20,M,16128,NL,MS,Hepatitis,28402
+1767,Bruno,32,M,16121,SE,HS,Broken Arm,34399
+1768,Antonio,30,M,16157,NL,HS,Hang Nail,27500
+1769,Federica,27,F,16143,NO,MS,Flu,48656
+1770,Angelo,60,M,16130,HR,MS,Hepatitis,25126
+1771,Tommaso,58,M,16158,FR,HS,Flu,18756
+1772,Domenico,21,M,16156,LU,BSc,Hepatitis,9883
+1773,Claudia,27,F,16165,AT,HS,Hepatitis,38980
+1774,Giovanni,46,M,16165,RO,PR,Hepatitis,26902
+1775,Maria,21,F,16146,BG,PR,Brochitis,34391
+1776,Domenico,43,M,16155,GR,PhD,Hang Nail,46991
+1777,Lucia,50,F,16144,ES,BSc,Flu,38162
+1778,Federica,33,F,16162,BE,BSc,Flu,43405
+1779,Lucia,22,F,16157,DE,HS,Brochitis,28750
+1780,Paola,50,O,16137,DK,MSc,Hepatitis,40149
+1781,Luca,20,M,16133,PL,HS,AIDS,43507
+1782,Leonardo,50,M,16157,IT,MSc,Brochitis,22876
+1783,Elena,42,F,16155,ES,BSc,Hepatitis,53630
+1784,Tommaso,41,M,16127,ES,MSc,Hepatitis,24021
+1785,Tommaso,25,M,16151,IT,HS,Broken Arm,23253
+1786,Leonardo,41,M,16155,IS,BSc,AIDS,40548
+1787,Giuseppina,35,F,16147,FR,MS,AIDS,45844
+1788,Angelo,54,M,16160,PT,HS,Hepatitis,47645
+1789,Raffaele,28,M,16166,CZ,PhD,Flu,15902
+1790,Rita,30,F,16134,IT,MSc,Hang Nail,38455
+1791,Federica,23,F,16127,CH,BSc,Brochitis,34154
+1792,Valentina,48,F,16145,IE,MSc,Hepatitis,31507
+1793,Giovanna,59,F,16137,IE,PR,AIDS,53065
+1794,Angelo,32,M,16131,IT,MSc,Flu,16562
+1795,Domenico,25,M,16148,IE,HS,Broken Arm,37915
+1796,Claudia,53,F,16146,CZ,BSc,AIDS,28836
+1797,Roberta,22,F,16165,SE,HS,Broken Arm,35199
+1798,Claudia,30,F,16131,IE,MSc,Brochitis,29973
+1799,Raffaele,52,M,16130,PL,HS,AIDS,20020
+1800,Rita,39,F,16160,DE,HS,Hang Nail,35053
+1801,Roberta,25,F,16143,ES,BSc,Hepatitis,43004
+1802,Roberta,21,F,16137,DK,MS,Hepatitis,25658
+1803,Valerio,29,M,16156,AT,PhD,AIDS,38974
+1804,Giovanna,46,F,16123,SE,HS,AIDS,38718
+1805,Tommaso,39,M,16133,SE,BSc,AIDS,32138
+1806,Rita,29,F,16152,RO,HS,Broken Arm,41585
+1807,Domenico,31,M,16153,SK,MS,Flu,23485
+1808,Enrico,32,M,16143,NO,PR,Hang Nail,29380
+1809,Alessandra,34,F,16122,NO,BSc,Brochitis,35982
+1810,Paola,24,F,16135,BE,BSc,Hang Nail,32307
+1811,Roberto,49,M,16164,GR,MSc,AIDS,47545
+1812,Silvia,21,F,16151,PL,BSc,Hang Nail,57323
+1813,Enrico,42,M,16162,NO,MSc,Broken Arm,22976
+1814,Giovanna,51,F,16144,BE,MSc,Brochitis,44894
+1815,Lucia,52,F,16149,FI,MSc,Flu,25539
+1816,Valentina,60,F,16157,GR,HS,Hepatitis,23083
+1817,Roberto,48,M,16158,DE,BSc,Brochitis,30048
+1818,Paola,41,F,16162,GR,MS,Hang Nail,27074
+1819,Elena,58,F,16158,PL,MSc,Broken Arm,20226
+1820,Tommaso,51,M,16154,PT,MS,Flu,32455
+1821,Roberta,38,F,16140,CH,MSc,Brochitis,19192
+1822,Raffaele,18,M,16135,NO,HS,Brochitis,28885
+1823,Silvia,53,F,16167,DK,HS,Flu,15796
+1824,Michele,52,M,16156,CH,MS,AIDS,41099
+1825,Leonardo,46,M,16166,DK,MSc,Broken Arm,22437
+1826,Raffaele,31,M,16140,FI,PR,Hang Nail,32239
+1827,Paola,39,F,16165,LU,HS,Broken Arm,28590
+1828,Michele,40,M,16138,SK,MS,Hang Nail,42283
+1829,Roberta,23,F,16142,FI,MSc,Brochitis,45117
+1830,Tommaso,43,M,16142,FI,PR,AIDS,61874
+1831,Giovanna,42,F,16134,CH,HS,AIDS,41686
+1832,Francesca,54,F,16144,GB,BSc,Brochitis,36278
+1833,Luca,25,M,16142,AT,HS,Broken Arm,41126
+1834,Elena,34,F,16139,SI,HS,Broken Arm,20647
+1835,Nicola,58,M,16163,GB,BSc,Brochitis,24605
+1836,Luca,29,M,16130,NL,BSc,Brochitis,20517
+1837,Domenico,20,M,16141,CH,MS,Broken Arm,45892
+1838,Elena,44,O,16123,LU,BSc,AIDS,45634
+1839,Giovanni,57,M,16131,FR,MSc,Hang Nail,28018
+1840,Federica,32,F,16159,IE,BSc,Flu,34734
+1841,Pietro,27,M,16135,SK,MSc,Brochitis,46904
+1842,Maria,45,F,16150,LU,HS,AIDS,28207
+1843,Nicola,26,M,16151,PL,MSc,Hang Nail,33488
+1844,Roberto,29,M,16122,IE,BSc,Brochitis,37199
+1845,Giovanna,48,F,16121,SE,MSc,Hang Nail,44704
+1846,Maria,43,F,16139,BG,MSc,Broken Arm,42965
+1847,Sara,29,F,16167,ES,HS,Hepatitis,26834
+1848,Maria,53,F,16165,SK,HS,Hepatitis,30856
+1849,Raffaele,19,M,16132,IT,HS,Brochitis,36134
+1850,Roberta,34,F,16122,PL,BSc,Brochitis,29136
+1851,Claudia,18,F,16140,FI,BSc,Hepatitis,34644
+1852,Rita,53,F,16144,FR,MSc,Hang Nail,52437
+1853,Valentina,29,F,16163,GR,BSc,Brochitis,26206
+1854,Lucia,20,F,16127,IS,HS,Brochitis,27695
+1855,Alessandra,20,F,16152,BG,HS,Broken Arm,40120
+1856,Elena,48,F,16136,DK,MSc,Hang Nail,44106
+1857,Rita,34,F,16162,CH,PR,Brochitis,38827
+1858,Roberta,49,F,16163,BG,HS,AIDS,49141
+1859,Paola,49,F,16142,DK,MSc,Hang Nail,11206
+1860,Michele,43,M,16167,BE,HS,Hepatitis,24369
+1861,Maria,46,F,16131,PL,PhD,Hang Nail,30048
+1862,Leonardo,50,M,16124,FR,BSc,Flu,43201
+1863,Roberto,55,M,16153,IS,HS,Flu,28732
+1864,Sara,57,F,16165,IS,PhD,AIDS,54717
+1865,Alessandra,53,F,16163,SE,MSc,Hepatitis,32840
+1866,Valentina,32,F,16140,GB,HS,Broken Arm,31623
+1867,Maria,38,F,16129,NO,HS,Flu,17984
+1868,Valentina,50,F,16136,PT,MSc,Flu,45486
+1869,Rita,27,F,16135,DE,MSc,AIDS,31313
+1870,Nicola,49,M,16154,RO,PhD,AIDS,47385
+1871,Sara,36,F,16121,CZ,HS,Hang Nail,51064
+1872,Angelo,46,M,16147,RO,None,Brochitis,34420
+1873,Paola,24,F,16130,FI,MS,AIDS,30173
+1874,Angelo,54,M,16163,ES,HS,Hang Nail,39239
+1875,Roberta,46,F,16150,IS,MS,Broken Arm,36523
+1876,Claudia,46,F,16148,RO,HS,Brochitis,41909
+1877,Paola,50,F,16123,AT,BSc,Brochitis,21686
+1878,Francesca,24,F,16133,IS,HS,Hepatitis,32587
+1879,Bruno,24,M,16157,AT,MSc,Hang Nail,29505
+1880,Luca,48,M,16163,AT,BSc,AIDS,38236
+1881,Valentina,47,F,16162,DK,HS,Brochitis,26166
+1882,Enrico,24,M,16127,BE,HS,AIDS,45946
+1883,Claudia,53,F,16141,FR,HS,AIDS,38353
+1884,Valentina,47,F,16150,CZ,MS,Brochitis,39126
+1885,Nicola,21,M,16148,HR,MS,Hepatitis,36883
+1886,Michele,38,M,16129,IE,PR,Hang Nail,47843
+1887,Federica,48,F,16123,DE,HS,Flu,30680
+1888,Elena,32,F,16127,GR,BSc,Hepatitis,21559
+1889,Alessandra,22,F,16161,BE,BSc,AIDS,23703
+1890,Maria,30,F,16143,BG,MS,AIDS,47461
+1891,Francesca,53,F,16155,LU,PhD,Hepatitis,40424
+1892,Leonardo,59,M,16125,AT,MS,Brochitis,34957
+1893,Roberto,20,M,16161,SE,HS,Brochitis,31492
+1894,Claudia,32,F,16149,IS,BSc,Brochitis,32619
+1895,Paola,37,F,16165,DE,PR,AIDS,23020
+1896,Antonio,55,M,16154,RO,BSc,Brochitis,38599
+1897,Giovanna,23,F,16163,IS,PR,Brochitis,45541
+1898,Federica,58,F,16146,BG,PR,AIDS,35271
+1899,Maria,29,F,16123,BG,BSc,Hepatitis,31359
+1900,Francesca,46,F,16142,FR,HS,Flu,24993
+1901,Elena,32,F,16130,PT,HS,Hang Nail,22930
+1902,Bruno,39,M,16135,ES,HS,Broken Arm,30096
+1903,Michele,45,M,16141,BE,BSc,Brochitis,35226
+1904,Giovanna,25,F,16133,CZ,MS,Flu,29209
+1905,Francesca,34,F,16164,IT,BSc,AIDS,39639
+1906,Roberto,28,M,16156,CZ,HS,Brochitis,37880
+1907,Leonardo,19,M,16154,IS,HS,Brochitis,24187
+1908,Claudia,46,F,16132,RO,BSc,Broken Arm,28980
+1909,Nicola,34,O,16138,HU,MSc,Hang Nail,40998
+1910,Roberto,47,M,16134,ES,HS,Flu,16241
+1911,Angelo,48,M,16165,IS,BSc,Brochitis,46363
+1912,Leonardo,26,M,16140,SI,HS,Hang Nail,33996
+1913,Maria,44,F,16127,SE,MSc,AIDS,48389
+1914,Giovanni,22,M,16162,RO,HS,Broken Arm,28125
+1915,Nicola,50,M,16157,LU,HS,Hepatitis,33792
+1916,Nicola,35,M,16153,DE,HS,AIDS,22215
+1917,Antonio,30,M,16137,NL,BSc,Hang Nail,42862
+1918,Claudia,26,F,16132,PL,BSc,Hepatitis,28203
+1919,Angelo,59,M,16138,CZ,MSc,Flu,54393
+1920,Luca,26,M,16162,CZ,HS,AIDS,34972
+1921,Roberto,44,M,16122,CZ,MSc,Hepatitis,47234
+1922,Pietro,18,M,16142,FI,MS,Brochitis,49679
+1923,Antonio,39,M,16158,NL,MS,Flu,45610
+1924,Leonardo,33,M,16136,LU,MSc,Flu,37086
+1925,Roberto,56,M,16140,SE,PR,AIDS,41506
+1926,Domenico,32,M,16145,BE,HS,Brochitis,38155
+1927,Luca,59,M,16145,HR,HS,Broken Arm,33413
+1928,Alessandra,18,F,16154,RO,MSc,AIDS,36399
+1929,Lucia,52,F,16164,AT,BSc,Brochitis,24153
+1930,Elena,21,F,16138,FI,HS,Broken Arm,18955
+1931,Silvia,57,F,16145,IT,BSc,Hepatitis,16898
+1932,Rita,32,F,16126,AT,MSc,Flu,46915
+1933,Angelo,30,M,16134,RO,BSc,Hepatitis,17160
+1934,Giuseppina,40,F,16140,NO,HS,Broken Arm,32909
+1935,Angelo,45,M,16121,RO,MS,Broken Arm,23579
+1936,Luca,56,M,16124,HR,HS,AIDS,38186
+1937,Sara,42,F,16151,LU,HS,Hang Nail,38704
+1938,Maria,23,F,16124,RO,HS,AIDS,31222
+1939,Sara,38,F,16130,GB,HS,AIDS,45375
+1940,Angelo,29,M,16151,SE,MS,Flu,17520
+1941,Giovanna,39,F,16134,HR,MS,Hang Nail,36929
+1942,Silvia,26,F,16160,PL,MS,Hepatitis,3137
+1943,Angelo,29,O,16125,LU,MSc,Broken Arm,41030
+1944,Domenico,52,M,16143,SK,BSc,AIDS,49834
+1945,Leonardo,38,M,16140,PL,BSc,Hang Nail,20841
+1946,Roberto,36,M,16150,CZ,HS,Hang Nail,33365
+1947,Domenico,30,M,16153,DE,BSc,Hang Nail,41875
+1948,Angelo,38,M,16141,PL,HS,Brochitis,40888
+1949,Nicola,23,M,16153,FR,BSc,Flu,54443
+1950,Claudia,21,F,16147,IE,HS,Brochitis,39461
+1951,Alessandra,20,F,16166,GR,BSc,Broken Arm,18522
+1952,Enrico,38,M,16151,NO,BSc,Broken Arm,34655
+1953,Antonio,52,M,16127,NL,HS,Hepatitis,27115
+1954,Michele,51,O,16144,DE,MSc,Hepatitis,39997
+1955,Enrico,34,M,16125,SK,HS,Hang Nail,43647
+1956,Francesca,45,F,16137,DE,BSc,Broken Arm,39014
+1957,Tommaso,55,M,16133,IS,BSc,Hang Nail,19248
+1958,Angelo,40,M,16125,ES,MSc,Hepatitis,36063
+1959,Pietro,49,M,16141,AT,HS,Hang Nail,51801
+1960,Rita,38,F,16140,SI,HS,Hang Nail,39197
+1961,Francesca,23,F,16133,NO,BSc,Hang Nail,35598
+1962,Federica,38,F,16150,SK,BSc,Broken Arm,24616
+1963,Paola,42,F,16154,SE,MS,Hang Nail,47989
+1964,Alessandra,25,F,16153,AT,MSc,AIDS,32488
+1965,Sara,30,F,16161,FI,HS,AIDS,34017
+1966,Valentina,38,F,16125,BE,BSc,Hepatitis,27220
+1967,Pietro,37,M,16131,DK,HS,AIDS,38764
+1968,Tommaso,19,M,16161,CH,HS,Hepatitis,33011
+1969,Federica,34,F,16163,BE,PR,Hepatitis,28935
+1970,Bruno,52,M,16139,BG,MS,Flu,50101
+1971,Paola,37,F,16165,FR,BSc,Broken Arm,38471
+1972,Raffaele,46,M,16167,IE,MS,Flu,31322
+1973,Roberto,25,M,16125,SK,HS,Flu,39317
+1974,Bruno,51,M,16140,BG,HS,Brochitis,41503
+1975,Paola,47,F,16158,SK,BSc,Flu,38628
+1976,Rita,54,F,16138,NL,BSc,AIDS,15359
+1977,Federica,38,F,16128,PL,BSc,Flu,16142
+1978,Bruno,32,M,16152,NL,MSc,Hang Nail,33226
+1979,Valerio,42,M,16157,NL,BSc,Brochitis,33905
+1980,Maria,50,F,16144,DE,HS,AIDS,26773
+1981,Domenico,30,M,16138,PT,HS,Hang Nail,27649
+1982,Raffaele,57,M,16155,SE,HS,AIDS,20665
+1983,Valerio,36,M,16160,AT,MSc,Hang Nail,24191
+1984,Tommaso,32,M,16154,CH,MSc,Flu,21167
+1985,Francesca,45,F,16130,FR,HS,Brochitis,54381
+1986,Valerio,46,M,16140,PT,MSc,Hepatitis,17293
+1987,Leonardo,53,M,16162,SK,PR,AIDS,35045
+1988,Antonio,43,M,16150,RO,PR,Hang Nail,39932
+1989,Maria,44,F,16128,NO,BSc,Flu,46931
+1990,Silvia,45,F,16143,SE,PhD,Hang Nail,21651
+1991,Maria,43,F,16158,SI,BSc,AIDS,19973
+1992,Raffaele,32,M,16160,PL,HS,Flu,43204
+1993,Tommaso,52,M,16163,BG,HS,AIDS,43664
+1994,Bruno,54,M,16145,RO,HS,Hang Nail,45615
+1995,Roberto,52,M,16143,IE,BSc,Hang Nail,32902
+1996,Domenico,57,M,16155,NL,HS,Hang Nail,33259
+1997,Michele,26,M,16164,HU,BSc,Flu,35510
+1998,Sara,39,F,16154,CZ,HS,Brochitis,31638
+1999,Elena,52,F,16132,SI,HS,AIDS,48550
+2000,Paola,28,F,16164,SK,HS,Hang Nail,32613
+2001,Valerio,58,M,16121,SE,PR,Hepatitis,38849
+2002,Leonardo,35,M,16167,IT,HS,Hepatitis,22273
+2003,Pietro,18,M,16143,PL,MSc,Brochitis,36554
+2004,Roberta,38,F,16135,BG,MSc,Hepatitis,31514
+2005,Antonio,42,M,16151,FI,BSc,Broken Arm,28848
+2006,Enrico,36,M,16147,CH,MSc,Broken Arm,25268
+2007,Michele,41,M,16136,PL,BSc,Flu,33131
+2008,Silvia,21,F,16151,DE,HS,Broken Arm,46735
+2009,Domenico,55,M,16148,ES,HS,Hepatitis,26277
+2010,Valerio,29,M,16134,SK,MS,Hepatitis,37675
+2011,Giuseppina,50,F,16151,RO,MS,Hepatitis,29728
+2012,Michele,43,M,16140,PL,MSc,Flu,47216
+2013,Enrico,47,M,16122,DE,PhD,Hang Nail,38717
+2014,Leonardo,41,M,16135,IE,MSc,Flu,25939
+2015,Roberta,53,F,16151,RO,BSc,Flu,41357
+2016,Alessandra,39,F,16148,IS,MS,Brochitis,23920
+2017,Nicola,29,M,16125,IS,BSc,Flu,45323
+2018,Maria,20,F,16129,GR,HS,Hang Nail,33369
+2019,Alessandra,28,F,16166,FI,HS,Hepatitis,31809
+2020,Roberta,53,F,16145,IE,PhD,Brochitis,38881
+2021,Sara,51,F,16148,BG,BSc,AIDS,56828
+2022,Silvia,59,F,16146,IS,MSc,Hepatitis,18407
+2023,Roberta,58,F,16128,FR,HS,Brochitis,31408
+2024,Pietro,47,M,16154,IE,HS,Brochitis,48901
+2025,Elena,32,F,16153,CZ,BSc,Hepatitis,22985
+2026,Roberta,35,F,16139,FR,HS,Hepatitis,33935
+2027,Federica,48,F,16130,CH,BSc,Hepatitis,42053
+2028,Angelo,27,M,16161,PT,BSc,Hang Nail,39581
+2029,Lucia,56,F,16150,GR,HS,Hepatitis,32361
+2030,Maria,35,F,16139,GR,MSc,Hepatitis,43045
+2031,Claudia,54,F,16142,SI,HS,Hang Nail,34025
+2032,Raffaele,23,M,16161,CH,MS,Brochitis,58009
+2033,Leonardo,36,M,16138,SE,MS,Broken Arm,52313
+2034,Rita,39,F,16147,LU,MS,Flu,29369
+2035,Maria,37,F,16123,IE,MS,Hang Nail,31312
+2036,Enrico,26,M,16154,GR,MS,Hang Nail,46577
+2037,Claudia,59,F,16147,NL,HS,Hang Nail,62593
+2038,Francesca,25,F,16152,HR,PhD,Hang Nail,35848
+2039,Claudia,54,F,16147,LU,HS,Brochitis,40440
+2040,Silvia,59,F,16136,PL,BSc,AIDS,38076
+2041,Roberto,35,M,16122,DE,MSc,Hepatitis,27419
+2042,Lucia,47,F,16130,SK,HS,Brochitis,29299
+2043,Giovanni,58,M,16149,DK,BSc,Broken Arm,25719
+2044,Tommaso,60,M,16166,DE,BSc,Hepatitis,37720
+2045,Silvia,28,F,16164,FR,MSc,Flu,47767
+2046,Francesca,19,F,16152,PT,HS,Hepatitis,44234
+2047,Sara,42,F,16140,GB,BSc,Hepatitis,43354
+2048,Rita,27,F,16131,PL,MSc,Broken Arm,27605
+2049,Giuseppina,41,F,16129,PL,MSc,Broken Arm,56873
+2050,Tommaso,35,M,16147,RO,MS,AIDS,39663
+2051,Giuseppina,45,F,16142,CZ,BSc,AIDS,27276
+2052,Rita,19,F,16153,RO,MSc,Brochitis,37580
+2053,Michele,38,M,16136,IE,MSc,Hang Nail,20995
+2054,Alessandra,18,F,16135,GB,PR,Brochitis,33087
+2055,Giovanni,56,M,16129,HU,HS,Hepatitis,57031
+2056,Francesca,60,F,16151,DK,BSc,Flu,29306
+2057,Federica,46,F,16133,CH,PR,Hang Nail,43837
+2058,Pietro,48,M,16128,BG,HS,Flu,35332
+2059,Leonardo,41,M,16167,NL,PR,AIDS,29188
+2060,Federica,38,F,16156,LU,HS,Broken Arm,26606
+2061,Rita,29,F,16134,IE,BSc,Broken Arm,37235
+2062,Michele,52,M,16152,HU,MSc,AIDS,38312
+2063,Roberto,18,M,16141,SI,MSc,Broken Arm,34475
+2064,Michele,40,M,16161,IS,HS,Hang Nail,26343
+2065,Roberta,25,F,16138,NO,MSc,Hepatitis,28272
+2066,Enrico,26,M,16156,SE,PhD,Brochitis,49883
+2067,Giovanna,54,O,16129,PT,MSc,Flu,37892
+2068,Valerio,41,M,16151,SE,HS,Hang Nail,30144
+2069,Claudia,21,F,16160,BE,PhD,Hang Nail,48148
+2070,Enrico,29,M,16137,NO,HS,Broken Arm,45359
+2071,Giovanna,55,F,16131,IE,MSc,Hang Nail,39908
+2072,Roberto,52,M,16129,GB,None,Flu,36500
+2073,Antonio,26,M,16124,BG,BSc,Hang Nail,48560
+2074,Giuseppina,26,F,16134,PL,PhD,Hepatitis,37734
+2075,Claudia,29,F,16140,DE,HS,Hang Nail,27711
+2076,Giovanni,46,M,16150,PT,MSc,Broken Arm,28296
+2077,Paola,21,F,16160,NL,BSc,Brochitis,31151
+2078,Rita,27,F,16161,NL,MSc,Brochitis,42528
+2079,Valentina,46,F,16167,IS,HS,Flu,31858
+2080,Sara,43,F,16140,GR,MSc,AIDS,34990
+2081,Enrico,54,M,16142,NL,HS,Hepatitis,29781
+2082,Antonio,31,M,16137,SE,HS,Brochitis,51884
+2083,Nicola,32,M,16130,FR,MSc,Hang Nail,33536
+2084,Sara,54,F,16132,NL,PR,Hepatitis,34963
+2085,Roberto,36,M,16167,ES,None,AIDS,35191
+2086,Raffaele,56,M,16144,NO,HS,AIDS,20837
+2087,Roberta,36,F,16153,SK,MSc,Hang Nail,16093
+2088,Alessandra,44,F,16122,IT,PhD,Brochitis,28770
+2089,Rita,46,F,16139,ES,MS,Hang Nail,55024
+2090,Nicola,35,M,16139,RO,MSc,AIDS,36988
+2091,Lucia,22,F,16124,RO,MSc,Hang Nail,27794
+2092,Luca,24,M,16151,BG,MS,Brochitis,34497
+2093,Giovanni,49,M,16153,DK,HS,Brochitis,36457
+2094,Roberta,55,F,16149,CH,HS,AIDS,38927
+2095,Giovanni,26,M,16125,SK,HS,Brochitis,36737
+2096,Roberta,56,F,16164,BE,MSc,Hepatitis,37808
+2097,Nicola,25,M,16166,DK,MSc,Brochitis,22287
+2098,Maria,26,F,16158,GB,BSc,AIDS,48057
+2099,Alessandra,21,F,16156,PL,HS,Flu,43666
+2100,Roberta,31,F,16156,SK,MSc,Hepatitis,38237
+2101,Sara,35,F,16145,GB,MS,Hepatitis,29549
+2102,Angelo,33,M,16164,IT,MS,AIDS,27732
+2103,Antonio,55,M,16124,NL,BSc,Brochitis,24556
+2104,Silvia,31,F,16127,DK,PhD,Brochitis,30685
+2105,Giovanni,54,M,16154,HR,MS,AIDS,32195
+2106,Claudia,43,F,16141,IS,HS,Flu,46181
+2107,Domenico,59,M,16129,DK,BSc,Flu,37567
+2108,Angelo,19,M,16132,DE,HS,Flu,16524
+2109,Roberto,58,M,16155,HU,MSc,Broken Arm,27904
+2110,Roberta,29,F,16165,NL,BSc,Hang Nail,36441
+2111,Michele,48,M,16136,DK,BSc,Broken Arm,32754
+2112,Valentina,25,O,16129,HU,BSc,Hang Nail,48721
+2113,Elena,52,F,16154,GB,BSc,Flu,33322
+2114,Pietro,30,M,16161,HR,PR,AIDS,41063
+2115,Tommaso,26,M,16158,FI,MSc,Hang Nail,44271
+2116,Giovanni,50,M,16155,IE,HS,Hang Nail,28085
+2117,Alessandra,46,F,16123,PT,BSc,AIDS,39408
+2118,Elena,55,F,16146,IE,BSc,Broken Arm,37651
+2119,Luca,47,M,16130,CH,PR,AIDS,24625
+2120,Valerio,34,M,16141,DE,BSc,Hang Nail,21153
+2121,Federica,21,F,16141,SE,MS,Hang Nail,34222
+2122,Alessandra,43,F,16153,SK,HS,Flu,31657
+2123,Luca,54,M,16152,SE,PhD,Hang Nail,40598
+2124,Roberto,24,O,16136,SE,HS,Hepatitis,22125
+2125,Raffaele,19,M,16132,AT,BSc,Broken Arm,38191
+2126,Leonardo,35,M,16138,CH,HS,Flu,23973
+2127,Federica,24,F,16164,BE,BSc,AIDS,45793
+2128,Alessandra,54,F,16145,DK,PhD,AIDS,38046
+2129,Lucia,19,F,16147,NL,HS,Hepatitis,23885
+2130,Tommaso,35,M,16165,SI,PR,Hepatitis,37793
+2131,Federica,49,F,16143,FR,HS,Brochitis,46422
+2132,Elena,32,F,16142,FI,MS,Broken Arm,23883
+2133,Bruno,35,M,16143,CH,HS,Broken Arm,29987
+2134,Pietro,30,M,16134,IT,BSc,Hepatitis,51743
+2135,Elena,38,F,16151,AT,MSc,Broken Arm,36458
+2136,Nicola,53,M,16165,IT,BSc,Brochitis,35236
+2137,Valerio,53,M,16142,DK,HS,Broken Arm,35928
+2138,Paola,37,F,16132,ES,HS,Hang Nail,40563
+2139,Francesca,31,F,16133,BE,BSc,Flu,38779
+2140,Sara,30,F,16131,IS,PR,Broken Arm,44217
+2141,Nicola,32,M,16164,FI,MS,Flu,39221
+2142,Giuseppina,41,F,16153,PT,MSc,Flu,43169
+2143,Tommaso,50,M,16159,NO,MSc,Hang Nail,37858
+2144,Roberto,27,M,16128,FR,MSc,Hang Nail,30065
+2145,Giovanna,23,F,16161,DK,HS,Hang Nail,39381
+2146,Nicola,44,M,16149,HR,HS,AIDS,40870
+2147,Angelo,19,M,16154,SK,MSc,Brochitis,29141
+2148,Maria,44,F,16141,NO,BSc,Hang Nail,41618
+2149,Roberto,54,M,16161,DE,BSc,AIDS,46511
+2150,Silvia,27,F,16145,SI,HS,Hepatitis,40890
+2151,Domenico,41,M,16141,CZ,HS,Hepatitis,48493
+2152,Luca,48,M,16162,NL,HS,Hang Nail,6235
+2153,Paola,43,F,16146,SE,BSc,Hepatitis,18708
+2154,Domenico,35,M,16150,IE,MSc,Brochitis,27316
+2155,Paola,27,F,16144,BG,HS,AIDS,33709
+2156,Raffaele,19,M,16127,GB,HS,AIDS,33831
+2157,Valerio,35,M,16163,GR,PhD,Hepatitis,19097
+2158,Roberto,18,M,16157,AT,MSc,Broken Arm,42133
+2159,Maria,46,F,16125,LU,MS,Hepatitis,44438
+2160,Lucia,52,F,16159,HR,MS,Hang Nail,38230
+2161,Raffaele,28,M,16125,NO,HS,Hang Nail,29976
+2162,Elena,25,F,16165,HR,HS,Hepatitis,27947
+2163,Nicola,51,M,16167,AT,HS,Broken Arm,29828
+2164,Paola,24,F,16166,SE,MSc,Brochitis,33074
+2165,Paola,27,F,16164,AT,HS,AIDS,38636
+2166,Maria,38,F,16152,CH,PR,AIDS,38474
+2167,Roberta,56,F,16131,NL,MS,Hang Nail,31143
+2168,Nicola,25,M,16137,CH,MSc,Hepatitis,18668
+2169,Rita,59,F,16143,FR,BSc,AIDS,23079
+2170,Michele,18,M,16151,DK,PR,Brochitis,40487
+2171,Silvia,21,F,16159,CH,MSc,AIDS,39073
+2172,Michele,55,M,16155,DE,HS,Brochitis,30093
+2173,Silvia,36,F,16142,IS,MS,Brochitis,41434
+2174,Nicola,28,M,16139,RO,HS,Hang Nail,36445
+2175,Roberto,56,M,16145,IE,MSc,Hang Nail,30008
+2176,Valentina,58,F,16143,ES,HS,Hang Nail,58634
+2177,Michele,58,M,16149,AT,HS,Broken Arm,30307
+2178,Pietro,37,M,16125,PL,HS,Broken Arm,30061
+2179,Tommaso,58,M,16154,DE,BSc,Hepatitis,23743
+2180,Giuseppina,46,F,16135,SI,BSc,Broken Arm,32745
+2181,Maria,45,F,16139,CH,MS,Hang Nail,41686
+2182,Tommaso,21,M,16123,FI,MSc,Broken Arm,38653
+2183,Lucia,33,F,16164,LU,HS,Brochitis,28993
+2184,Angelo,44,M,16139,NO,PR,Hang Nail,25003
+2185,Maria,35,F,16132,DE,MS,Flu,33055
+2186,Sara,22,F,16130,SK,MSc,Hepatitis,42433
+2187,Federica,48,F,16158,RO,BSc,Flu,32173
+2188,Tommaso,35,M,16146,RO,MS,Brochitis,26920
+2189,Michele,23,M,16158,SK,PhD,Flu,47688
+2190,Raffaele,41,M,16125,HR,MSc,Hepatitis,42095
+2191,Nicola,53,M,16159,RO,HS,AIDS,50260
+2192,Angelo,59,M,16160,PT,MS,AIDS,31414
+2193,Nicola,20,M,16134,FR,PR,Brochitis,29027
+2194,Alessandra,26,F,16125,CZ,BSc,AIDS,42032
+2195,Michele,33,M,16129,FI,HS,Broken Arm,45808
+2196,Lucia,43,F,16143,SK,MSc,AIDS,39013
+2197,Claudia,39,F,16166,PT,PhD,Flu,51653
+2198,Valerio,30,M,16137,NO,BSc,Hepatitis,29159
+2199,Michele,48,M,16128,AT,PR,Hang Nail,41506
+2200,Raffaele,43,M,16167,GR,BSc,Brochitis,37831
+2201,Sara,56,F,16124,HR,BSc,Hepatitis,40053
+2202,Tommaso,19,M,16166,CH,MS,AIDS,56319
+2203,Nicola,38,O,16122,NL,MSc,Hepatitis,27206
+2204,Valerio,60,M,16163,SK,BSc,Hang Nail,53346
+2205,Francesca,27,O,16150,LU,HS,Hepatitis,26926
+2206,Rita,25,F,16123,SK,BSc,Flu,48779
+2207,Pietro,56,M,16130,PT,PhD,Brochitis,36598
+2208,Domenico,42,M,16126,HU,HS,Brochitis,49585
+2209,Roberto,59,M,16144,BG,PhD,Flu,36844
+2210,Tommaso,26,M,16155,NL,HS,Brochitis,30983
+2211,Lucia,52,F,16126,CZ,MSc,Brochitis,34688
+2212,Roberta,32,F,16149,SK,HS,Broken Arm,33937
+2213,Federica,55,F,16160,CH,MS,AIDS,34981
+2214,Claudia,33,F,16137,NL,HS,AIDS,35237
+2215,Enrico,33,M,16122,FR,BSc,Hang Nail,43829
+2216,Leonardo,44,M,16147,HU,BSc,Hang Nail,38745
+2217,Bruno,24,M,16122,AT,MS,Brochitis,32248
+2218,Enrico,25,M,16144,FI,HS,Broken Arm,17405
+2219,Roberto,22,M,16153,GB,MSc,Broken Arm,30484
+2220,Leonardo,57,M,16129,ES,MS,Hepatitis,17623
+2221,Giovanni,60,M,16124,HR,BSc,Hang Nail,50118
+2222,Giovanna,56,F,16155,IS,BSc,Brochitis,24987
+2223,Michele,48,M,16139,SE,None,Brochitis,12484
+2224,Silvia,19,F,16149,AT,HS,Hepatitis,28136
+2225,Bruno,21,M,16157,ES,PhD,AIDS,50022
+2226,Bruno,52,M,16158,SI,PR,Brochitis,39006
+2227,Valerio,28,M,16158,SK,HS,Flu,28782
+2228,Enrico,52,M,16123,NO,PR,Brochitis,43199
+2229,Giovanni,38,M,16159,PL,HS,Hang Nail,35824
+2230,Giovanni,30,M,16122,ES,HS,Broken Arm,23500
+2231,Giovanna,43,F,16127,SI,BSc,AIDS,39282
+2232,Maria,57,F,16164,RO,BSc,AIDS,27099
+2233,Enrico,41,M,16158,AT,PR,Hepatitis,13604
+2234,Rita,46,F,16121,CH,MSc,Hepatitis,21754
+2235,Alessandra,60,F,16145,PT,HS,Broken Arm,47368
+2236,Francesca,24,F,16141,AT,HS,AIDS,38054
+2237,Nicola,30,M,16127,GR,MSc,Flu,32933
+2238,Antonio,27,M,16121,PL,MSc,AIDS,23605
+2239,Sara,47,F,16161,BG,MSc,Hepatitis,12513
+2240,Francesca,58,F,16155,NL,MSc,Hang Nail,25045
+2241,Paola,36,F,16136,HU,HS,Hepatitis,45115
+2242,Lucia,59,O,16157,CZ,PR,Hepatitis,30358
+2243,Alessandra,39,F,16125,CH,BSc,Broken Arm,36895
+2244,Tommaso,25,M,16145,IT,BSc,Hepatitis,47756
+2245,Domenico,33,M,16135,LU,HS,Hepatitis,42003
+2246,Angelo,42,M,16159,LU,HS,AIDS,44669
+2247,Giuseppina,30,F,16126,CZ,BSc,AIDS,29910
+2248,Domenico,52,M,16144,AT,HS,Hepatitis,38230
+2249,Valentina,54,F,16124,HR,PhD,Hang Nail,51693
+2250,Pietro,60,M,16135,BE,HS,Broken Arm,33918
+2251,Domenico,39,M,16167,NO,PhD,Brochitis,43702
+2252,Valerio,19,M,16134,PT,BSc,Brochitis,28077
+2253,Angelo,59,M,16152,PT,PhD,Hang Nail,42464
+2254,Angelo,24,M,16154,BE,BSc,Flu,21362
+2255,Francesca,44,F,16167,AT,HS,Hepatitis,43965
+2256,Francesca,23,F,16155,PL,MSc,Broken Arm,27202
+2257,Francesca,25,F,16161,FI,HS,Hang Nail,38769
+2258,Michele,34,M,16127,SI,None,AIDS,56687
+2259,Federica,29,F,16124,CZ,PhD,Hang Nail,41174
+2260,Valentina,54,F,16127,PL,HS,Hepatitis,31162
+2261,Roberto,36,M,16166,GB,MSc,Hepatitis,30728
+2262,Lucia,54,F,16159,SI,MS,Broken Arm,52595
+2263,Pietro,56,M,16137,DK,HS,Broken Arm,37033
+2264,Rita,18,F,16144,IE,MSc,Flu,36853
+2265,Roberto,20,M,16167,FR,HS,Hepatitis,43956
+2266,Domenico,29,M,16138,GR,PhD,AIDS,34904
+2267,Federica,60,F,16129,ES,MSc,AIDS,38842
+2268,Angelo,27,M,16150,LU,MS,Hang Nail,27192
+2269,Nicola,40,M,16151,SK,BSc,Hang Nail,12426
+2270,Valerio,58,M,16166,SI,MS,Brochitis,21384
+2271,Elena,29,F,16141,NL,HS,Flu,47143
+2272,Giovanni,57,M,16150,IE,PR,Hang Nail,41252
+2273,Roberta,45,F,16155,SK,HS,Brochitis,38484
+2274,Alessandra,28,F,16121,NO,BSc,Hang Nail,25724
+2275,Leonardo,50,M,16147,BG,HS,Hang Nail,48309
+2276,Roberto,31,M,16121,BE,HS,Flu,13161
+2277,Roberta,24,F,16136,DK,BSc,AIDS,47489
+2278,Enrico,57,M,16137,BE,None,Hang Nail,38985
+2279,Giovanni,34,M,16124,DK,HS,Hang Nail,35464
+2280,Angelo,38,M,16153,SI,HS,Hepatitis,41466
+2281,Paola,48,F,16142,CZ,MSc,Hang Nail,38007
+2282,Pietro,21,M,16153,BG,MSc,Hang Nail,34505
+2283,Sara,41,F,16158,GR,HS,Broken Arm,25178
+2284,Tommaso,46,M,16134,CH,BSc,Flu,38761
+2285,Pietro,57,M,16159,CZ,BSc,Hepatitis,15001
+2286,Antonio,35,M,16139,PT,BSc,Hang Nail,55013
+2287,Leonardo,20,M,16153,HR,PR,Hepatitis,48118
+2288,Rita,37,F,16130,SE,HS,Hepatitis,28888
+2289,Bruno,34,M,16157,IE,PR,Broken Arm,36663
+2290,Rita,46,F,16145,CZ,HS,Hang Nail,34801
+2291,Francesca,30,F,16149,BE,BSc,Hang Nail,32942
+2292,Lucia,34,F,16137,BE,BSc,Hang Nail,32616
+2293,Leonardo,30,M,16145,LU,BSc,Hepatitis,49695
+2294,Giovanna,32,F,16137,CZ,MSc,AIDS,16544
+2295,Federica,39,F,16123,GB,PR,Flu,35948
+2296,Silvia,49,F,16128,CZ,HS,Hepatitis,25226
+2297,Nicola,20,M,16161,NO,HS,Brochitis,31776
+2298,Alessandra,37,F,16121,NO,MSc,Flu,28109
+2299,Leonardo,57,M,16160,FI,PR,Hang Nail,50076
+2300,Alessandra,43,F,16158,HR,MS,Hang Nail,41409
+2301,Rita,45,F,16153,CZ,BSc,Hepatitis,51256
+2302,Claudia,24,F,16159,LU,MSc,AIDS,41734
+2303,Alessandra,46,F,16125,NO,MS,Flu,28348
+2304,Luca,31,M,16127,BE,BSc,Hang Nail,42552
+2305,Maria,29,F,16152,GB,MSc,Broken Arm,40709
+2306,Lucia,57,F,16151,RO,HS,Brochitis,36997
+2307,Enrico,56,M,16140,ES,BSc,Hang Nail,33819
+2308,Maria,54,F,16146,IS,HS,Broken Arm,22498
+2309,Tommaso,32,M,16153,CH,HS,Brochitis,50020
+2310,Angelo,29,M,16165,ES,BSc,Flu,46057
+2311,Michele,42,M,16144,DE,MSc,Broken Arm,35200
+2312,Domenico,42,M,16135,HU,MSc,Hepatitis,32296
+2313,Giovanni,45,M,16131,HR,HS,Hepatitis,41339
+2314,Leonardo,25,M,16149,DK,BSc,Hepatitis,37483
+2315,Maria,60,F,16142,FI,HS,Flu,38014
+2316,Lucia,22,F,16134,PL,MSc,AIDS,18071
+2317,Maria,29,F,16160,HU,PR,Brochitis,38558
+2318,Leonardo,19,M,16142,SI,BSc,Broken Arm,22501
+2319,Angelo,41,M,16125,PT,PR,Brochitis,33828
+2320,Tommaso,50,M,16157,DK,PhD,Brochitis,18606
+2321,Maria,33,F,16125,GR,HS,AIDS,22832
+2322,Michele,49,M,16152,IS,PhD,Hepatitis,32367
+2323,Leonardo,44,M,16133,FR,MSc,Hang Nail,28963
+2324,Leonardo,29,M,16136,LU,HS,Hepatitis,23958
+2325,Bruno,55,M,16164,SK,MSc,Hepatitis,24475
+2326,Roberto,59,M,16159,IS,PR,Hepatitis,48110
+2327,Valentina,50,F,16130,FI,HS,AIDS,28279
+2328,Sara,19,F,16138,BG,BSc,Flu,41047
+2329,Giovanni,53,M,16166,RO,MSc,AIDS,24992
+2330,Angelo,51,M,16121,ES,PhD,Flu,39143
+2331,Michele,35,O,16132,PL,MSc,Flu,27382
+2332,Enrico,30,M,16139,IE,PhD,AIDS,29853
+2333,Lucia,56,F,16123,GB,HS,Broken Arm,23867
+2334,Enrico,29,M,16150,RO,MSc,AIDS,28258
+2335,Lucia,26,F,16122,DE,BSc,Flu,23529
+2336,Domenico,47,M,16134,IT,MS,Broken Arm,42038
+2337,Lucia,24,F,16133,DK,MS,Brochitis,42166
+2338,Michele,19,M,16132,PT,HS,Flu,22044
+2339,Valentina,25,F,16165,GR,MSc,Brochitis,47856
+2340,Michele,23,M,16141,AT,PR,Hepatitis,18085
+2341,Valerio,40,M,16153,AT,PR,Broken Arm,8645
+2342,Lucia,35,F,16151,CZ,HS,Hang Nail,24669
+2343,Maria,56,F,16146,NL,MSc,Broken Arm,28412
+2344,Bruno,52,M,16133,HR,HS,AIDS,41892
+2345,Sara,35,F,16150,CZ,MS,Hepatitis,41652
+2346,Giuseppina,32,F,16128,PT,MSc,Hepatitis,35236
+2347,Pietro,58,M,16156,HU,BSc,Hepatitis,52175
+2348,Lucia,45,F,16147,IT,HS,Hang Nail,35983
+2349,Roberta,52,F,16149,ES,HS,Hepatitis,34819
+2350,Pietro,19,M,16145,AT,BSc,Hang Nail,38690
+2351,Valentina,28,F,16164,CZ,MSc,Broken Arm,23938
+2352,Pietro,55,M,16154,FI,BSc,Hang Nail,26450
+2353,Giovanni,36,M,16149,PL,HS,Hepatitis,38413
+2354,Giovanna,30,F,16138,DK,HS,Hepatitis,20909
+2355,Giovanna,51,F,16125,AT,MSc,AIDS,48107
+2356,Nicola,42,M,16137,CH,HS,Flu,33221
+2357,Raffaele,36,M,16154,CH,PhD,Brochitis,37758
+2358,Paola,44,F,16157,BG,HS,Brochitis,34217
+2359,Bruno,51,M,16163,IS,MS,Broken Arm,42905
+2360,Giuseppina,59,O,16143,LU,BSc,Hang Nail,53936
+2361,Rita,59,F,16147,ES,BSc,Flu,55362
+2362,Sara,59,F,16123,HU,MSc,Hang Nail,26612
+2363,Elena,54,F,16166,DK,HS,Brochitis,52554
+2364,Valentina,26,F,16130,AT,BSc,AIDS,31332
+2365,Leonardo,46,M,16160,SE,PR,Flu,31923
+2366,Alessandra,60,F,16134,IT,HS,Hepatitis,25625
+2367,Giuseppina,24,F,16159,HR,HS,Brochitis,26817
+2368,Elena,42,F,16134,SI,PR,Broken Arm,29646
+2369,Claudia,44,F,16145,IT,HS,Brochitis,30980
+2370,Giuseppina,47,F,16161,IE,BSc,AIDS,43992
+2371,Elena,52,F,16157,SK,HS,Flu,53609
+2372,Angelo,20,M,16152,FR,HS,Brochitis,31511
+2373,Valentina,25,F,16145,IE,HS,AIDS,37967
+2374,Claudia,43,F,16147,FI,HS,Hang Nail,41852
+2375,Roberta,21,F,16125,SE,MS,Broken Arm,54987
+2376,Maria,41,F,16146,DK,HS,Flu,26877
+2377,Pietro,27,M,16161,NO,BSc,Hang Nail,37785
+2378,Silvia,26,F,16130,CH,MSc,Hepatitis,19314
+2379,Francesca,57,F,16150,ES,BSc,Broken Arm,40653
+2380,Antonio,54,M,16144,DE,BSc,Flu,31797
+2381,Antonio,42,M,16145,SK,HS,Broken Arm,27324
+2382,Luca,59,M,16127,SK,PhD,Flu,38240
+2383,Antonio,36,M,16123,RO,MSc,Hang Nail,33037
+2384,Antonio,24,M,16167,DE,PR,AIDS,31232
+2385,Giovanni,29,M,16122,NL,HS,Flu,57422
+2386,Pietro,31,M,16166,NL,MSc,Flu,30620
+2387,Roberto,52,M,16152,HU,HS,Broken Arm,34676
+2388,Tommaso,47,M,16153,IS,PR,Hepatitis,41647
+2389,Alessandra,38,F,16142,IE,HS,Brochitis,23334
+2390,Roberto,20,M,16156,AT,HS,Brochitis,39334
+2391,Giovanni,49,M,16153,GR,PR,Hepatitis,30725
+2392,Francesca,21,F,16142,IT,BSc,AIDS,42877
+2393,Giovanni,53,M,16129,SI,HS,AIDS,25048
+2394,Silvia,51,F,16130,CZ,HS,Brochitis,35628
+2395,Claudia,59,F,16158,PL,BSc,Flu,29594
+2396,Francesca,47,F,16149,PL,MSc,AIDS,43733
+2397,Francesca,52,F,16161,BG,HS,AIDS,36191
+2398,Domenico,54,M,16121,AT,MSc,Hepatitis,22829
+2399,Valerio,25,M,16141,IS,BSc,AIDS,49940
+2400,Sara,56,F,16153,IS,BSc,Brochitis,36509
+2401,Giovanni,22,M,16144,CZ,HS,Hang Nail,35685
+2402,Giovanna,21,F,16125,LU,BSc,AIDS,32382
+2403,Silvia,50,F,16137,IS,BSc,AIDS,31601
+2404,Valentina,29,F,16136,CZ,BSc,Broken Arm,27910
+2405,Giuseppina,18,F,16141,SE,BSc,Hang Nail,48358
+2406,Enrico,44,M,16166,ES,PR,Flu,43425
+2407,Antonio,44,M,16147,NO,HS,Flu,34264
+2408,Elena,56,F,16133,ES,HS,AIDS,37576
+2409,Paola,27,F,16146,BE,PR,Broken Arm,28753
+2410,Maria,26,F,16166,PT,MS,Broken Arm,23199
+2411,Giuseppina,35,F,16148,BE,PR,Broken Arm,35387
+2412,Bruno,43,M,16126,PT,BSc,Flu,31039
+2413,Luca,55,M,16148,HU,HS,Hepatitis,42576
+2414,Michele,36,M,16139,DE,HS,Hepatitis,16515
+2415,Bruno,26,M,16147,GR,BSc,Flu,53996
+2416,Nicola,52,M,16143,HU,MSc,Hepatitis,27799
+2417,Federica,24,F,16124,BG,BSc,Broken Arm,39908
+2418,Giovanna,43,F,16165,ES,HS,Hepatitis,21653
+2419,Alessandra,54,F,16151,CZ,MSc,Flu,40350
+2420,Roberto,29,M,16122,HU,MSc,Hang Nail,50082
+2421,Francesca,38,F,16146,IS,BSc,Broken Arm,19586
+2422,Leonardo,51,M,16137,RO,HS,Hepatitis,36589
+2423,Antonio,57,M,16145,GR,PR,Brochitis,38890
+2424,Rita,32,F,16123,RO,BSc,Broken Arm,42040
+2425,Leonardo,58,M,16137,BG,HS,Hepatitis,34173
+2426,Giovanna,50,F,16136,IS,PR,Hang Nail,25672
+2427,Silvia,51,F,16138,NL,HS,Brochitis,25034
+2428,Sara,25,F,16144,BE,HS,Hang Nail,32794
+2429,Federica,18,F,16134,IS,PR,AIDS,41788
+2430,Francesca,18,F,16161,CZ,MSc,Broken Arm,32110
+2431,Bruno,37,M,16159,RO,PR,Flu,27973
+2432,Paola,34,F,16145,IS,MSc,AIDS,32225
+2433,Lucia,40,F,16161,ES,BSc,AIDS,42746
+2434,Antonio,40,M,16147,FR,HS,AIDS,42437
+2435,Valerio,53,M,16160,FI,PR,Hang Nail,31039
+2436,Alessandra,33,F,16164,AT,HS,Broken Arm,41188
+2437,Michele,29,M,16134,PL,HS,Flu,35869
+2438,Giovanni,34,M,16161,GB,HS,Hepatitis,38538
+2439,Giuseppina,53,F,16137,BG,MSc,Hepatitis,37456
+2440,Valerio,54,M,16138,DK,MSc,Flu,41647
+2441,Federica,53,F,16140,IT,HS,Hang Nail,37550
+2442,Luca,33,M,16137,CH,BSc,Hepatitis,45887
+2443,Valentina,23,F,16122,FR,HS,Hepatitis,22455
+2444,Bruno,58,M,16135,FI,HS,Hang Nail,33893
+2445,Elena,24,F,16136,NL,HS,Hang Nail,41693
+2446,Michele,36,M,16149,RO,MSc,AIDS,30332
+2447,Giuseppina,46,F,16155,ES,HS,AIDS,34006
+2448,Giuseppina,56,F,16129,CH,PhD,Hang Nail,30881
+2449,Rita,37,F,16129,HR,HS,Hepatitis,51229
+2450,Roberta,60,F,16139,NO,BSc,Hepatitis,42576
+2451,Enrico,60,M,16145,DK,BSc,AIDS,39925
+2452,Leonardo,44,M,16132,NL,BSc,Flu,37555
+2453,Domenico,23,M,16148,IT,BSc,Flu,35411
+2454,Nicola,58,M,16139,BE,HS,Hang Nail,27238
+2455,Valerio,21,M,16158,BE,BSc,AIDS,40039
+2456,Roberta,53,F,16146,HU,HS,Hepatitis,33928
+2457,Antonio,50,M,16136,IS,PhD,Broken Arm,28909
+2458,Silvia,39,F,16162,PT,MSc,Hepatitis,31265
+2459,Federica,29,F,16158,CZ,PR,AIDS,30110
+2460,Claudia,45,F,16141,BE,HS,Flu,33281
+2461,Antonio,28,M,16145,DE,MS,Brochitis,33683
+2462,Enrico,18,M,16147,NL,MSc,Broken Arm,29441
+2463,Domenico,55,M,16143,FR,PhD,Hang Nail,49962
+2464,Valentina,49,F,16154,GR,MSc,Flu,19778
+2465,Roberta,48,F,16137,BG,MSc,Flu,24335
+2466,Enrico,38,M,16122,BG,PR,Brochitis,27362
+2467,Maria,53,F,16133,PL,HS,Flu,24521
+2468,Francesca,30,F,16127,HU,BSc,Broken Arm,42280
+2469,Elena,48,F,16127,PT,MS,Broken Arm,30840
+2470,Giovanna,39,F,16126,FI,HS,AIDS,37210
+2471,Sara,54,F,16145,GB,HS,Hepatitis,23194
+2472,Luca,40,M,16131,BE,MS,Broken Arm,33067
+2473,Claudia,29,F,16163,FR,MSc,Hepatitis,24223
+2474,Lucia,18,F,16149,NO,MSc,Hang Nail,35424
+2475,Luca,32,M,16142,IS,BSc,Broken Arm,25820
+2476,Enrico,21,M,16135,DK,HS,Brochitis,12347
+2477,Domenico,23,M,16166,ES,PhD,Hang Nail,41645
+2478,Tommaso,44,M,16156,IE,BSc,Hepatitis,52193
+2479,Maria,58,F,16154,FI,HS,AIDS,30584
+2480,Raffaele,25,M,16122,LU,PR,Hang Nail,40499
+2481,Tommaso,53,M,16125,GB,MSc,Brochitis,24920
+2482,Bruno,32,M,16158,CH,MS,Flu,40000
+2483,Claudia,25,F,16125,GB,HS,AIDS,24929
+2484,Federica,32,F,16153,CH,MSc,Flu,30076
+2485,Antonio,41,M,16167,ES,HS,Hang Nail,37982
+2486,Domenico,34,M,16157,NO,BSc,Hepatitis,30464
+2487,Elena,23,F,16138,BG,MS,Hang Nail,31862
+2488,Giovanna,18,F,16125,IE,HS,Hang Nail,29938
+2489,Maria,47,F,16162,LU,MS,Broken Arm,44929
+2490,Maria,21,F,16130,SI,None,Flu,37194
+2491,Nicola,24,M,16164,CH,HS,Hang Nail,20568
+2492,Nicola,43,M,16131,BG,BSc,Brochitis,22914
+2493,Giovanni,42,M,16165,LU,HS,Hang Nail,25113
+2494,Maria,58,F,16152,AT,HS,Hang Nail,45738
+2495,Raffaele,33,M,16139,CH,MSc,Hepatitis,27737
+2496,Bruno,43,M,16152,AT,HS,Hepatitis,23775
+2497,Silvia,47,F,16132,IS,PR,Flu,38706
+2498,Luca,24,M,16151,IS,MSc,Hepatitis,26435
+2499,Rita,50,F,16143,IS,BSc,Hepatitis,33400

@@ -1,0 +1,101 @@
+ID,Name,Age,Sex,Zipcode,Country,Education,Disease,Salary
+0,Maria,23,F,16129,DK,PR,Hepatitis,34235
+1,Nicola,52,M,16134,DE,BSc,Brochitis,26619
+2,Paola,50,F,16137,IS,None,Brochitis,29429
+3,Angelo,25,M,16139,FR,MSc,AIDS,49077
+4,Elena,49,F,16129,PT,BSc,AIDS,50837
+5,Domenico,24,M,16141,BE,PhD,Broken Arm,22340
+6,Claudia,42,F,16130,CZ,BSc,Brochitis,61169
+7,Michele,57,M,16158,GB,BSc,Broken Arm,22452
+8,Michele,54,M,16156,FR,MSc,AIDS,46526
+9,Claudia,35,F,16144,GR,MSc,AIDS,35362
+10,Luca,25,M,16150,DE,BSc,Flu,37150
+11,Domenico,20,M,16139,AT,HS,AIDS,28949
+12,Pietro,18,M,16126,IT,BSc,Flu,29607
+13,Roberto,20,M,16133,FR,MSc,AIDS,38009
+14,Francesca,28,F,16128,LU,PhD,Hepatitis,22275
+15,Sara,33,F,16131,SE,MSc,Flu,34103
+16,Francesca,42,F,16155,GR,HS,AIDS,39447
+17,Tommaso,48,M,16141,HR,MSc,Hepatitis,45226
+18,Sara,38,F,16123,AT,MSc,Flu,37418
+19,Domenico,36,M,16167,RO,MS,Brochitis,38433
+20,Antonio,43,M,16141,IE,BSc,Flu,41062
+21,Michele,38,M,16159,LU,BSc,Flu,25336
+22,Tommaso,31,M,16160,CH,HS,AIDS,40009
+23,Alessandra,48,F,16163,IS,BSc,Brochitis,32374
+24,Raffaele,52,M,16134,GR,MSc,Hepatitis,19343
+25,Valerio,41,M,16126,DE,PhD,Flu,34952
+26,Elena,46,F,16126,SK,BSc,AIDS,48207
+27,Sara,39,F,16135,IE,PhD,Brochitis,31420
+28,Maria,38,F,16132,HU,BSc,AIDS,29631
+29,Nicola,37,M,16136,HU,MSc,Flu,27573
+30,Giovanna,57,F,16158,GB,MS,AIDS,47076
+31,Michele,33,M,16135,AT,HS,Hepatitis,18589
+32,Enrico,22,M,16138,PL,PhD,Flu,42168
+33,Giovanni,22,M,16122,SK,HS,Flu,28433
+34,Lucia,40,F,16152,NL,MSc,Hepatitis,46772
+35,Michele,50,M,16141,BG,HS,AIDS,26821
+36,Sara,29,F,16132,CH,MSc,Hepatitis,25958
+37,Raffaele,38,M,16140,HR,HS,Hang Nail,17467
+38,Giovanna,56,F,16139,CZ,BSc,Hepatitis,29108
+39,Roberta,52,F,16167,BE,HS,Brochitis,34375
+40,Alessandra,57,F,16164,PL,BSc,Hang Nail,46621
+41,Federica,31,F,16132,GR,HS,Broken Arm,23835
+42,Luca,28,M,16124,ES,MSc,Hang Nail,21668
+43,Valentina,34,F,16125,SI,MSc,Broken Arm,47668
+44,Domenico,45,M,16156,DE,BSc,AIDS,19314
+45,Giuseppina,52,F,16150,AT,PR,Broken Arm,32990
+46,Alessandra,39,F,16131,DE,BSc,Broken Arm,36509
+47,Maria,59,F,16147,PT,MS,Flu,24896
+48,Bruno,40,M,16158,CZ,MS,AIDS,26059
+49,Roberta,26,F,16137,DE,MSc,Broken Arm,30468
+50,Leonardo,43,M,16132,RO,HS,Flu,28045
+51,Valerio,49,M,16121,DK,BSc,AIDS,28939
+52,Angelo,50,M,16162,LU,HS,Hang Nail,34525
+53,Pietro,32,M,16136,HU,HS,Broken Arm,47292
+54,Pietro,48,M,16135,ES,MSc,Broken Arm,39905
+55,Rita,53,F,16160,SE,BSc,Hang Nail,32495
+56,Tommaso,59,M,16135,BE,BSc,Flu,41816
+57,Domenico,50,M,16162,IS,BSc,Hepatitis,56917
+58,Giovanna,31,F,16140,GR,MS,Hang Nail,22575
+59,Tommaso,53,M,16144,DK,HS,Hang Nail,40139
+60,Federica,47,F,16159,BG,None,Flu,15099
+61,Silvia,56,F,16153,PT,MS,Broken Arm,18948
+62,Roberta,27,F,16137,IT,MSc,Hepatitis,41836
+63,Leonardo,21,M,16152,SI,BSc,Broken Arm,35365
+64,Federica,58,F,16143,IE,HS,AIDS,33741
+65,Roberto,28,M,16155,SE,HS,Flu,42899
+66,Giovanna,23,F,16137,SK,MSc,Flu,11364
+67,Lucia,23,F,16129,CH,HS,AIDS,27832
+68,Alessandra,60,F,16164,ES,MSc,Flu,46078
+69,Giuseppina,33,F,16145,GB,BSc,Broken Arm,34005
+70,Enrico,28,M,16141,LU,BSc,Hepatitis,40203
+71,Leonardo,49,M,16134,HR,BSc,Broken Arm,27325
+72,Leonardo,52,M,16147,HR,HS,Hang Nail,36520
+73,Lucia,35,F,16136,IE,MSc,Hang Nail,33131
+74,Giovanna,18,F,16133,NO,PhD,Broken Arm,8538
+75,Paola,19,F,16122,SK,MSc,AIDS,37012
+76,Valerio,34,M,16134,DK,BSc,Brochitis,29141
+77,Roberta,52,F,16133,DE,MS,Brochitis,40707
+78,Leonardo,34,M,16164,LU,MSc,Hepatitis,20188
+79,Giovanna,40,F,16152,IT,HS,Flu,34487
+80,Domenico,31,M,16157,IE,MSc,Hepatitis,37414
+81,Lucia,24,F,16122,HR,HS,AIDS,50033
+82,Giovanni,18,M,16155,GR,HS,Hang Nail,25806
+83,Domenico,59,M,16129,BG,BSc,AIDS,36727
+84,Angelo,54,M,16140,IT,MSc,AIDS,14811
+85,Sara,40,F,16154,HU,HS,Flu,21858
+86,Claudia,46,F,16166,LU,MSc,Brochitis,23775
+87,Lucia,52,F,16146,HU,HS,Hang Nail,49437
+88,Pietro,54,M,16152,HR,None,Hang Nail,48504
+89,Nicola,42,M,16145,FI,BSc,AIDS,32325
+90,Bruno,35,M,16161,RO,MSc,Hang Nail,21141
+91,Nicola,50,M,16133,LU,HS,AIDS,29234
+92,Roberto,51,M,16147,SE,BSc,Hang Nail,50793
+93,Lucia,28,F,16149,RO,MSc,Hang Nail,57628
+94,Giovanna,30,F,16144,NO,BSc,Flu,31894
+95,Sara,42,F,16158,IT,BSc,Broken Arm,42949
+96,Rita,57,F,16158,SE,MS,Hang Nail,27401
+97,Silvia,22,F,16152,SE,PR,Hepatitis,17231
+98,Sara,59,F,16139,SK,BSc,Flu,39229
+99,Enrico,58,M,16130,SK,MSc,Broken Arm,30797

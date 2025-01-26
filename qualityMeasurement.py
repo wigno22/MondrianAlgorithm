@@ -3,6 +3,7 @@ from mondrian import mondrianAnon
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 def metrics(dataset, QIs, k, print_metrics=False):
     """
     from a dataset and a list of quasi-identifiers, calculate the two metrics: Cdm and Cavg
@@ -164,7 +165,6 @@ def calculate_information_loss(dataset_original, dataset_anon):
     return total_loss / len(dataset_original.columns)
 
 
-
 def privacy_utility_analysis(dataset, dataset_anon, QIs, k):
     """
     generate a table containing all the metrics calculated by the algorithm.
@@ -188,7 +188,7 @@ def privacy_utility_analysis(dataset, dataset_anon, QIs, k):
     information_loss = calculate_information_loss(dataset_original, dataset_anon)
 
     # Calcolo Data Utility Metrics
-    discernability_metric, avg_equiv_class_size = metrics(dataset, QIs, k)
+    discernability_metric, avg_equiv_class_size = metrics(dataset_anon, QIs, k)
 
     # Preparazione dei dati per la tabella
     table_data = [
@@ -199,6 +199,5 @@ def privacy_utility_analysis(dataset, dataset_anon, QIs, k):
         ["Discernability Metric (Cdm)", f"{discernability_metric}"],
         ["Normalized Avg. Equiv. Class Size (Cavg)", f"{avg_equiv_class_size:.2f}"],
     ]
-
 
     return table_data
